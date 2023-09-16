@@ -1,9 +1,104 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Coral Tsai</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+    />
+
+    <script src="js/js.js"></script>
   </head>
-  <body></body>
+  <body>
+    <header>
+      <nav
+        class="navbar is-light"
+        role="navigation"
+        aria-label="main navigation"
+      >
+        <div class="navbar-brand">
+          <a class="navbar-item" href="index.html">
+            <img
+              src="https://bulma.io/images/bulma-logo.png"
+              width="112"
+              height="28"
+            />
+          </a>
+
+          <a
+            role="button"
+            class="navbar-burger"
+            aria-label="menu"
+            aria-expanded="false"
+            data-target="navbarBasicExample"
+          >
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+
+        <div id="navbarBasicExample" class="navbar-menu">
+          <div class="navbar-start">
+            <a class="navbar-item" href="index.html"> 首頁 </a>
+
+            <a class="navbar-item"> 關於我 </a>
+
+            <div class="navbar-item has-dropdown is-hoverable">
+              <a class="navbar-link"> 更多 </a>
+
+              <div class="navbar-dropdown">
+                <a class="navbar-item"> 寫寫東西 </a>
+                <a class="navbar-item"> 聯絡我 </a>
+              </div>
+            </div>
+          </div>
+          <div class="navbar-end">
+            <a class="navbar-item"> EN </a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="section" style="text-align: center">
+        <br />
+        <h1 class="title">
+          I am a UIUX Designer<strong class="has-text-primary">.</strong>
+        </h1>
+        <br />
+        <h2 class="subtitle">
+          你好，我的名字是亞珊，大家都叫我Coral
+          <br />
+          專注在<strong>UIUX設計</strong>
+          <span class="has-text-primary">&</span> <strong>資訊視覺化</strong>
+        </h2>
+        <h2>很高興認識你😄</h2>
+      </section>
+      <section class="section">
+        <div class="columns">
+          <div class="column is-three-fifths">[UIUX] 快點簽</div>
+          <div class="column">[UIUX] 敏捷開發快速指南</div>
+        </div>
+        <div class="columns">
+          <div class="column">[UX] U瓦隆</div>
+          <div class="column">[UI] VDL</div>
+          <div class="column">[VD] 產品操作手冊</div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="content has-text-centered">
+        <p>
+          ©2023 Coral Tsai
+          <br />本網站是用
+          <strong><a href="https://bulma.io/" target="_blank">Bulma</a></strong>
+          建構而成🌟
+        </p>
+      </div>
+    </footer>
+  </body>
 </html>
