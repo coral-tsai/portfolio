@@ -1,0 +1,7 @@
+.card {
+  transition: 0.5s;
+}
+.card:hover {
+  transform: translate(0px, -8px);
+  transition: 0.5s;
+}/*# sourceMappingURL=style.css.map */
