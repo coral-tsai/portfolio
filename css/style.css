@@ -4,4 +4,9 @@
 .card:hover {
   transform: translate(0px, -8px);
   transition: 0.5s;
+  box-shadow: 0 0.5em 1em -0.125em rgba(0, 209, 178, 0.2705882353), 0 0 0 1px rgba(10, 10, 10, 0.02);
+}
+.card .card-image:last-child img {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
 }/*# sourceMappingURL=style.css.map */
