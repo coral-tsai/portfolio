@@ -40,12 +40,11 @@
       content="https://bulma.io/favicons/browserconfig.xml?v=201701041855"
     />
 
+    <!-- Links============================================ -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
     />
-
-    <!-- Links============================================ -->
     <link rel="stylesheet" href="/css/style.css" />
 
     <!-- Scripts============================================ -->
@@ -64,11 +63,18 @@
       >
         <div class="navbar-brand">
           <a class="navbar-item" href="index.html">
-            <img
+            <span
+              style="
+                text-decoration: underline;
+                font-family: 'Work Sans', sans-serif !important;
+              "
+              >Coral Tsai</span
+            >
+            <!-- <img
               src="https://bulma.io/images/bulma-logo.png"
               width="112"
               height="28"
-            />
+            /> -->
           </a>
 
           <a
@@ -85,29 +91,36 @@
         </div>
 
         <div id="navbarBasicExample" class="navbar-menu">
-          <div class="navbar-start">
-            <a class="navbar-item" href="index.html"> 首頁 </a>
+          <div class="navbar-end">
+            <a class="navbar-item" href="index.html"> Home </a>
 
-            <a class="navbar-item"> 關於我 </a>
+            <a class="navbar-item"> About </a>
+            <a
+              class="navbar-item"
+              target="_blank"
+              href="https://matters.town/@coraltsai"
+            >
+              Writing
+            </a>
 
-            <div class="navbar-item has-dropdown is-hoverable">
-              <a class="navbar-link"> 更多 </a>
+            <!-- <div class="navbar-item has-dropdown is-hoverable">
+              <a class="navbar-link"> More </a>
 
               <div class="navbar-dropdown">
                 <a
                   class="navbar-item"
                   target="_blank"
-                  href="https://matters.town/@yashantsai"
+                  href="https://matters.town/@coraltsai"
                 >
-                  寫寫東西
+                  Writing
                 </a>
-                <a class="navbar-item"> 聯絡我 </a>
+                <a class="navbar-item"> Contact me </a>
               </div>
-            </div>
+            </div> -->
           </div>
-          <div class="navbar-end">
+          <!-- <div class="navbar-end">
             <a class="navbar-item"> EN </a>
-          </div>
+          </div> -->
         </div>
       </nav>
     </header>
@@ -122,12 +135,17 @@
         </h1>
         <br />
         <h2 class="subtitle">
-          你好，我的名字是亞珊，大家都叫我Coral
+          Hello, my name is Coral. <br />
+          Focus on <strong style="">UIUX design</strong>
+          <span class="has-text-primary">&</span>
+          <strong>Data visualization</strong>.
+          <br />
+          <!-- 你好，我的名字是亞珊，大家都叫我Coral
           <br />
           專注在<strong>UIUX設計</strong>
           <span class="has-text-primary">&</span> <strong>資訊視覺化</strong>
         </h2>
-        <h2>很高興認識你😄</h2>
+        <h2>很高興認識你😄</h2> -->
       </section>
 
       <!-- Projects============================================ -->
@@ -145,14 +163,13 @@
                   </figure>
                 </div>
                 <div class="card-content">
-                  <p class="title is-4">快點簽</p>
+                  <p class="title is-4">Fast-sign</p>
                   <div class="content">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Phasellus nec iaculis mauris. <a>@bulmaio</a>.
+                    <a>@bulmaio</a>.
                     <a href="#">#css</a>
                     <a href="#">#responsive</a>
                     <br />
-                    <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                    <time datetime="2016-1-1">2022/11</time>
                   </div>
                 </div>
               </div>
@@ -171,14 +188,13 @@
                   </figure>
                 </div>
                 <div class="card-content">
-                  <p class="title is-4">敏捷開發快速指南</p>
+                  <p class="title is-4">scrum quick guide</p>
                   <div class="content">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Phasellus nec iaculis mauris. <a>@bulmaio</a>.
+                    <a>@bulmaio</a>.
                     <a href="#">#css</a>
                     <a href="#">#responsive</a>
                     <br />
-                    <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                    <time datetime="2016-1-1">2022/11</time>
                   </div>
                 </div>
               </div>
@@ -201,8 +217,7 @@
                 <div class="card-content">
                   <p class="title is-4">U瓦隆</p>
                   <div class="content">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Phasellus nec iaculis mauris. <a>@bulmaio</a>.
+                    <a>@bulmaio</a>.
                     <a href="#">#css</a>
                     <a href="#">#responsive</a>
                     <br />
@@ -226,8 +241,7 @@
                 <div class="card-content">
                   <p class="title is-4">VitaDataLink</p>
                   <div class="content">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Phasellus nec iaculis mauris. <a>@bulmaio</a>.
+                    <a>@bulmaio</a>.
                     <a href="#">#css</a>
                     <a href="#">#responsive</a>
                     <br />
@@ -251,8 +265,7 @@
                 <div class="card-content">
                   <p class="title is-4">產品操作手冊</p>
                   <div class="content">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Phasellus nec iaculis mauris. <a>@bulmaio</a>.
+                    <a>@bulmaio</a>.
                     <a href="#">#css</a>
                     <a href="#">#responsive</a>
                     <br />
@@ -287,9 +300,17 @@
             class="icon"
             target="_blank"
           >
-            <i class="fa-brands fa-instagram fa-xl"></i>
+            <i class="fa-brands fa-square-instagram fa-xl"></i>
           </a>
           <a
+            href="https://www.instagram.com/yashan_tsai"
+            class="icon"
+            target="_blank"
+          >
+            <i class="fa-brands fa-square-facebook fa-xl"></i>
+          </a>
+
+          <!-- <a
             href="https://matters.town/@yashantsai"
             class="icon"
             target="_blank"
@@ -298,6 +319,16 @@
               src="https://assets-next.mattersprotocol.io/_next/static/media/favicon-32x32.5e03b2c1.png"
               alt="Matters Blog"
             />
+          </a> -->
+        </div>
+        <br />
+        <div class="columns is-mobile is-centered">
+          <a
+            href="https://www.instagram.com/yashan_tsai"
+            class="icon"
+            target="_blank"
+          >
+            <i class="fa-brands fa-line fa-xl"></i>
           </a>
         </div>
       </section>
