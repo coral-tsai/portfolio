@@ -1,349 +1,81 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Coral Tsai</title>
-    <!-- Favicon============================================ -->
+    <title>Bootstrap demo</title>
     <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="https://bulma.io/favicons/apple-touch-icon.png?v=201701041855"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      href="https://bulma.io/favicons/favicon-32x32.png?v=201701041855"
-      sizes="32x32"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      href="https://bulma.io/favicons/favicon-16x16.png?v=201701041855"
-      sizes="16x16"
-    />
-    <link
-      rel="manifest"
-      href="https://bulma.io/favicons/manifest.json?v=201701041855"
-    />
-    <link
-      rel="mask-icon"
-      href="https://bulma.io/favicons/safari-pinned-tab.svg?v=201701041855"
-      color="#00d1b2"
-    />
-    <link
-      rel="shortcut icon"
-      href="https://bulma.io/favicons/favicon.ico?v=201701041855"
-    />
-    <meta
-      name="msapplication-config"
-      content="https://bulma.io/favicons/browserconfig.xml?v=201701041855"
-    />
-
-    <!-- Links============================================ -->
-    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
     />
     <link rel="stylesheet" href="/css/style.css" />
-
-    <!-- Scripts============================================ -->
-    <script src="js/js.js"></script>
     <script
-      src="https://kit.fontawesome.com/d7d78ac6c2.js"
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
       crossorigin="anonymous"
     ></script>
   </head>
   <body>
-    <header>
-      <nav
-        class="navbar is-light"
-        role="navigation"
-        aria-label="main navigation"
-      >
-        <div class="navbar-brand">
-          <a class="navbar-item" href="index.html">
-            <span
-              style="
-                text-decoration: underline;
-                font-family: 'Work Sans', sans-serif !important;
-              "
-              >Coral Tsai</span
-            >
-            <!-- <img
-              src="https://bulma.io/images/bulma-logo.png"
-              width="112"
-              height="28"
-            /> -->
-          </a>
-
-          <a
-            role="button"
-            class="navbar-burger"
-            aria-label="menu"
-            aria-expanded="false"
-            data-target="navbarBasicExample"
-          >
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-          </a>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+            </li>
+          </ul>
         </div>
-
-        <div id="navbarBasicExample" class="navbar-menu">
-          <div class="navbar-end">
-            <a class="navbar-item" href="index.html"> Home </a>
-
-            <a class="navbar-item" href="about.html"> About </a>
-            <a
-              class="navbar-item"
-              target="_blank"
-              href="https://matters.town/@coraltsai"
-            >
-              Writing
-            </a>
-
-            <!-- <div class="navbar-item has-dropdown is-hoverable">
-              <a class="navbar-link"> More </a>
-
-              <div class="navbar-dropdown">
-                <a
-                  class="navbar-item"
-                  target="_blank"
-                  href="https://matters.town/@coraltsai"
-                >
-                  Writing
-                </a>
-                <a class="navbar-item"> Contact me </a>
-              </div>
-            </div> -->
-          </div>
-          <!-- <div class="navbar-end">
-            <a class="navbar-item"> EN </a>
-          </div> -->
-        </div>
-      </nav>
-    </header>
-
-    <!-- Main============================================ -->
-    <main>
-      <!-- Breif============================================ -->
-      <section class="section" style="text-align: center">
-        <br />
-        <h1 class="title">
-          I am a UIUX Designer<strong class="has-text-primary">.</strong>
-        </h1>
-        <br />
-        <h2 class="subtitle">
-          Hello, my name is Coral. <br />
-          Focus on <strong style="">UIUX design</strong>
-          <span class="has-text-primary">&</span>
-          <strong>Data visualization</strong>.
-          <br />
-          <!-- 你好，我的名字是亞珊，大家都叫我Coral
-          <br />
-          專注在<strong>UIUX設計</strong>
-          <span class="has-text-primary">&</span> <strong>資訊視覺化</strong>
-        </h2>
-        <h2>很高興認識你😄</h2> -->
-      </section>
-
-      <!-- Projects============================================ -->
-      <section class="section">
-        <div class="columns">
-          <div class="column">
-            <a href="#">
-              <div class="card">
-                <div class="card-image">
-                  <figure class="image is-2by1">
-                    <img
-                      src="https://bulma.io/images/placeholders/640x320.png"
-                      alt="Placeholder image"
-                    />
-                  </figure>
-                </div>
-                <div class="card-content">
-                  <p class="title is-4">Fast-sign</p>
-                  <div class="content">
-                    <a>@bulmaio</a>.
-                    <a href="#">#css</a>
-                    <a href="#">#responsive</a>
-                    <br />
-                    <time datetime="2016-1-1">2022/11</time>
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-
-          <div class="column">
-            <a href="#">
-              <div class="card">
-                <div class="card-image">
-                  <figure class="image is-2by1">
-                    <img
-                      src="https://bulma.io/images/placeholders/640x320.png"
-                      alt="Placeholder image"
-                    />
-                  </figure>
-                </div>
-                <div class="card-content">
-                  <p class="title is-4">scrum quick guide</p>
-                  <div class="content">
-                    <a>@bulmaio</a>.
-                    <a href="#">#css</a>
-                    <a href="#">#responsive</a>
-                    <br />
-                    <time datetime="2016-1-1">2022/11</time>
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-        <hr />
-        <div class="columns">
-          <div class="column">
-            <a href="#">
-              <div class="card">
-                <div class="card-image">
-                  <figure class="image is-2by1">
-                    <img
-                      src="https://bulma.io/images/placeholders/640x320.png"
-                      alt="Placeholder image"
-                    />
-                  </figure>
-                </div>
-                <div class="card-content">
-                  <p class="title is-4">U瓦隆</p>
-                  <div class="content">
-                    <a>@bulmaio</a>.
-                    <a href="#">#css</a>
-                    <a href="#">#responsive</a>
-                    <br />
-                    <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="column">
-            <a href="#">
-              <div class="card">
-                <div class="card-image">
-                  <figure class="image is-2by1">
-                    <img
-                      src="https://bulma.io/images/placeholders/640x320.png"
-                      alt="Placeholder image"
-                    />
-                  </figure>
-                </div>
-                <div class="card-content">
-                  <p class="title is-4">VitaDataLink</p>
-                  <div class="content">
-                    <a>@bulmaio</a>.
-                    <a href="#">#css</a>
-                    <a href="#">#responsive</a>
-                    <br />
-                    <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="column">
-            <a href="#">
-              <div class="card">
-                <div class="card-image">
-                  <figure class="image is-2by1">
-                    <img
-                      src="https://bulma.io/images/placeholders/640x320.png"
-                      alt="Placeholder image"
-                    />
-                  </figure>
-                </div>
-                <div class="card-content">
-                  <p class="title is-4">產品操作手冊</p>
-                  <div class="content">
-                    <a>@bulmaio</a>.
-                    <a href="#">#css</a>
-                    <a href="#">#responsive</a>
-                    <br />
-                    <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-      </section>
-
-      <!-- SNS============================================ -->
-      <section class="section SNS">
-        <div class="columns is-mobile is-centered">
-          <a
-            href="https://www.behance.net/coral-tsai"
-            class="icon"
-            target="_blank"
-          >
-            <i class="fa-brands fa-square-behance fa-xl"></i>
-          </a>
-          <a
-            href="https://www.linkedin.com/in/coral-tsai/"
-            class="icon"
-            target="_blank"
-          >
-            <i class="fa-brands fa-linkedin fa-xl"></i>
-          </a>
-          <a
-            href="https://www.instagram.com/yashan_tsai"
-            class="icon"
-            target="_blank"
-          >
-            <i class="fa-brands fa-square-instagram fa-xl"></i>
-          </a>
-          <a
-            href="https://www.instagram.com/yashan_tsai"
-            class="icon"
-            target="_blank"
-          >
-            <i class="fa-brands fa-square-facebook fa-xl"></i>
-          </a>
-
-          <!-- <a
-            href="https://matters.town/@yashantsai"
-            class="icon"
-            target="_blank"
-          >
-            <img
-              src="https://assets-next.mattersprotocol.io/_next/static/media/favicon-32x32.5e03b2c1.png"
-              alt="Matters Blog"
-            />
-          </a> -->
-        </div>
-        <br />
-        <div class="columns is-mobile is-centered">
-          <a
-            href="https://www.instagram.com/yashan_tsai"
-            class="icon"
-            target="_blank"
-          >
-            <i class="fa-brands fa-line fa-xl"></i>
-          </a>
-        </div>
-      </section>
-    </main>
-
-    <!-- Footer=========================================== -->
-    <footer class="footer">
-      <div class="content has-text-centered">
-        <p>
-          ©2023 Coral Tsai
-          <br />你現在看到的網站 ＝
-          <strong><a href="https://bulma.io/" target="_blank">Bulma</a></strong>
-          ＋ <strong>Coral的小巧思</strong>🌟
-        </p>
       </div>
-    </footer>
+    </nav>
+
+    <div class=".container-fluid">
+      <div class="row mb-3 text-center">
+        <div class="col-md-8 themed-grid-col">
+          <div class="pb-3">.col-md-8</div>
+          <div class="row">
+            <div class="col-md-6 themed-grid-col">.col-md-6</div>
+            <div class="col-md-6 themed-grid-col">.col-md-6</div>
+          </div>
+        </div>
+        <div class="col-md-4 themed-grid-col">.col-md-4</div>
+      </div>
+      <div class="row mb-3 text-center">
+        <div class="col-md-4">.col-md-4</div>
+        <div class="col-md-4">.col-md-4</div>
+        <div class="col-md-4">.col-md-4</div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="footer-body"></div>
+      <div class="footer-head"></div>
+    </div>
   </body>
 </html>

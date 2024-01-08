@@ -35,6 +35,11 @@ body {
   }
 }
 
+body {
+  overflow-y: hidden; /* Hide vertical scrollbar */
+  overflow-x: hidden; /* Hide horizontal scrollbar */
+}
+
 // index2
 
 // .footer {
@@ -94,7 +99,7 @@ body {
   height: 3em;
   content: ".";
   // mix-blend-mode: screen;
-  animation: 200s -27s move infinite ease-in-out alternate;
+  animation: 160s -27s move infinite ease-in-out alternate;
 }
 
 .footer-body::before {
