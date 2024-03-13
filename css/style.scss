@@ -77,6 +77,87 @@ body {
   font-size: 20px;
   margin-bottom: 40px;
 }
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 16px;
+  right: 50%;
+  transform: translate(50%, 0);
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  width: 64px;
+  height: 44px;
+  border-radius: 99px;
+  &::before {
+    font-family: "icomoon";
+    content: "\e908";
+  }
+  &:hover {
+    background-color: #555;
+  }
+}
+
+.contact-fab {
+  position: fixed;
+  right: 8px;
+  top: 50%;
+  transform: translate(0, -50%);
+  display: flex;
+  gap: 8px;
+  flex-direction: column;
+  z-index: 1;
+  a {
+    width: 40px;
+    height: 40px;
+    border-radius: 99px;
+    // background-color: #fff;
+    text-decoration: none;
+    font-family: "icomoon";
+    color: #fff;
+    box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.05);
+    &::before {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+    &.linkedIn {
+      position: relative;
+      background-color: #0077b5;
+      &::before {
+        content: "\e900";
+      }
+    }
+    &.blog {
+      position: relative;
+      background-color: #0d6763;
+      &::before {
+        content: "\e916";
+      }
+    }
+    &.instagram {
+      position: relative;
+      background: radial-gradient(
+        circle at 30% 107%,
+        #fdf497 0%,
+        #fdf497 5%,
+        #fd5949 45%,
+        #d6249f 60%,
+        #285aeb 90%
+      );
+      &::before {
+        content: "\e945";
+      }
+    }
+  }
+}
+
 .projects {
   .col-md {
     padding: 0;
@@ -102,24 +183,27 @@ body {
   transition: 0.5s;
   font-family: "icomoon";
   &:before {
-    content: "\ea3b";
+    content: "\e90a";
+    font-size: 24px;
     position: absolute;
     right: 20px;
     opacity: 0;
     transition: 0.5s;
   }
+
   &:hover {
     background-color: rgba(255, 255, 255, 0.5);
     box-shadow: -10px 10px 20px 10px rgba(0, 0, 0, 0.1);
     transition: 0.5s;
     transform: rotate(-0.6deg);
     transform-origin: top left;
+    cursor: pointer;
     .project-info {
       color: black;
     }
     &:before {
       opacity: 1;
-      transform: translate(2px, -4px);
+      transform: translate(5px, -8px);
       transition: 0.5s;
       transition-delay: 0.2s;
     }
@@ -177,11 +261,11 @@ body {
   background: rgba(255, 255, 255, 0);
   z-index: -1;
   .copyright {
-    font-size: 14px;
+    font-size: 12px;
     bottom: 0;
     text-align: center;
     background: rgba(255, 255, 255, 0) !important;
-    padding: 40px 0 0 0;
+    padding: 40px 0;
   }
 }
 
