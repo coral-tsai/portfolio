@@ -1,74 +1,20 @@
-// @import url("https://fonts.googleapis.com/css2?family=Ysabeau+Infant:ital,wght@0,1;0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,1;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-// @import url("https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap");
-// @import url("https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&family=Work+Sans:wght@900&display=swap");
-// @import url("https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Noto+Sans+TC:wght@100;200;300;400;500;600;700;800;900&family=Work+Sans:wght@900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Trirong:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url(/icomoon/style.css);
 body {
   font-family: "Work Sans", "Noto Sans TC", sans-serif;
   padding: 40px 0;
+  &.lock {
+    height: 100vh;
+  }
 }
-// .card {
-//   transition: 0.5s;
-//   border-radius: 16px;
-//   overflow: hidden;
-//   position: relative;
-//   &:hover {
-//     transform: translate(0px, -8px);
-//     transition: 0.5s;
-//     // box-shadow: 0 0.5em 1em -0.125em #00d1b245, 0 0 0 1px rgba(10, 10, 10, 0.02);
-//   }
-//   .card-image:last-child img {
-//     border-bottom-left-radius: 0;
-//     border-bottom-right-radius: 0;
-//   }
-//   .card-content {
-//     position: absolute;
-//     top: 0;
-//     left: 0;
-//     width: 100%;
-//     height: 100%;
-//     opacity: 0;
-//     transition: 0.5s;
-//     &:hover {
-//       opacity: 1;
-//       transition: 0.5s;
-//       background-color: #000;
-//     }
-//     > * {
-//       color: white !important;
-//     }
-//   }
-// }
 
-// body {
-//   overflow-y: hidden; /* Hide vertical scrollbar */
-//   overflow-x: hidden; /* Hide horizontal scrollbar */
-// }
-
-// index2
-
-// .footer {
-//   background: linear-gradient(180deg, #fafafa, hsla(0, 0%, 100%, 0)),
-//     url(../img/footer_bg.webp);
-//   opacity: 0.5;
-//   background-size: cover;
-//   // background-position-y: 0, -175px;
-//   background-repeat: no-repeat;
-//   width: 100vw;
-//   height: 100vh;
-//   position: absolute;
-//   left: 0;
-//   top: 0;
-//   z-index: -1;
-// }
 .myLogo {
-  height: 80px;
-  width: 80px;
-  background: #000;
-  border-radius: 999px;
-  margin: 0 auto 40px;
+  height: 100px;
+  width: 100px;
+  margin: 0 auto 20px;
+  background-image: url(/img/protrait.png);
+  background-size: cover;
 }
 .greet {
   font-family: "Trirong", "Noto Sans TC", sans-serif !important;
@@ -77,7 +23,44 @@ body {
   font-size: 20px;
   margin-bottom: 40px;
 }
+///////
+@import "https://unpkg.com/open-props";
+// @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+.page {
+  color: black;
+  background-color: white;
+  display: grid;
+  grid-template-areas: "main";
+  min-height: 100vh;
+  // font-family: "IBM Plex Mono", monospace;
+}
+.page__main {
+  grid-area: main;
+}
+
+.main {
+  display: grid;
+  place-content: center;
+}
+.main__title {
+  font-size: clamp(1.5rem, 8vw, 5rem);
+}
+.main__word {
+  // color: green;
+  border-bottom: 1px solid;
+}
+////////
+.container.password {
+  height: 100%;
+}
 #myBtn {
   display: none;
   position: fixed;
@@ -236,10 +219,6 @@ body {
     }
   }
 }
-
-// .uk-navbar-container {
-//   border-bottom: solid 1px #000;
-// }
 
 @mixin dots($count) {
   $text-shadow: ();
