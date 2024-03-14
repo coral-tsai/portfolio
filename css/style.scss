@@ -7,6 +7,16 @@ body {
   padding: 40px 0;
   &.lock {
     height: 100vh;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center;
+    // gap: 20px;
+    .myLogo {
+      // background-image: url(../img/lockpage.png);
+    }
+    .hint {
+      text-align: center;
+    }
   }
 }
 
@@ -24,9 +34,10 @@ body {
   font-size: 20px;
   margin-bottom: 40px;
 }
-///////
+.lockpage {
+}
+//typing///typing///typing///typing/////////////////////////////
 @import "https://unpkg.com/open-props";
-// @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&display=swap");
 *,
 *::before,
 *::after {
@@ -58,9 +69,9 @@ body {
   // color: green;
   border-bottom: 1px solid;
 }
-////////
+//////////////////////////////////////////////////////////////////////
 .container.password {
-  height: 100%;
+  height: auto;
 }
 #myBtn {
   display: none;
