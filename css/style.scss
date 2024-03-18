@@ -5,38 +5,33 @@
 body {
   font-family: "Work Sans", "Noto Sans TC", sans-serif;
   padding: 40px 0;
-  &.lock {
-    height: 100vh;
-    // display: flex;
-    // flex-direction: column;
-    // justify-content: center;
-    // gap: 20px;
-    .myLogo {
-      // background-image: url(../img/lockpage.png);
-    }
-    .hint {
-      text-align: center;
-    }
+  // &.lock {
+  //   height: 100vh;
+  //   // display: flex;
+  //   // flex-direction: column;
+  //   // justify-content: center;
+  //   // gap: 20px;
+  // }
+}
+// ==================================================
+// ==================================================
+.container.header {
+  .myLogo {
+    height: 100px;
+    width: 100px;
+    margin: 0 auto 20px;
+    background-image: url(../img/protrait.png);
+    background-size: cover;
+  }
+  .greet {
+    font-family: "Trirong", "Noto Sans TC", sans-serif !important;
+    font-weight: 900;
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 40px;
   }
 }
-
-.myLogo {
-  height: 100px;
-  width: 100px;
-  margin: 0 auto 20px;
-  background-image: url(../img/protrait.png);
-  background-size: cover;
-}
-.greet {
-  font-family: "Trirong", "Noto Sans TC", sans-serif !important;
-  font-weight: 900;
-  text-align: center;
-  font-size: 20px;
-  margin-bottom: 40px;
-}
-.lockpage {
-}
-//typing///typing///typing///typing/////////////////////////////
+//typing ============================================
 @import "https://unpkg.com/open-props";
 *,
 *::before,
@@ -69,91 +64,84 @@ body {
   // color: green;
   border-bottom: 1px solid;
 }
-//////////////////////////////////////////////////////////////////////
-.container.password {
-  height: auto;
-}
-#myBtn {
-  display: none;
-  position: fixed;
-  bottom: 16px;
-  right: 50%;
-  transform: translate(50%, 0);
-  z-index: 99;
-  font-size: 18px;
-  border: none;
-  outline: none;
-  background-color: black;
-  color: white;
-  cursor: pointer;
-  width: 64px;
-  height: 44px;
-  border-radius: 99px;
-  &::before {
-    font-family: "icomoon";
-    content: "\e908";
-  }
-  &:hover {
-    background-color: #555;
-  }
-}
 
-.contact-fab {
-  position: fixed;
-  right: 8px;
-  top: 50%;
-  transform: translate(0, -50%);
-  display: flex;
-  gap: 8px;
-  flex-direction: column;
-  z-index: 1;
-  a {
-    width: 40px;
-    height: 40px;
-    border-radius: 99px;
-    // background-color: #fff;
-    text-decoration: none;
-    font-family: "icomoon";
-    color: #fff;
-    box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.05);
-    &::before {
+// ==================================================
+// LOCK project page =====================================
+.project-detail.lock {
+  gap: 20px;
+  .project-name {
+    font-family: "Trirong", "Noto Sans TC", sans-serif !important;
+    font-weight: bold;
+    text-align: center;
+    font-size: 52px;
+    margin-bottom: 20px;
+    span {
+      border-bottom: 1px solid;
+    }
+  }
+  .welcome {
+    position: relative;
+    .cover {
+      position: relative;
+      img {
+        width: 100%;
+        height: auto;
+      }
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        backdrop-filter: blur(4px);
+      }
+    }
+    .hint-group {
       position: absolute;
-      left: 50%;
+      width: 100%;
       top: 50%;
+      left: 50%;
       transform: translate(-50%, -50%);
-    }
-    &.linkedIn {
-      position: relative;
-      background-color: #0077b5;
-      &::before {
-        content: "\e900";
+      color: #fff;
+      .hint {
+        text-align: center;
+        font-size: 20px;
+        &.huge {
+          font-size: 32px;
+          font-weight: 500;
+        }
+        .email {
+          color: #fdf497;
+          border-bottom: 1px solid;
+          text-decoration: none;
+        }
       }
     }
-    &.blog {
-      position: relative;
-      background-color: #0d6763;
+  }
+
+  .rough-detail {
+    .myRole {
       &::before {
-        content: "\e916";
+        content: "MY ROLE";
+        color: rgba(0, 0, 0, 0.5);
+        display: block;
       }
     }
-    &.instagram {
-      position: relative;
-      background: radial-gradient(
-        circle at 30% 107%,
-        #fdf497 0%,
-        #fdf497 5%,
-        #fd5949 45%,
-        #d6249f 60%,
-        #285aeb 90%
-      );
+    .myResponsibilities {
       &::before {
-        content: "\e945";
+        content: "RESPONSIBILITIES";
+        color: rgba(0, 0, 0, 0.5);
+        display: block;
       }
     }
   }
 }
 
-.projects {
+// ==================================================
+// index project card ===============================
+.project-group {
   .col-md {
     padding: 0;
     margin: 0;
@@ -232,6 +220,8 @@ body {
   }
 }
 
+// ==================================================
+//gradient background ===============================
 @mixin dots($count) {
   $text-shadow: ();
   @for $i from 0 through $count {
@@ -324,3 +314,87 @@ body {
     transform: rotate(45deg) scale(45) translateX(40px);
   }
 }
+// ==================================================
+//===============================================================
+// back to top ==================================================
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 16px;
+  right: 50%;
+  transform: translate(50%, 0);
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  width: 64px;
+  height: 44px;
+  border-radius: 99px;
+  &::before {
+    font-family: "icomoon";
+    content: "\e908";
+  }
+  &:hover {
+    background-color: #555;
+  }
+}
+// ==================================================
+// contact ==========================================
+.contact-fab {
+  position: fixed;
+  right: 8px;
+  top: 50%;
+  transform: translate(0, -50%);
+  display: flex;
+  gap: 8px;
+  flex-direction: column;
+  z-index: 1;
+  a {
+    width: 40px;
+    height: 40px;
+    border-radius: 99px;
+    // background-color: #fff;
+    text-decoration: none;
+    font-family: "icomoon";
+    color: #fff;
+    box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.05);
+    &::before {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+    &.linkedIn {
+      position: relative;
+      background-color: #0077b5;
+      &::before {
+        content: "\e900";
+      }
+    }
+    &.blog {
+      position: relative;
+      background-color: #0d6763;
+      &::before {
+        content: "\e916";
+      }
+    }
+    &.instagram {
+      position: relative;
+      background: radial-gradient(
+        circle at 30% 107%,
+        #fdf497 0%,
+        #fdf497 5%,
+        #fd5949 45%,
+        #d6249f 60%,
+        #285aeb 90%
+      );
+      &::before {
+        content: "\e945";
+      }
+    }
+  }
+}
+// ==================================================
