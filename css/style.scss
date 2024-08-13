@@ -151,6 +151,16 @@ body {
     font-size: 24px;
     font-weight: bold;
   }
+  .project-link {
+    padding: 20px 0;
+    a {
+      background: #000;
+      border-radius: 8px;
+      text-decoration: none;
+      padding: 10px;
+      color: #fff;
+    }
+  }
   .cover {
     // background: #000;
     position: relative;
@@ -190,6 +200,13 @@ body {
         display: block;
       }
     }
+  }
+  .overview {
+  }
+  .section {
+    background: #ffffff30;
+    border-radius: 20px;
+    padding: 40px 20px;
   }
 }
 
@@ -293,7 +310,7 @@ body {
         (-0.5+ (random()) * 3) +
         em
         7px
-        hsla(random() * 360, 100%, 50%, 0.6);
+        hsla(random() * 360, 100%, 50%, 0.2);
   }
   text-shadow: $text-shadow;
 }
