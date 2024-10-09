@@ -1,0 +1,27 @@
+// ==================================================
+//===============================================================
+// back to top ==================================================
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 16px;
+  right: 50%;
+  transform: translate(50%, 0);
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  width: 64px;
+  height: 44px;
+  border-radius: 99px;
+  &::before {
+    font-family: "icomoon";
+    content: "\e908";
+  }
+  &:hover {
+    background-color: #555;
+  }
+}

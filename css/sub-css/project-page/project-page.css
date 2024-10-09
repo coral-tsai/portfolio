@@ -1,0 +1,21 @@
+a.backBtn {
+  transition: 0.5s;
+  text-decoration: none;
+  padding: 12px 20px;
+  margin-left: 20px;
+  color: white;
+  background: #000;
+  border-radius: 99px;
+  position: fixed;
+}
+a.backBtn::before {
+  transition: 0.5s;
+  content: "\e906";
+  padding-right: 6px;
+  font-family: "icomoon";
+}
+a.backBtn:hover {
+  padding-left: 16px;
+  padding-right: 24px;
+  transition: 0.5s;
+}/*# sourceMappingURL=project-page.css.map */
