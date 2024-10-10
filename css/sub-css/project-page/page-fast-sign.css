@@ -17,8 +17,8 @@ body.page-fast-sign .work-container .project-detail {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  padding-top: 80px;
-  padding-bottom: 80px;
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 body.page-fast-sign .work-container .project-detail .project-name {
   font-family: "Trirong", "Noto Sans TC", sans-serif !important;
@@ -71,8 +71,8 @@ body.page-fast-sign .work-container .project-detail .section {
 body.page-fast-sign .work-container .goal {
   background-color: #323338;
   color: white;
-  padding-top: 80px;
-  padding-bottom: 80px;
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 body.page-fast-sign .work-container .goal .row {
   padding-bottom: 80px;

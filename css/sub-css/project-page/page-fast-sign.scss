@@ -2,11 +2,6 @@ $main: #0b7d77;
 $main-light: #cee5e4;
 $accent: #323338;
 
-@mixin section {
-  padding-top: 80px;
-  padding-bottom: 80px;
-}
-
 body.page-fast-sign {
   background: $main;
   padding: 0;
@@ -59,6 +54,13 @@ body.page-fast-sign {
         display: flex;
         flex-direction: column;
         gap: 20px;
+        .link {
+          &::before {
+            content: "LINK";
+            color: #ffffff60;
+            display: block;
+          }
+        }
         .myRole {
           &::before {
             content: "MY ROLE";

@@ -1,5 +1,8 @@
-$rem-root: 4px;
-
 @mixin fontSize($num) {
   font-size: $num;
+}
+
+@mixin section {
+  padding-top: 120px;
+  padding-bottom: 120px;
 }

@@ -1,3 +1,5 @@
+@import url(/css/sub-css/base.scss);
+
 $main: #0693e3;
 $background: #181e2a;
 $background10: #2f343f;
@@ -5,8 +7,12 @@ $background20: #464b55;
 $accent: #374753;
 
 @mixin section {
-  padding-top: 80px;
-  padding-bottom: 80px;
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.dn {
+  display: none;
 }
 
 body.page-scrum-game {
@@ -21,6 +27,17 @@ body.page-scrum-game {
       height: auto;
     }
   }
+  .section-title {
+    font-weight: 600;
+    text-align: left;
+    font-size: 20px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+  .sub-title {
+    color: $main;
+    font-size: 32px;
+  }
   .work-container {
     background: $background;
     padding: 20px 0;
@@ -30,14 +47,16 @@ body.page-scrum-game {
       gap: 20px;
       @include section();
       .project-name {
-        font-family: "Trirong", "Noto Sans TC", sans-serif !important;
-        font-weight: bold;
+        font-weight: 600;
         text-align: left;
-        font-size: 16px;
+        font-size: 20px;
+        margin-bottom: 20px;
+        text-transform: uppercase;
       }
       .project-value {
-        font-size: 24px;
-        //   font-weight: bold;
+        font-size: 32px;
+        line-height: 1.2;
+        margin-bottom: 40px;
       }
       .project-link {
         padding: 20px 0;
@@ -63,6 +82,12 @@ body.page-scrum-game {
         display: flex;
         flex-direction: column;
         gap: 20px;
+        .group-info {
+          display: flex;
+          // justify-content: space-between;
+          gap: 120px;
+        }
+
         .myRole {
           &::before {
             content: "MY ROLE";
@@ -72,9 +97,46 @@ body.page-scrum-game {
         }
         .myResponsibilities {
           &::before {
-            content: "RESPONSIBILITIES";
+            content: "MAIN RESPONSIBILITIES";
             color: #ffffff60;
             display: block;
+          }
+        }
+        .timeline {
+          &::before {
+            content: "TIMELINE";
+            color: #ffffff60;
+            display: block;
+          }
+        }
+        .link {
+          &::before {
+            content: "LINK";
+            color: #ffffff60;
+            display: block;
+          }
+          a {
+            color: white;
+            text-decoration: none;
+            transition: 0.5s;
+            padding-right: 16px;
+            &::after {
+              content: "\e90a";
+              opacity: 0;
+              padding-left: 0;
+              padding-right: 4px;
+              font-family: "icomoon";
+              transition: 0.5s;
+            }
+            &:hover {
+              transition: 0.5s;
+              &::after {
+                opacity: 1;
+                padding-left: 4px;
+                padding-right: 0;
+                transition: 0.5s;
+              }
+            }
           }
         }
       }
@@ -86,10 +148,31 @@ body.page-scrum-game {
     }
     .goal {
       background-color: $accent;
-      color: white;
       @include section();
-      .row {
-        padding-bottom: 80px;
+      .container {
+        color: white;
+        display: flex;
+        flex-direction: column;
+        gap: 80px;
+      }
+      li {
+        margin-bottom: 20px;
+      }
+      .main-goal {
+        font-size: 20px;
+        font-weight: 600;
+      }
+    }
+    .persona {
+      .user {
+        margin-bottom: 20px;
+        .user-story {
+          font-weight: 600;
+          margin-bottom: 16px;
+        }
+        li {
+          margin-bottom: 16px;
+        }
       }
     }
   }
