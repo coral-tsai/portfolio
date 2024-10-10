@@ -1,6 +1,19 @@
 body.page-on-going {
   padding: 0;
 }
-body.page-on-going .page-work-cover {
-  color: white;
+body.page-on-going .page-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 40px;
+  height: calc(100vh - 98px);
+  text-align: center;
+}
+body.page-on-going .page-container .page-work-cover {
+  width: 100%;
+  text-align: center;
+}
+body.page-on-going .page-container .page-work-cover img {
+  width: 200px;
+  height: auto;
 }/*# sourceMappingURL=page-on-going.css.map */
