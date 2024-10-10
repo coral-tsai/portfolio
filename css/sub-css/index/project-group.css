@@ -121,7 +121,7 @@
   padding-bottom: 4px;
 }
 .project-card .project-info .project-name {
-  font-family: "Trirong";
+  font-family: "Trirong", "Noto Serif TC";
   font-weight: 600;
   font-size: 24px;
 }

@@ -1,0 +1,45 @@
+.form-switch {
+  display: flex;
+  align-items: center;
+  margin-bottom: 6px;
+  padding-left: 56px;
+  .form-check-input {
+    width: 56px;
+    height: 32px;
+    border: 0px solid #ffffff;
+    position: relative;
+    // &::before {
+    //   content: "EN";
+    //   font-size: 12px;
+    //   position: absolute;
+    //   top: 50%;
+    //   left: 8px;
+    //   transform: translate(0, -50%);
+    //   transition: 0.5s;
+    //   color: white;
+    // }
+    // &::after {
+    //   content: "中";
+    //   position: absolute;
+    //   top: 50%;
+    //   font-size: 12px;
+    //   left: initial;
+    //   right: 10px;
+    //   transform: translate(0, -50%);
+    //   transition: 0.5s;
+    //   color: black;
+    // }
+    &:focus {
+      border-color: rgba(0, 0, 0, 0.25);
+      outline: 0;
+      box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+      background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='rgba(0,0,0,0.25)'/></svg>");
+    }
+    &:checked {
+      background-color: #00000030;
+      //   border-color: #30d158;
+      border: none;
+      background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='rgba(255,255,255,1.0)'/></svg>");
+    }
+  }
+}

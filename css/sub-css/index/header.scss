@@ -21,13 +21,56 @@
     }
     .menu {
       display: flex;
+      position: relative;
       a {
         color: #00000090;
         text-decoration: none;
         transition: 0.5s;
+        &.change-language-zh {
+          width: 32px;
+          height: 32px;
+          text-align: center;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          position: absolute;
+          top: 50%;
+          font-size: 12px;
+          right: 0;
+          transform: translate(0, -50%);
+          transition: 0.5s;
+          color: black;
+        }
+        &.change-language-en {
+          width: 32px;
+          height: 32px;
+          text-align: center;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          position: absolute;
+          top: 50%;
+          font-size: 12px;
+          left: 0;
+          transform: translate(-50%, 0);
+          transition: 0.5s;
+          color: black;
+        }
         &:hover {
           color: #000000;
           transition: 0.5s;
+        }
+        &.LinkedIn {
+          &::before {
+            content: "\e900";
+            font-family: "icomoon";
+          }
+        }
+        &.Resume {
+          &::before {
+            content: "\e918";
+            font-family: "icomoon";
+          }
         }
       }
     }
@@ -41,7 +84,7 @@
       background-position: 50% 20%;
     }
     .intro {
-      font-family: "Trirong", "Noto Sans TC", sans-serif !important;
+      font-family: "Trirong", "Noto Serif TC", "Noto Sans TC", sans-serif !important;
       font-weight: 400;
       font-size: 32px;
       padding: 20px 24px;
@@ -74,7 +117,7 @@
         background-position: 50% 20%;
       }
       .intro {
-        font-family: "Trirong", "Noto Sans TC", sans-serif !important;
+        font-family: "Trirong", "Noto Serif TC", "Noto Sans TC", sans-serif !important;
         font-weight: 400;
         font-size: 26px;
         padding: 0;
