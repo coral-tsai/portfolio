@@ -1,5 +1,7 @@
-$main: #e95076;
-$main-light: rgb(253, 237, 241, 1);
+$main: #0693e3;
+$background: #181e2a;
+$background10: #2f343f;
+$background20: #464b55;
 $accent: #374753;
 
 @mixin section {
@@ -7,7 +9,8 @@ $accent: #374753;
   padding-bottom: 80px;
 }
 
-body.page-1999 {
+body.page-scrum-game {
+  color: white;
   background: $main;
   padding: 0;
   .page-work-cover {
@@ -19,7 +22,7 @@ body.page-1999 {
     }
   }
   .work-container {
-    background: $main-light;
+    background: $background;
     padding: 20px 0;
     .project-detail {
       display: flex;
@@ -63,14 +66,14 @@ body.page-1999 {
         .myRole {
           &::before {
             content: "MY ROLE";
-            color: rgba(0, 0, 0, 0.5);
+            color: #ffffff60;
             display: block;
           }
         }
         .myResponsibilities {
           &::before {
             content: "RESPONSIBILITIES";
-            color: rgba(0, 0, 0, 0.5);
+            color: #ffffff60;
             display: block;
           }
         }

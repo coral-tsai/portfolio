@@ -1,13 +1,14 @@
-$main: #e95076;
-$main-light: rgb(253, 237, 241, 1);
-$accent: #374753;
+$main: #55301d;
+$accent01: #813110;
+$accent02: #7a4a3e;
+$accent03: #dea55e;
 
 @mixin section {
   padding-top: 80px;
   padding-bottom: 80px;
 }
 
-body.page-1999 {
+body.page-classic-movie {
   background: $main;
   padding: 0;
   .page-work-cover {
@@ -19,7 +20,7 @@ body.page-1999 {
     }
   }
   .work-container {
-    background: $main-light;
+    background: $accent03;
     padding: 20px 0;
     .project-detail {
       display: flex;
@@ -75,6 +76,8 @@ body.page-1999 {
           }
         }
       }
+      .overview {
+      }
       .section {
         background: #ffffff30;
         border-radius: 20px;
@@ -82,7 +85,7 @@ body.page-1999 {
       }
     }
     .goal {
-      background-color: $accent;
+      background-color: $accent01;
       color: white;
       @include section();
       .row {

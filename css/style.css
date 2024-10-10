@@ -10,6 +10,9 @@
 @import url(/css/sub-css/index/header.css);
 @import url(/css/sub-css/project-page/project-page.css);
 @import url(/css/sub-css/project-page/page-1999.css);
+@import url(/css/sub-css/project-page/page-classic-movie.css);
+@import url(/css/sub-css/project-page/page-scrum-game.css);
+@import url(/css/sub-css/project-page/page-fast-sign.css);
 @import url(/css/sub-css/project-page/page-on-going.css);
 @import "https://unpkg.com/open-props";
 html {

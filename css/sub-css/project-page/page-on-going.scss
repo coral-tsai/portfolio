@@ -16,5 +16,18 @@ body.page-on-going {
         height: auto;
       }
     }
+    .CTA {
+      // display: flex;
+      // flex-direction: column;
+      // width: auto;
+      // gap: 16px;
+      a {
+        text-decoration: none;
+        color: white;
+        padding: 10px 20px;
+        background-color: #000;
+        border-radius: 99px;
+      }
+    }
   }
 }

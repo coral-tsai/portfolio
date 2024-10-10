@@ -16,4 +16,11 @@ body.page-on-going .page-container .page-work-cover {
 body.page-on-going .page-container .page-work-cover img {
   width: 200px;
   height: auto;
+}
+body.page-on-going .page-container .CTA a {
+  text-decoration: none;
+  color: white;
+  padding: 10px 20px;
+  background-color: #000;
+  border-radius: 99px;
 }/*# sourceMappingURL=page-on-going.css.map */

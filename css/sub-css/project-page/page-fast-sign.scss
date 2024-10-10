@@ -1,20 +1,19 @@
-$main: #e95076;
-$main-light: rgb(253, 237, 241, 1);
-$accent: #374753;
+$main: #0b7d77;
+$main-light: #cee5e4;
+$accent: #323338;
 
 @mixin section {
   padding-top: 80px;
   padding-bottom: 80px;
 }
 
-body.page-1999 {
+body.page-fast-sign {
   background: $main;
   padding: 0;
   .page-work-cover {
     background: $main;
-    //   height: 400px;
     img {
-      width: 100%;
+      width: 80%;
       height: auto;
     }
   }
