@@ -1,0 +1,5 @@
+$rem-root: 4px;
+
+@mixin fontSize($num) {
+  font-size: $num;
+}

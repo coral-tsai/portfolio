@@ -2,10 +2,11 @@ a.backBtn {
   transition: 0.5s;
   text-decoration: none;
   padding: 12px 20px;
-  margin: 20px;
   color: white;
   background: #000;
   border-radius: 99px;
+  top: 20px;
+  left: 20px;
   position: fixed;
 }
 a.backBtn::before {
@@ -34,7 +35,7 @@ a.backBtn:hover {
 }
 .work-nav a {
   text-decoration: none;
-  color: rgba(0, 0, 0, 0.3137254902);
+  color: #b8c6d0;
   padding: 0 4px;
 }
 .work-nav a:active, .work-nav a:hover {
@@ -42,20 +43,21 @@ a.backBtn:hover {
 }
 
 .section-menu {
+  padding: 12px 10px 12px 10px;
+  background-color: #ffffff;
+  color: #b8c6d0;
   bottom: 20px;
   left: 50%;
   transform: translate(-50%, 0);
   position: fixed;
+  font-size: 13px;
+  font-weight: 550;
+  border-radius: 50px;
+  box-shadow: 0px 3px 30px rgba(0, 0, 0, 0.07);
   display: block;
   transition: bottom 0.5s;
 }
 .section-menu nav.container-fluid {
-  padding: 4px 16px;
-  background-color: #ffffff;
-  color: rgba(0, 0, 0, 0.3764705882);
-  font-size: 14px;
-  border-radius: 50px;
-  box-shadow: 0px 3px 30px rgba(0, 0, 0, 0.07);
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
@@ -68,7 +70,7 @@ a.backBtn:hover {
   justify-content: center;
 }
 .section-menu nav.container-fluid ul.nav li .nav-link {
-  color: rgba(0, 0, 0, 0.3764705882);
+  color: #b8c6d0;
   text-transform: uppercase;
 }
 .section-menu nav.container-fluid ul.nav li .nav-link.active {
@@ -77,13 +79,30 @@ a.backBtn:hover {
 }
 
 @media (max-width: 768px) {
+  a.backBtn {
+    top: 10px;
+    left: 10px;
+    position: fixed;
+    font-size: 12px;
+    padding: 8px 16px;
+  }
   .section-menu {
-    bottom: 20px;
-    left: 0%;
-    transform: translate(0%, 0);
+    padding: 4px 0;
+    background-color: #ffffff;
+    color: #b8c6d0;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 300px;
+    position: fixed;
+    font-size: 11px;
+    font-weight: 550;
+    border-radius: 50px;
+    box-shadow: 0px 3px 30px rgba(0, 0, 0, 0.07);
+    display: block;
+    transition: bottom 0.5s;
   }
   .section-menu nav.container-fluid {
-    font-size: 12px;
     margin: auto;
     width: 100%;
     padding-right: 15px;

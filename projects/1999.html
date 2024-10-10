@@ -26,7 +26,8 @@
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
   </head>
   <body class="page-1999">
-    <a href="/index-new.html" class="backBtn">back</a>
+    <a href="/index-new.html" class="backBtn">Back</a>
+
     <div class="section-menu">
       <nav id="myScrollspy" class="container-fluid">
         <ul class="nav">
@@ -38,6 +39,13 @@
           </li>
           <li>
             <a class="nav-link" href="#overview">Outcome</a>
+          </li>
+          <li>
+            <button
+              onclick="topFunction()"
+              id="pageNavMyBtn"
+              title="Go to top"
+            ></button>
           </li>
         </ul>
       </nav>
@@ -117,30 +125,22 @@
       </div>
     </div>
   </body>
-  <!-- <div class="footer">
-    <div class="copyright"></div>
-
-    <div class="footer-body"></div>
-    <div class="footer-head"></div>
-  </div> -->
-  <!-- <button onclick="topFunction()" id="myBtn" title="Go to top"></button> -->
   <script>
     // Get the button
-    let mybutton = document.getElementById("myBtn");
+    let mybutton = document.getElementById("pageNavMyBtn");
 
     // When the user scrolls down 20px from the top of the document, show the button
     window.onscroll = function () {
       scrollFunction();
     };
-
     function scrollFunction() {
       if (
         document.body.scrollTop > 20 ||
         document.documentElement.scrollTop > 20
       ) {
-        mybutton.style.display = "block";
+        mybutton.classList.add("on");
       } else {
-        mybutton.style.display = "none";
+        mybutton.classList.remove("on");
       }
     }
 

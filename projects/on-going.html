@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" class="page-1999">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Coral Tsai | 1999</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../icomoon/fonts/icomoon.ttf" />
+    <script src="/js/js.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/imdYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  </head>
+  <body class="page-on-going">
+    <a href="/index-new.html" class="backBtn">Back</a>
+
+    <div class="page-work-cover">
+      <img src="/img/lockpage.png" alt="1999" />
+    </div>
+    <div>
+      Thank you for your interest in this project. It is still in progress, and
+      you are welcome to reach out or leave your email. I’d be happy to share
+      more details with you in a more casual setting.
+    </div>
+  </body>
+  <div class="footer">
+    <div class="copyright"></div>
+    <!-- <div class="copyright">
+      © 2024 <span class="icon-figma"> & </span>
+      <span class="icon-github"></span>
+      by Coral
+    </div> -->
+
+    <div class="footer-body"></div>
+    <div class="footer-head"></div>
+  </div>
+  <script>
+    // Get the button
+    let mybutton = document.getElementById("pageNavMyBtn");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function () {
+      scrollFunction();
+    };
+    function scrollFunction() {
+      if (
+        document.body.scrollTop > 20 ||
+        document.documentElement.scrollTop > 20
+      ) {
+        mybutton.classList.add("on");
+      } else {
+        mybutton.classList.remove("on");
+      }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+  </script>
+</html>

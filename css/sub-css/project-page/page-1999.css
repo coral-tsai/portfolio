@@ -2,78 +2,78 @@ body.page-1999 {
   background: #e95076;
   padding: 0;
 }
-
-.page-work-cover {
+body.page-1999 .page-work-cover {
   background: #e95076;
 }
-.page-work-cover img {
+body.page-1999 .page-work-cover img {
   width: 100%;
   height: auto;
 }
-
-.work-container {
+body.page-1999 .work-container {
   background: rgb(253, 237, 241);
   padding: 20px 0;
 }
-.work-container .project-detail {
+body.page-1999 .work-container .project-detail {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  padding: 80px 0px;
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
-.work-container .project-detail .project-name {
+body.page-1999 .work-container .project-detail .project-name {
   font-family: "Trirong", "Noto Sans TC", sans-serif !important;
   font-weight: bold;
   text-align: left;
   font-size: 16px;
 }
-.work-container .project-detail .project-value {
+body.page-1999 .work-container .project-detail .project-value {
   font-size: 24px;
 }
-.work-container .project-detail .project-link {
+body.page-1999 .work-container .project-detail .project-link {
   padding: 20px 0;
 }
-.work-container .project-detail .project-link a {
+body.page-1999 .work-container .project-detail .project-link a {
   background: #000;
   border-radius: 8px;
   text-decoration: none;
   padding: 10px;
   color: #fff;
 }
-.work-container .project-detail .cover {
+body.page-1999 .work-container .project-detail .cover {
   position: relative;
   border-radius: 8px;
   overflow: hidden;
 }
-.work-container .project-detail .cover img {
+body.page-1999 .work-container .project-detail .cover img {
   width: 100%;
   height: auto;
 }
-.work-container .project-detail .rough-detail {
+body.page-1999 .work-container .project-detail .rough-detail {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
-.work-container .project-detail .rough-detail .myRole::before {
+body.page-1999 .work-container .project-detail .rough-detail .myRole::before {
   content: "MY ROLE";
   color: rgba(0, 0, 0, 0.5);
   display: block;
 }
-.work-container .project-detail .rough-detail .myResponsibilities::before {
+body.page-1999 .work-container .project-detail .rough-detail .myResponsibilities::before {
   content: "RESPONSIBILITIES";
   color: rgba(0, 0, 0, 0.5);
   display: block;
 }
-.work-container .project-detail .section {
+body.page-1999 .work-container .project-detail .section {
   background: rgba(255, 255, 255, 0.1882352941);
   border-radius: 20px;
   padding: 40px 20px;
 }
-.work-container .goal {
+body.page-1999 .work-container .goal {
   background-color: #374753;
   color: white;
-  padding: 80px 0px;
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
-.work-container .goal .row {
+body.page-1999 .work-container .goal .row {
   padding-bottom: 80px;
 }/*# sourceMappingURL=page-1999.css.map */

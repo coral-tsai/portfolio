@@ -2,7 +2,8 @@
 //===============================================================
 // back to top ==================================================
 #myBtn {
-  display: none;
+  opacity: 0;
+  // display: none;
   position: fixed;
   bottom: 16px;
   right: 50%;
@@ -17,11 +18,60 @@
   width: 64px;
   height: 44px;
   border-radius: 99px;
+  transition: 0.5s;
   &::before {
     font-family: "icomoon";
     content: "\e908";
   }
   &:hover {
     background-color: #555;
+  }
+  &.on {
+    opacity: 1;
+    transition: 0.5s;
+  }
+}
+
+// back to top ==================================================
+#pageNavMyBtn {
+  position: absolute;
+  top: -24px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  display: flex;
+  align-items: center;
+  // height: 100%;
+  transition: 0.5s;
+  opacity: 0;
+  font-size: 16px;
+  text-align: center;
+  border: none;
+  outline: none;
+  background-color: #ffffff;
+  border-radius: 99px 99px 0 0;
+  padding: 4px 20px;
+  color: #b8c6d0;
+  z-index: -1;
+  cursor: pointer;
+  &::before {
+    font-family: "icomoon";
+    content: "\e908";
+  }
+  // &:hover {
+  //   background-color: #555;
+  // }
+  &.on {
+    opacity: 1;
+    transition: 0.5s;
+  }
+}
+
+@media (max-width: 768px) {
+  #pageNavMyBtn {
+    &.on {
+      // padding: 0px;
+      opacity: 1;
+      transition: 0.5s;
+    }
   }
 }
