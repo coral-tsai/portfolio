@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="page-1999">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -12,7 +12,7 @@
     />
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="stylesheet" href="../icomoon/fonts/icomoon.ttf" />
-    <!-- <script src="/js/js.js"></script> -->
+    <script src="/js/js.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
       integrity="sha384-I7E8VVD/imdYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
@@ -25,20 +25,42 @@
     ></script>
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
   </head>
-  <body>
+  <body class="page-1999">
     <a href="/index-new.html" class="backBtn">back</a>
-
-    <div class="container project-detail">
-
-      <div class="cover">
-        <img src="../img/project/1999_page-cover.png" alt="1999" />
-      </div>
+    <div class="section-menu">
+      <nav id="myScrollspy" class="container-fluid">
+        <ul class="nav">
+          <li>
+            <a class="nav-link" href="#overview">Overview</a>
+          </li>
+          <li>
+            <a class="nav-link" href="#overview">Research</a>
+          </li>
+          <li>
+            <a class="nav-link" href="#overview">Outcome</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <!-- <div class="work-nav">
+      <a href="#" type="button">Top</a>
+      <a href="#overview" type="button">Overview</a>
+      <a href="#overview" type="button">Research</a>
+      <a href="#overview" type="button">Outcome</a>
+    </div> -->
+    <div class="page-work-cover">
+      <img src="../img/project/1999_page-cover.png" alt="1999" />
+    </div>
+    <div class="work-container">
+      <div class="container project-detail" id="overview">
         <div class="row">
           <div class="col-md-5">
             <div class="project-name">
-              <span>1999</span> 
+              <span>1999</span>
             </div>
-            <div class="project-value">Data Analysis of Taoyuan City Petition System.</div>
+            <div class="project-value">
+              Data Analysis of Taoyuan City Petition System.
+            </div>
           </div>
           <div class="col-md">
             <div class="rough-detail">
@@ -58,8 +80,42 @@
             </div>
           </div>
         </div>
-
-     
+      </div>
+      <div class="goal">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3">User Story</div>
+            <div class="col-md">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book. It has
+              survived not only five centuries, but also the leap into
+              electronic typesetting, remaining essentially unchanged. It was
+              popularised in the 1960s with the release of Letraset sheets
+              containing Lorem Ipsum passages, and more recently with desktop
+              publishing software like Aldus PageMaker including versions of
+              Lorem Ipsum.
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-3">The Goal</div>
+            <div class="col-md">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book. It has
+              survived not only five centuries, but also the leap into
+              electronic typesetting, remaining essentially unchanged. It was
+              popularised in the 1960s with the release of Letraset sheets
+              containing Lorem Ipsum passages, and more recently with desktop
+              publishing software like Aldus PageMaker including versions of
+              Lorem Ipsum.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
   <!-- <div class="footer">
     <div class="copyright"></div>
@@ -67,7 +123,7 @@
     <div class="footer-body"></div>
     <div class="footer-head"></div>
   </div> -->
-  <button onclick="topFunction()" id="myBtn" title="Go to top"></button>
+  <!-- <button onclick="topFunction()" id="myBtn" title="Go to top"></button> -->
   <script>
     // Get the button
     let mybutton = document.getElementById("myBtn");

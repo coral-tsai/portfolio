@@ -45,10 +45,45 @@
   font-size: 32px;
   padding: 20px 24px;
 }
+.container.greet .intro .name {
+  line-height: 1.5;
+  padding-bottom: 16px;
+}
 .container.greet .intro .expertise {
   font-size: 20px;
+  line-height: 1.5;
 }
 .container.greet .intro .i-am {
   font-size: 16px;
   color: #000000;
+}
+
+@media (max-width: 768px) {
+  .container.greet {
+    padding: 40px;
+  }
+  .container.greet .photo {
+    background-image: url(/img/protrait.webp);
+    background-size: 87% auto;
+    background-repeat: no-repeat;
+    background-position: 50% 20%;
+  }
+  .container.greet .intro {
+    font-family: "Trirong", "Noto Sans TC", sans-serif !important;
+    font-weight: 400;
+    font-size: 26px;
+    padding: 0;
+  }
+  .container.greet .intro .name {
+    line-height: 1.5;
+    padding-bottom: 14px;
+  }
+  .container.greet .intro .expertise {
+    font-size: 20px;
+    line-height: 1.5;
+  }
+  .container.greet .intro .i-am {
+    font-size: 12px;
+    color: #000000;
+  }
 }/*# sourceMappingURL=header.css.map */

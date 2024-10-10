@@ -1,0 +1,94 @@
+$main: #e95076;
+$accent: #374753;
+
+@mixin section {
+  padding: 80px 0px;
+}
+
+body.page-1999 {
+  background: $main;
+  padding: 0;
+}
+.page-work-cover {
+  background: $main;
+  //   height: 400px;
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+.work-container {
+  background: rgb(253, 237, 241, 1);
+  padding: 20px 0;
+  .project-detail {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    @include section();
+    .project-name {
+      font-family: "Trirong", "Noto Sans TC", sans-serif !important;
+      font-weight: bold;
+      text-align: left;
+      font-size: 16px;
+    }
+    .project-value {
+      font-size: 24px;
+      //   font-weight: bold;
+    }
+    .project-link {
+      padding: 20px 0;
+      a {
+        background: #000;
+        border-radius: 8px;
+        text-decoration: none;
+        padding: 10px;
+        color: #fff;
+      }
+    }
+    .cover {
+      // background: #000;
+      position: relative;
+      border-radius: 8px;
+      overflow: hidden;
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    .rough-detail {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      .myRole {
+        &::before {
+          content: "MY ROLE";
+          color: rgba(0, 0, 0, 0.5);
+          display: block;
+        }
+      }
+      .myResponsibilities {
+        &::before {
+          content: "RESPONSIBILITIES";
+          color: rgba(0, 0, 0, 0.5);
+          display: block;
+        }
+      }
+    }
+    .overview {
+    }
+    .section {
+      background: #ffffff30;
+      border-radius: 20px;
+      padding: 40px 20px;
+    }
+  }
+  .goal {
+    background-color: $accent;
+    color: white;
+    @include section();
+    .row {
+      padding-bottom: 80px;
+    }
+  }
+}

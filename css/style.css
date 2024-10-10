@@ -8,7 +8,12 @@
 @import url(/css/sub-css/index/back-to-top.css);
 @import url(/css/sub-css/index/header.css);
 @import url(/css/sub-css/project-page/project-page.css);
+@import url(/css/sub-css/project-page/page-1999.css);
 @import "https://unpkg.com/open-props";
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Work Sans", "Noto Sans TC", sans-serif;
   padding: 40px 0;
@@ -89,61 +94,6 @@ body.pre .container.greet {
 }
 .wait-greet .wait-list .btn:visited {
   color: #fff;
-}
-
-.project-detail {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-.project-detail .project-name {
-  font-family: "Trirong", "Noto Sans TC", sans-serif !important;
-  font-weight: bold;
-  text-align: left;
-  font-size: 16px;
-}
-.project-detail .project-value {
-  font-size: 24px;
-  font-weight: bold;
-}
-.project-detail .project-link {
-  padding: 20px 0;
-}
-.project-detail .project-link a {
-  background: #000;
-  border-radius: 8px;
-  text-decoration: none;
-  padding: 10px;
-  color: #fff;
-}
-.project-detail .cover {
-  position: relative;
-  border-radius: 8px;
-  overflow: hidden;
-}
-.project-detail .cover img {
-  width: 100%;
-  height: auto;
-}
-.project-detail .rough-detail {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-.project-detail .rough-detail .myRole::before {
-  content: "MY ROLE";
-  color: rgba(0, 0, 0, 0.5);
-  display: block;
-}
-.project-detail .rough-detail .myResponsibilities::before {
-  content: "RESPONSIBILITIES";
-  color: rgba(0, 0, 0, 0.5);
-  display: block;
-}
-.project-detail .section {
-  background: rgba(255, 255, 255, 0.1882352941);
-  border-radius: 20px;
-  padding: 40px 20px;
 }
 
 .contact-fab {
