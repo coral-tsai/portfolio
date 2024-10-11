@@ -18,6 +18,7 @@
 @import "https://unpkg.com/open-props";
 html {
   scroll-behavior: smooth;
+  transition: 2s;
 }
 
 body {
