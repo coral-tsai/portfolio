@@ -8,6 +8,7 @@ a.backBtn {
   top: 20px;
   left: 20px;
   position: fixed;
+  z-index: 1;
   &::before {
     transition: 0.5s;
     content: "\e906";

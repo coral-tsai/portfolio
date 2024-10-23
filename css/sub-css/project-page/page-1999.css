@@ -16,6 +16,9 @@ body.page-1999 .work-container .section {
   padding-top: 120px;
   padding-bottom: 120px;
 }
+body.page-1999 .work-container .section img {
+  width: 100%;
+}
 body.page-1999 .work-container .section .section-title {
   text-transform: uppercase;
   font-weight: 600;
@@ -118,4 +121,26 @@ body.page-1999 .work-container .section.thanks .contact .resume {
   font-style: italic;
   text-decoration: underline;
   font-size: 16px;
+}
+
+#carouselExampleCaptions .carousel-indicators [data-bs-target] {
+  background-color: #e95076;
+  opacity: 0.3;
+}
+#carouselExampleCaptions .carousel-indicators .active {
+  opacity: 1;
+}
+#carouselExampleCaptions .carousel-inner .carousel-caption {
+  width: 100%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding-bottom: 2.5rem;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(0deg, rgb(255, 255, 255) 80%, rgba(255, 255, 255, 0) 100%);
+}
+#carouselExampleCaptions .carousel-inner .carousel-caption h5,
+#carouselExampleCaptions .carousel-inner .carousel-caption p {
+  color: #000;
+  margin-bottom: 0;
 }/*# sourceMappingURL=page-1999.css.map */
