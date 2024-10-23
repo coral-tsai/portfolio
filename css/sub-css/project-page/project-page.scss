@@ -52,7 +52,7 @@ a.backBtn {
   left: 50%;
   transform: translate(-50%, 0);
   position: fixed;
-  font-size: 13px;
+  font-size: 0.6rem;
   font-weight: 550;
   border-radius: 50px;
   box-shadow: 0px 3px 30px rgba(0, 0, 0, 0.07);
@@ -87,7 +87,7 @@ a.backBtn {
     top: 10px;
     left: 10px;
     position: fixed;
-    font-size: 12px;
+    font-size: 0.8rem;
     padding: 8px 16px;
   }
   .section-menu {
@@ -99,7 +99,7 @@ a.backBtn {
     transform: translateX(-50%);
     width: 300px;
     position: fixed;
-    font-size: 11px;
+    font-size: 0.6rem;
     font-weight: 550;
     border-radius: 50px;
     box-shadow: 0px 3px 30px rgba(0, 0, 0, 0.07);

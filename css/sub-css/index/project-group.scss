@@ -37,7 +37,7 @@
   height: 100%;
   position: relative;
   transition: 0.5s;
-  font-family: "icomoon";
+  font-family: "Montserrat", "icomoon";
   // overflow: hidden;
   &.small {
     height: 236px;
@@ -65,7 +65,7 @@
 
   &:before {
     content: "\e90a";
-    font-size: 24px;
+    font-size: 1.4rem;
     position: absolute;
     right: 20px;
     opacity: 0;
@@ -108,7 +108,7 @@
     text-decoration: none;
   }
   .cata {
-    font-size: 14px;
+    font-size: 0.8rem;
     margin: 4px 0 8px;
     transform: translateX(-3px);
     padding: 8px 0 20px 0;
@@ -127,7 +127,7 @@
     color: black;
     &:before {
       content: "\e90a";
-      font-size: 24px;
+      font-size: 1.4rem;
       position: absolute;
       right: 20px;
       opacity: 0;
@@ -142,22 +142,22 @@
         transition-delay: 0.2s;
       }
     }
-    .year {
-      font-size: 12px;
-      padding-bottom: 4px;
-      // font-weight: 600;
-    }
+    // .year {
+    //   font-size: 12px;
+    //   padding-bottom: 4px;
+    //   font-weight: 600;
+    // }
 
     .project-name {
-      font-family: "Trirong", "Noto Serif TC";
+      font-family: "Montserrat", "Noto Serif TC";
       font-weight: 600;
-      font-size: 24px;
+      font-size: 1.2rem;
       &.on-going {
         height: 36px;
         &::before {
           content: "\e927 ";
           font-family: "icomoon";
-          font-size: 16px;
+          font-size: 1rem;
           padding: 3px 5px 5px;
           margin-right: 5px;
           margin-bottom: 5px;
@@ -171,9 +171,13 @@
       }
     }
     .description {
-      font-size: 16px;
+      font-size: 0.8rem;
       color: #00000090;
       line-height: 1.2;
+      height: 2rem;
+      overflow: hidden;
+      // white-space: nowrap;
+      text-overflow: ellipsis;
     }
   }
 }

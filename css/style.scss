@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Serif+TC:wght@200..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Trirong:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url(icomoon/style.css);
@@ -17,16 +18,17 @@
 @import url(/css/sub-css/project-page/page-classic-movie.css);
 @import url(/css/sub-css/project-page/page-scrum-game.css);
 @import url(/css/sub-css/project-page/page-fast-sign.css);
+@import url(/css/sub-css/project-page/thanks.css);
 
 @import url(/css/sub-css/project-page/page-on-going.css);
 
 html {
   scroll-behavior: smooth;
   transition: 2s;
-  font-size: 18px;
+  font-size: 20px;
 }
 body {
-  font-family: "Work Sans", "Noto Sans TC", sans-serif;
+  font-family: "Montserrat", "Noto Sans TC", sans-serif;
   padding: 40px 0;
 
   &.pre {
@@ -184,3 +186,16 @@ body {
   }
 }
 // ==================================================
+@media screen and (min-width: 1024px) {
+  .paragraph {
+    margin-left: 200px;
+    margin-right: 200px;
+  }
+  .overview,
+  .goal {
+    .paragraph {
+      margin-left: 120px;
+      margin-right: 120px;
+    }
+  }
+}

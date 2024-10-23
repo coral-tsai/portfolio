@@ -23,12 +23,12 @@ body.page-classic-movie .work-container .section img {
 body.page-classic-movie .work-container .section .section-title {
   text-transform: uppercase;
   font-weight: 600;
-  font-size: 16px;
+  font-size: 1.5rem;
   margin-bottom: 20px;
 }
 body.page-classic-movie .work-container .section .sub-title {
   color: #55301d;
-  font-size: 23px;
+  font-size: 1.2rem;
   margin-top: 40px;
   margin-bottom: 10px;
 }
@@ -39,7 +39,7 @@ body.page-classic-movie .work-container .section.overview {
   gap: 20px;
 }
 body.page-classic-movie .work-container .section.overview .project-value {
-  font-size: 24px;
+  font-size: 1.5rem;
 }
 body.page-classic-movie .work-container .section.overview .project-link {
   padding: 20px 0;
@@ -81,27 +81,27 @@ body.page-classic-movie .work-container .section.goal {
   padding-top: 120px;
   padding-bottom: 120px;
 }
-body.page-classic-movie .work-container .section.outcome, body.page-classic-movie .work-container .section.research {
+body.page-classic-movie .work-container .section.approach, body.page-classic-movie .work-container .section.research {
   background-color: #f4f2f1;
 }
-body.page-classic-movie .work-container .section.outcome .iteration {
+body.page-classic-movie .work-container .section.approach .iteration {
   background-color: #55301d;
   border-radius: 16px;
   color: #dea55e;
   font-weight: 600;
   padding: 20px;
-  font-size: 20px;
+  font-size: 1.2rem;
 }
-body.page-classic-movie .work-container .section.outcome .iteration .iterate-note {
+body.page-classic-movie .work-container .section.approach .iteration .iterate-note {
   font-weight: normal;
   color: #fff;
-  font-size: 16px;
+  font-size: 1rem;
   padding-top: 10px;
 }
-body.page-classic-movie .work-container .section.outcome .final-design a {
+body.page-classic-movie .work-container .section.approach .final-design a {
   color: #fff;
   text-decoration: none;
-  padding: 8px 20px 12px;
+  padding: 5px 20px 15px;
   background-color: #000;
   border-radius: 20px;
   display: inline-block;
@@ -109,40 +109,10 @@ body.page-classic-movie .work-container .section.outcome .final-design a {
   margin-bottom: 20px;
   transition: 0.3s;
 }
-body.page-classic-movie .work-container .section.outcome .final-design a:hover {
+body.page-classic-movie .work-container .section.approach .final-design a:hover {
   color: rgba(255, 255, 255, 0.6);
   transition: 0.3s;
 }
 body.page-classic-movie .work-container .section.process, body.page-classic-movie .work-container .section.reflection {
   background-color: #fff;
-}
-body.page-classic-movie .work-container .section.thanks {
-  text-align: center;
-  font-size: 16px;
-  color: #fff;
-  padding-bottom: 200px;
-  width: 60%;
-  margin: 0 auto;
-}
-body.page-classic-movie .work-container .section.thanks .contact {
-  color: #000;
-  display: flex;
-  gap: 20px;
-  justify-content: center;
-  margin-top: 20px;
-}
-body.page-classic-movie .work-container .section.thanks .contact a {
-  color: #fff;
-  text-decoration: none;
-  transition: 0.5s;
-  font-size: 20px;
-}
-body.page-classic-movie .work-container .section.thanks .contact a:hover {
-  color: rgba(255, 255, 255, 0.4588235294);
-  transition: 0.5s;
-}
-body.page-classic-movie .work-container .section.thanks .contact .resume {
-  font-style: italic;
-  text-decoration: underline;
-  font-size: 16px;
 }/*# sourceMappingURL=page-classic-movie.css.map */

@@ -20,7 +20,7 @@
   height: 100%;
   position: relative;
   transition: 0.5s;
-  font-family: "icomoon";
+  font-family: "Montserrat", "icomoon";
 }
 .project-card.small {
   height: 236px;
@@ -48,7 +48,7 @@
 }
 .project-card:before {
   content: "\e90a";
-  font-size: 24px;
+  font-size: 1.4rem;
   position: absolute;
   right: 20px;
   opacity: 0;
@@ -84,7 +84,7 @@
   text-decoration: none;
 }
 .project-card .cata {
-  font-size: 14px;
+  font-size: 0.8rem;
   margin: 4px 0 8px;
   transform: translateX(-3px);
   padding: 8px 0 20px 0;
@@ -103,7 +103,7 @@
 }
 .project-card .project-info:before {
   content: "\e90a";
-  font-size: 24px;
+  font-size: 1.4rem;
   position: absolute;
   right: 20px;
   opacity: 0;
@@ -116,14 +116,10 @@
   transition: 0.5s;
   transition-delay: 0.2s;
 }
-.project-card .project-info .year {
-  font-size: 12px;
-  padding-bottom: 4px;
-}
 .project-card .project-info .project-name {
-  font-family: "Trirong", "Noto Serif TC";
+  font-family: "Montserrat", "Noto Serif TC";
   font-weight: 600;
-  font-size: 24px;
+  font-size: 1.2rem;
 }
 .project-card .project-info .project-name.on-going {
   height: 36px;
@@ -131,7 +127,7 @@
 .project-card .project-info .project-name.on-going::before {
   content: "\e927";
   font-family: "icomoon";
-  font-size: 16px;
+  font-size: 1rem;
   padding: 3px 5px 5px;
   margin-right: 5px;
   margin-bottom: 5px;
@@ -143,7 +139,10 @@
   line-height: normal;
 }
 .project-card .project-info .description {
-  font-size: 16px;
+  font-size: 0.8rem;
   color: rgba(0, 0, 0, 0.5647058824);
   line-height: 1.2;
+  height: 2rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }/*# sourceMappingURL=project-group.css.map */

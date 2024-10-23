@@ -22,12 +22,12 @@ body.page-1999 .work-container .section img {
 body.page-1999 .work-container .section .section-title {
   text-transform: uppercase;
   font-weight: 600;
-  font-size: 1rem;
+  font-size: 1.5rem;
   margin-bottom: 20px;
 }
 body.page-1999 .work-container .section .sub-title {
   color: #e95076;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   margin-top: 40px;
   margin-bottom: 10px;
 }
@@ -38,7 +38,7 @@ body.page-1999 .work-container .section.overview {
   gap: 20px;
 }
 body.page-1999 .work-container .section.overview .project-value {
-  font-size: 24px;
+  font-size: 1.5rem;
 }
 body.page-1999 .work-container .section.overview .project-link {
   padding: 20px 0;
@@ -78,32 +78,34 @@ body.page-1999 .work-container .section.goal {
   background-color: #374753;
   color: white;
 }
-body.page-1999 .work-container .section.goal .container {
+body.page-1999 .work-container .section.goal .paragraph {
   display: flex;
   flex-direction: column;
   gap: 80px;
 }
-body.page-1999 .work-container .section.goal .container span.goal-detail {
+body.page-1999 .work-container .section.goal .paragraph span.goal-detail {
   display: block;
   margin: 4px 0 20px 0;
+  display: none;
 }
-body.page-1999 .work-container .section.goal .container span.hightlight {
+body.page-1999 .work-container .section.goal .paragraph span.hightlight {
   color: rgb(253, 237, 241);
   text-decoration: underline;
 }
-body.page-1999 .work-container .section.goal .container li {
+body.page-1999 .work-container .section.goal .paragraph li {
   font-weight: 600;
   color: rgb(253, 237, 241);
+  padding-bottom: 20px;
 }
-body.page-1999 .work-container .section.goal .container li span {
+body.page-1999 .work-container .section.goal .paragraph li span {
   font-weight: normal;
   color: white;
 }
-body.page-1999 .work-container .section.goal .container .user-story {
-  font-size: 20px;
+body.page-1999 .work-container .section.goal .paragraph .user-story {
+  font-size: 1rem;
   line-height: 2;
 }
-body.page-1999 .work-container .section.outcome {
+body.page-1999 .work-container .section.approach {
   background-color: #fff;
 }
 body.page-1999 .work-container .section.understanding, body.page-1999 .work-container .section.reflection, body.page-1999 .work-container .section.process {
@@ -111,36 +113,6 @@ body.page-1999 .work-container .section.understanding, body.page-1999 .work-cont
 }
 body.page-1999 .work-container .section.understanding .team-member .row, body.page-1999 .work-container .section.reflection .team-member .row, body.page-1999 .work-container .section.process .team-member .row {
   gap: 20px;
-}
-body.page-1999 .work-container .section.thanks {
-  text-align: center;
-  font-size: 16px;
-  color: #fff;
-  padding-bottom: 200px;
-  width: 60%;
-  margin: 0 auto;
-}
-body.page-1999 .work-container .section.thanks .contact {
-  color: #000;
-  display: flex;
-  gap: 20px;
-  justify-content: center;
-  margin-top: 20px;
-}
-body.page-1999 .work-container .section.thanks .contact a {
-  color: #fff;
-  text-decoration: none;
-  transition: 0.5s;
-  font-size: 20px;
-}
-body.page-1999 .work-container .section.thanks .contact a:hover {
-  color: rgba(255, 255, 255, 0.4588235294);
-  transition: 0.5s;
-}
-body.page-1999 .work-container .section.thanks .contact .resume {
-  font-style: italic;
-  text-decoration: underline;
-  font-size: 16px;
 }
 
 #carouselExampleCaptions .carousel-indicators [data-bs-target] {

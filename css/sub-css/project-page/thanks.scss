@@ -1,0 +1,32 @@
+.section {
+  &.thanks {
+    text-align: center;
+    font-size: 0.8rem;
+    color: #fff;
+    padding-bottom: 200px !important;
+    width: 60%;
+    margin: 0 auto;
+    .contact {
+      color: #000;
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      margin-top: 20px;
+      a {
+        color: #fff;
+        text-decoration: none;
+        transition: 0.5s;
+        font-size: 1rem;
+        &:hover {
+          color: #ffffff75;
+          transition: 0.5s;
+        }
+      }
+      .resume {
+        font-style: italic;
+        text-decoration: underline;
+        font-size: 0.8rem;
+      }
+    }
+  }
+}

@@ -36,12 +36,13 @@ body.page-1999 {
       .section-title {
         text-transform: uppercase;
         font-weight: 600;
-        font-size: 1rem;
+        font-size: 1.5rem;
         margin-bottom: 20px;
+        // transform: translateX(-0.2rem);
       }
       .sub-title {
         color: $main;
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         margin-top: 40px;
         margin-bottom: 10px;
       }
@@ -51,7 +52,7 @@ body.page-1999 {
         flex-direction: column;
         gap: 20px;
         .project-value {
-          font-size: 24px;
+          font-size: 1.5rem;
         }
         .project-link {
           padding: 20px 0;
@@ -96,13 +97,14 @@ body.page-1999 {
       &.goal {
         background-color: $accent;
         color: white;
-        .container {
+        .paragraph {
           display: flex;
           flex-direction: column;
           gap: 80px;
           span.goal-detail {
             display: block;
             margin: 4px 0 20px 0;
+            display: none;
           }
           span.hightlight {
             color: $main-light;
@@ -112,18 +114,19 @@ body.page-1999 {
           li {
             font-weight: 600;
             color: $main-light;
+            padding-bottom: 20px;
             span {
               font-weight: normal;
               color: white;
             }
           }
           .user-story {
-            font-size: 20px;
+            font-size: 1rem;
             line-height: 2;
           }
         }
       }
-      &.outcome {
+      &.approach {
         background-color: #fff;
       }
       &.understanding,
@@ -133,37 +136,6 @@ body.page-1999 {
         .team-member {
           .row {
             gap: 20px;
-          }
-        }
-      }
-      &.thanks {
-        text-align: center;
-        font-size: 16px;
-        color: #fff;
-        padding-bottom: 200px;
-        width: 60%;
-        margin: 0 auto;
-        .contact {
-          color: #000;
-          display: flex;
-          gap: 20px;
-          justify-content: center;
-          margin-top: 20px;
-          a {
-            color: #fff;
-            text-decoration: none;
-            transition: 0.5s;
-            font-size: 20px;
-            &:hover {
-              color: #ffffff75;
-              transition: 0.5s;
-            }
-          }
-
-          .resume {
-            font-style: italic;
-            text-decoration: underline;
-            font-size: 16px;
           }
         }
       }

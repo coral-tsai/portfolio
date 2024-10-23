@@ -1,0 +1,30 @@
+.section.thanks {
+  text-align: center;
+  font-size: 0.8rem;
+  color: #fff;
+  padding-bottom: 200px !important;
+  width: 60%;
+  margin: 0 auto;
+}
+.section.thanks .contact {
+  color: #000;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+.section.thanks .contact a {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.5s;
+  font-size: 1rem;
+}
+.section.thanks .contact a:hover {
+  color: rgba(255, 255, 255, 0.4588235294);
+  transition: 0.5s;
+}
+.section.thanks .contact .resume {
+  font-style: italic;
+  text-decoration: underline;
+  font-size: 0.8rem;
+}/*# sourceMappingURL=thanks.css.map */
