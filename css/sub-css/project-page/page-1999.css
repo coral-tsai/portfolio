@@ -29,6 +29,7 @@ body.page-1999 .work-container .section .sub-title {
   color: #e95076;
   font-size: 23px;
   margin-top: 40px;
+  margin-bottom: 10px;
 }
 body.page-1999 .work-container .section.overview {
   background: rgb(253, 237, 241);
@@ -86,11 +87,18 @@ body.page-1999 .work-container .section.goal .container {
   flex-direction: column;
   gap: 80px;
 }
+body.page-1999 .work-container .section.goal .container span.goal-detail {
+  display: block;
+  margin: 4px 0 20px 0;
+}
 body.page-1999 .work-container .section.outcome {
   background-color: #fff;
 }
 body.page-1999 .work-container .section.understanding, body.page-1999 .work-container .section.reflection, body.page-1999 .work-container .section.process {
   background-color: #fafafa;
+}
+body.page-1999 .work-container .section.understanding .team-member .row, body.page-1999 .work-container .section.reflection .team-member .row, body.page-1999 .work-container .section.process .team-member .row {
+  gap: 20px;
 }
 body.page-1999 .work-container .section.thanks {
   text-align: center;
@@ -130,6 +138,17 @@ body.page-1999 .work-container .section.thanks .contact .resume {
 #carouselExampleCaptions .carousel-indicators .active {
   opacity: 1;
 }
+#carouselExampleCaptions .carousel-control-next,
+#carouselExampleCaptions .carousel-control-prev {
+  width: 5%;
+  opacity: 1;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
+}
+#carouselExampleCaptions .carousel-control-prev {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%);
+}
 #carouselExampleCaptions .carousel-inner .carousel-caption {
   width: 100%;
   left: 0;
@@ -137,7 +156,7 @@ body.page-1999 .work-container .section.thanks .contact .resume {
   bottom: 0;
   padding-bottom: 2.5rem;
   background: rgb(255, 255, 255);
-  background: linear-gradient(0deg, rgb(255, 255, 255) 80%, rgba(255, 255, 255, 0) 100%);
+  background: linear-gradient(0deg, rgb(255, 255, 255) 60%, rgba(255, 255, 255, 0) 100%);
 }
 #carouselExampleCaptions .carousel-inner .carousel-caption h5,
 #carouselExampleCaptions .carousel-inner .carousel-caption p {
