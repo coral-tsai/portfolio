@@ -3,8 +3,8 @@ $main-light: rgb(253, 237, 241, 1);
 $accent: #374753;
 
 @mixin section {
-  padding-top: 80px;
-  padding-bottom: 80px;
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 body.page-1999 {
@@ -19,74 +19,121 @@ body.page-1999 {
     }
   }
   .work-container {
-    background: $main-light;
+    // background: $main-light;
     padding: 20px 0;
-    .project-detail {
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
+    .section {
       @include section();
-      .project-name {
-        font-family: "Trirong", "Noto Sans TC", sans-serif !important;
-        font-weight: bold;
-        text-align: left;
+      .section-title {
+        text-transform: uppercase;
+        font-weight: 600;
         font-size: 16px;
+        margin-bottom: 20px;
       }
-      .project-value {
-        font-size: 24px;
-        //   font-weight: bold;
+      .sub-title {
+        color: $main;
+        font-size: 23px;
+        margin-top: 40px;
       }
-      .project-link {
-        padding: 20px 0;
-        a {
-          background: #000;
-          border-radius: 8px;
-          text-decoration: none;
-          padding: 10px;
-          color: #fff;
-        }
-      }
-      .cover {
-        position: relative;
-        border-radius: 8px;
-        overflow: hidden;
-        img {
-          width: 100%;
-          height: auto;
-        }
-      }
-
-      .rough-detail {
+      &.overview {
+        background: $main-light;
         display: flex;
         flex-direction: column;
         gap: 20px;
-        .myRole {
-          &::before {
-            content: "MY ROLE";
-            color: rgba(0, 0, 0, 0.5);
-            display: block;
+        .project-name {
+          text-align: left;
+          font-size: 16px;
+        }
+        .project-value {
+          font-size: 24px;
+          //   font-weight: bold;
+        }
+        .project-link {
+          padding: 20px 0;
+          a {
+            background: #000;
+            border-radius: 8px;
+            text-decoration: none;
+            padding: 10px;
+            color: #fff;
           }
         }
-        .myResponsibilities {
-          &::before {
-            content: "RESPONSIBILITIES";
-            color: rgba(0, 0, 0, 0.5);
-            display: block;
+        .cover {
+          position: relative;
+          border-radius: 8px;
+          overflow: hidden;
+          img {
+            width: 100%;
+            height: auto;
+          }
+        }
+
+        .rough-detail {
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+          .myRole {
+            &::before {
+              content: "MY ROLE";
+              color: rgba(0, 0, 0, 0.5);
+              display: block;
+            }
+          }
+          .myResponsibilities {
+            &::before {
+              content: "RESPONSIBILITIES";
+              color: rgba(0, 0, 0, 0.5);
+              display: block;
+            }
           }
         }
       }
-      .section {
-        background: #ffffff30;
-        border-radius: 20px;
-        padding: 40px 20px;
+      &.goal {
+        background-color: $accent;
+        color: white;
+        .container {
+          display: flex;
+          flex-direction: column;
+          gap: 80px;
+        }
       }
-    }
-    .goal {
-      background-color: $accent;
-      color: white;
-      @include section();
-      .row {
-        padding-bottom: 80px;
+      &.outcome {
+        background-color: #fff;
+      }
+      &.understanding,
+      &.reflaction,
+      &.process {
+        background-color: #fafafa;
+      }
+      &.thanks {
+        text-align: center;
+        font-size: 16px;
+        color: #fff;
+        padding-bottom: 200px;
+        width: 50%;
+        margin: 0 auto;
+        .contact {
+          color: #000;
+          display: flex;
+          gap: 20px;
+          justify-content: center;
+          margin-top: 20px;
+          a {
+            color: #fff;
+            text-decoration: none;
+            transition: 0.5s;
+            font-size: 20px;
+            &:hover {
+              color: #ffffff75;
+              transition: 0.5s;
+            }
+          }
+
+          .resume {
+            font-style: italic;
+            text-decoration: underline;
+            font-size: 16px;
+          }
+        }
       }
     }
   }

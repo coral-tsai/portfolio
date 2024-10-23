@@ -11,10 +11,6 @@ $accent: #374753;
   padding-bottom: 120px;
 }
 
-.dn {
-  display: none;
-}
-
 body.page-scrum-game {
   color: white;
   background: $main;
@@ -27,151 +23,180 @@ body.page-scrum-game {
       height: auto;
     }
   }
-  .section-title {
-    font-weight: 600;
-    text-align: left;
-    font-size: 20px;
-    margin-bottom: 20px;
-    text-transform: uppercase;
-  }
-  .sub-title {
-    color: $main;
-    font-size: 32px;
-  }
   .work-container {
-    background: $background;
+    background: $main;
     padding: 20px 0;
-    .project-detail {
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
+    .section {
       @include section();
-      .project-name {
-        font-weight: 600;
-        text-align: left;
-        font-size: 20px;
-        margin-bottom: 20px;
+      .section-title {
         text-transform: uppercase;
+        font-weight: 600;
+        font-size: 16px;
+        margin-bottom: 20px;
       }
-      .project-value {
-        font-size: 32px;
-        line-height: 1.2;
-        margin-bottom: 40px;
+      .sub-title {
+        color: $main;
+        font-size: 23px;
+        margin-top: 40px;
       }
-      .project-link {
-        padding: 20px 0;
-        a {
-          background: #000;
-          border-radius: 8px;
-          text-decoration: none;
-          padding: 10px;
-          color: #fff;
-        }
-      }
-      .cover {
-        position: relative;
-        border-radius: 8px;
-        overflow: hidden;
-        img {
-          width: 100%;
-          height: auto;
-        }
-      }
-
-      .rough-detail {
+      &.overview {
+        background: $background;
         display: flex;
         flex-direction: column;
         gap: 20px;
-        .group-info {
-          display: flex;
-          // justify-content: space-between;
-          gap: 120px;
+        .project-name {
+          font-weight: 600;
+          text-align: left;
+          font-size: 20px;
+          margin-bottom: 20px;
+          text-transform: uppercase;
         }
-
-        .myRole {
-          &::before {
-            content: "MY ROLE";
-            color: #ffffff60;
-            display: block;
-          }
+        .project-value {
+          font-size: 24px;
         }
-        .myResponsibilities {
-          &::before {
-            content: "MAIN RESPONSIBILITIES";
-            color: #ffffff60;
-            display: block;
-          }
-        }
-        .timeline {
-          &::before {
-            content: "TIMELINE";
-            color: #ffffff60;
-            display: block;
-          }
-        }
-        .link {
-          &::before {
-            content: "LINK";
-            color: #ffffff60;
-            display: block;
-          }
+        .project-link {
+          padding: 20px 0;
           a {
-            color: white;
+            background: #000;
+            border-radius: 8px;
             text-decoration: none;
-            transition: 0.5s;
-            padding-right: 16px;
-            &::after {
-              content: "\e90a";
-              opacity: 0;
-              padding-left: 0;
-              padding-right: 4px;
-              font-family: "icomoon";
-              transition: 0.5s;
+            padding: 10px;
+            color: #fff;
+          }
+        }
+        .cover {
+          position: relative;
+          border-radius: 8px;
+          overflow: hidden;
+          img {
+            width: 100%;
+            height: auto;
+          }
+        }
+        .rough-detail {
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+          .group-info {
+            display: flex;
+            gap: 120px;
+            .myRole {
+              &::before {
+                content: "MY ROLE";
+                color: #ffffff60;
+                display: block;
+              }
             }
-            &:hover {
-              transition: 0.5s;
-              &::after {
-                opacity: 1;
-                padding-left: 4px;
-                padding-right: 0;
-                transition: 0.5s;
+            .timeline {
+              &::before {
+                content: "TIMELINE";
+                color: #ffffff60;
+                display: block;
               }
             }
           }
+          .link {
+            &::before {
+              content: "LINK";
+              color: #ffffff60;
+              display: block;
+            }
+            a {
+              color: white;
+              text-decoration: none;
+              transition: 0.5s;
+              padding-right: 16px;
+              &::after {
+                content: "\e90a";
+                opacity: 0;
+                padding-left: 0;
+                padding-right: 4px;
+                font-family: "icomoon";
+                transition: 0.5s;
+              }
+              &:hover {
+                transition: 0.5s;
+                &::after {
+                  opacity: 1;
+                  padding-left: 4px;
+                  padding-right: 0;
+                  transition: 0.5s;
+                }
+              }
+            }
+          }
+          .myResponsibilities {
+            &::before {
+              content: "MAIN RESPONSIBILITIES";
+              color: #ffffff60;
+              display: block;
+            }
+          }
         }
       }
-      .section {
-        background: #ffffff30;
-        border-radius: 20px;
-        padding: 40px 20px;
-      }
-    }
-    .goal {
-      background-color: $accent;
-      @include section();
-      .container {
-        color: white;
-        display: flex;
-        flex-direction: column;
-        gap: 80px;
-      }
-      li {
-        margin-bottom: 20px;
-      }
-      .main-goal {
-        font-size: 20px;
-        font-weight: 600;
-      }
-    }
-    .persona {
-      .user {
-        margin-bottom: 20px;
-        .user-story {
-          font-weight: 600;
-          margin-bottom: 16px;
+
+      &.goal {
+        background-color: $accent;
+        .container {
+          display: flex;
+          flex-direction: column;
+          gap: 80px;
         }
         li {
-          margin-bottom: 16px;
+          margin-bottom: 20px;
+        }
+        .main-goal {
+          font-size: 20px;
+          font-weight: 600;
+        }
+        .persona {
+          .user {
+            margin-bottom: 20px;
+            .user-story {
+              font-weight: 600;
+              margin-bottom: 16px;
+            }
+            li {
+              margin-bottom: 16px;
+            }
+          }
+        }
+      }
+      &.user-story {
+        background: $background;
+      }
+      &.outcome {
+        background-color: $accent;
+      }
+      &.thanks {
+        text-align: center;
+        font-size: 16px;
+        color: #fff;
+        padding-bottom: 200px;
+        width: 50%;
+        margin: 0 auto;
+        .contact {
+          color: #000;
+          display: flex;
+          gap: 20px;
+          justify-content: center;
+          margin-top: 20px;
+          a {
+            color: #fff;
+            text-decoration: none;
+            transition: 0.5s;
+            font-size: 20px;
+            &:hover {
+              color: #ffffff75;
+              transition: 0.5s;
+            }
+          }
+
+          .resume {
+            font-style: italic;
+            text-decoration: underline;
+            font-size: 16px;
+          }
         }
       }
     }

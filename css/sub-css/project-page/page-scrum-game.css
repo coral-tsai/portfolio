@@ -1,8 +1,4 @@
 @import url(/css/sub-css/base.scss);
-.dn {
-  display: none;
-}
-
 body.page-scrum-game {
   color: white;
   background: #0693e3;
@@ -15,95 +11,91 @@ body.page-scrum-game .page-work-cover img {
   width: 100%;
   height: auto;
 }
-body.page-scrum-game .section-title {
-  font-weight: 600;
-  text-align: left;
-  font-size: 20px;
-  margin-bottom: 20px;
-  text-transform: uppercase;
-}
-body.page-scrum-game .sub-title {
-  color: #0693e3;
-  font-size: 32px;
-}
 body.page-scrum-game .work-container {
-  background: #181e2a;
+  background: #0693e3;
   padding: 20px 0;
 }
-body.page-scrum-game .work-container .project-detail {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+body.page-scrum-game .work-container .section {
   padding-top: 120px;
   padding-bottom: 120px;
 }
-body.page-scrum-game .work-container .project-detail .project-name {
+body.page-scrum-game .work-container .section .section-title {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+body.page-scrum-game .work-container .section .sub-title {
+  color: #0693e3;
+  font-size: 23px;
+  margin-top: 40px;
+}
+body.page-scrum-game .work-container .section.overview {
+  background: #181e2a;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+body.page-scrum-game .work-container .section.overview .project-name {
   font-weight: 600;
   text-align: left;
   font-size: 20px;
   margin-bottom: 20px;
   text-transform: uppercase;
 }
-body.page-scrum-game .work-container .project-detail .project-value {
-  font-size: 32px;
-  line-height: 1.2;
-  margin-bottom: 40px;
+body.page-scrum-game .work-container .section.overview .project-value {
+  font-size: 24px;
 }
-body.page-scrum-game .work-container .project-detail .project-link {
+body.page-scrum-game .work-container .section.overview .project-link {
   padding: 20px 0;
 }
-body.page-scrum-game .work-container .project-detail .project-link a {
+body.page-scrum-game .work-container .section.overview .project-link a {
   background: #000;
   border-radius: 8px;
   text-decoration: none;
   padding: 10px;
   color: #fff;
 }
-body.page-scrum-game .work-container .project-detail .cover {
+body.page-scrum-game .work-container .section.overview .cover {
   position: relative;
   border-radius: 8px;
   overflow: hidden;
 }
-body.page-scrum-game .work-container .project-detail .cover img {
+body.page-scrum-game .work-container .section.overview .cover img {
   width: 100%;
   height: auto;
 }
-body.page-scrum-game .work-container .project-detail .rough-detail {
+body.page-scrum-game .work-container .section.overview .rough-detail {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
-body.page-scrum-game .work-container .project-detail .rough-detail .group-info {
+body.page-scrum-game .work-container .section.overview .rough-detail .group-info {
   display: flex;
   gap: 120px;
 }
-body.page-scrum-game .work-container .project-detail .rough-detail .myRole::before {
+body.page-scrum-game .work-container .section.overview .rough-detail .group-info .myRole::before {
   content: "MY ROLE";
   color: rgba(255, 255, 255, 0.3764705882);
   display: block;
 }
-body.page-scrum-game .work-container .project-detail .rough-detail .myResponsibilities::before {
-  content: "MAIN RESPONSIBILITIES";
-  color: rgba(255, 255, 255, 0.3764705882);
-  display: block;
-}
-body.page-scrum-game .work-container .project-detail .rough-detail .timeline::before {
+body.page-scrum-game .work-container .section.overview .rough-detail .group-info .timeline::before {
   content: "TIMELINE";
   color: rgba(255, 255, 255, 0.3764705882);
   display: block;
 }
-body.page-scrum-game .work-container .project-detail .rough-detail .link::before {
+body.page-scrum-game .work-container .section.overview .rough-detail .link::before {
   content: "LINK";
   color: rgba(255, 255, 255, 0.3764705882);
   display: block;
 }
-body.page-scrum-game .work-container .project-detail .rough-detail .link a {
+body.page-scrum-game .work-container .section.overview .rough-detail .link a {
   color: white;
   text-decoration: none;
   transition: 0.5s;
   padding-right: 16px;
 }
-body.page-scrum-game .work-container .project-detail .rough-detail .link a::after {
+body.page-scrum-game .work-container .section.overview .rough-detail .link a::after {
   content: "\e90a";
   opacity: 0;
   padding-left: 0;
@@ -111,45 +103,78 @@ body.page-scrum-game .work-container .project-detail .rough-detail .link a::afte
   font-family: "icomoon";
   transition: 0.5s;
 }
-body.page-scrum-game .work-container .project-detail .rough-detail .link a:hover {
+body.page-scrum-game .work-container .section.overview .rough-detail .link a:hover {
   transition: 0.5s;
 }
-body.page-scrum-game .work-container .project-detail .rough-detail .link a:hover::after {
+body.page-scrum-game .work-container .section.overview .rough-detail .link a:hover::after {
   opacity: 1;
   padding-left: 4px;
   padding-right: 0;
   transition: 0.5s;
 }
-body.page-scrum-game .work-container .project-detail .section {
-  background: rgba(255, 255, 255, 0.1882352941);
-  border-radius: 20px;
-  padding: 40px 20px;
+body.page-scrum-game .work-container .section.overview .rough-detail .myResponsibilities::before {
+  content: "MAIN RESPONSIBILITIES";
+  color: rgba(255, 255, 255, 0.3764705882);
+  display: block;
 }
-body.page-scrum-game .work-container .goal {
+body.page-scrum-game .work-container .section.goal {
   background-color: #374753;
-  padding-top: 120px;
-  padding-bottom: 120px;
 }
-body.page-scrum-game .work-container .goal .container {
-  color: white;
+body.page-scrum-game .work-container .section.goal .container {
   display: flex;
   flex-direction: column;
   gap: 80px;
 }
-body.page-scrum-game .work-container .goal li {
+body.page-scrum-game .work-container .section.goal li {
   margin-bottom: 20px;
 }
-body.page-scrum-game .work-container .goal .main-goal {
+body.page-scrum-game .work-container .section.goal .main-goal {
   font-size: 20px;
   font-weight: 600;
 }
-body.page-scrum-game .work-container .persona .user {
+body.page-scrum-game .work-container .section.goal .persona .user {
   margin-bottom: 20px;
 }
-body.page-scrum-game .work-container .persona .user .user-story {
+body.page-scrum-game .work-container .section.goal .persona .user .user-story {
   font-weight: 600;
   margin-bottom: 16px;
 }
-body.page-scrum-game .work-container .persona .user li {
+body.page-scrum-game .work-container .section.goal .persona .user li {
   margin-bottom: 16px;
+}
+body.page-scrum-game .work-container .section.user-story {
+  background: #181e2a;
+}
+body.page-scrum-game .work-container .section.outcome {
+  background-color: #374753;
+}
+body.page-scrum-game .work-container .section.thanks {
+  text-align: center;
+  font-size: 16px;
+  color: #fff;
+  padding-bottom: 200px;
+  width: 50%;
+  margin: 0 auto;
+}
+body.page-scrum-game .work-container .section.thanks .contact {
+  color: #000;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+body.page-scrum-game .work-container .section.thanks .contact a {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.5s;
+  font-size: 20px;
+}
+body.page-scrum-game .work-container .section.thanks .contact a:hover {
+  color: rgba(255, 255, 255, 0.4588235294);
+  transition: 0.5s;
+}
+body.page-scrum-game .work-container .section.thanks .contact .resume {
+  font-style: italic;
+  text-decoration: underline;
+  font-size: 16px;
 }/*# sourceMappingURL=page-scrum-game.css.map */
