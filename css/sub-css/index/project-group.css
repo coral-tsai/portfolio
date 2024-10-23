@@ -117,7 +117,7 @@
   transition-delay: 0.2s;
 }
 .project-card .project-info .project-name {
-  font-family: "Montserrat", "Noto Serif TC";
+  font-family: "Montserrat", "Noto Sans TC";
   font-weight: 600;
   font-size: 1.2rem;
 }
