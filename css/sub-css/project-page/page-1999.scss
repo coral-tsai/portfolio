@@ -2,6 +2,13 @@ $main: #e95076;
 $main-light: rgb(253, 237, 241, 1);
 $accent: #374753;
 
+// $0-5rem: 8px;
+// $1rem: 16px;
+// $1-5rem: 20px;
+// $2rem: 32px;
+// $2-5rem: 40px;
+// $3rem: 48px;
+
 @mixin section {
   padding-top: 120px;
   padding-bottom: 120px;
@@ -29,12 +36,12 @@ body.page-1999 {
       .section-title {
         text-transform: uppercase;
         font-weight: 600;
-        font-size: 16px;
+        font-size: 1rem;
         margin-bottom: 20px;
       }
       .sub-title {
         color: $main;
-        font-size: 23px;
+        font-size: 1.5rem;
         margin-top: 40px;
         margin-bottom: 10px;
       }
