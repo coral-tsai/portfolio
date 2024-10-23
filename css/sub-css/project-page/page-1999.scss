@@ -43,13 +43,8 @@ body.page-1999 {
         display: flex;
         flex-direction: column;
         gap: 20px;
-        .project-name {
-          text-align: left;
-          font-size: 16px;
-        }
         .project-value {
           font-size: 24px;
-          //   font-weight: bold;
         }
         .project-link {
           padding: 20px 0;
@@ -82,9 +77,9 @@ body.page-1999 {
               display: block;
             }
           }
-          .myResponsibilities {
+          .timeline {
             &::before {
-              content: "RESPONSIBILITIES";
+              content: "TIMELINE";
               color: rgba(0, 0, 0, 0.5);
               display: block;
             }
@@ -101,6 +96,23 @@ body.page-1999 {
           span.goal-detail {
             display: block;
             margin: 4px 0 20px 0;
+          }
+          span.hightlight {
+            color: $main-light;
+            // font-weight: 600;
+            text-decoration: underline;
+          }
+          li {
+            font-weight: 600;
+            color: $main-light;
+            span {
+              font-weight: normal;
+              color: white;
+            }
+          }
+          .user-story {
+            font-size: 20px;
+            line-height: 2;
           }
         }
       }
