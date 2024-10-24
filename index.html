@@ -45,7 +45,7 @@
     </script>
   </head>
 
-  <div class="contact-fab">
+  <!-- <div class="contact-fab">
     <a
       href="https://www.linkedin.com/in/coral-tsai/"
       target="_blank"
@@ -64,35 +64,64 @@
       class="blog"
       aria-label="My Blog"
     ></a>
-  </div>
+  </div> -->
   <body class="pre">
     <div class="container header">
-      <a href="index.html"><div class="myLogo"></div></a>
+      <a href="index.html"><div class="myLogo">Coral Tsai</div></a>
+      <div class="menu">
+        <a
+          class="btn LinkedIn"
+          href="https://www.linkedin.com/in/coral-tsai/"
+          target="_blank"
+        ></a>
+        <a class="btn Resume" href="/resume_coral-tsai.pdf" target="_blank"
+          >Resume</a
+        >
+      </div>
     </div>
     <div class="container greet">
-      Hello, I am Coral 👋 <br />
-      <span class="i-am">
-        an <span class="main__word" id="typed"></span>.<br />
-        Living in Taiwan, I pursue inclusive mindset 🌈</span
-      >
-    </div>
-    <div class="container wait-greet">
-      My portfolio is currently being prepared.
-      <br />
-      <br />
-      You can leave your information in the link below.
-      <br />
-      I will send you an email notification once the site launches.
-      <br />
-      Thank you!
-      <br />
-      <div class="wait-list">
-        <a
-          href="https://forms.gle/8en5nESyexGaUDXn7"
-          target="_blank"
-          class="btn"
-          >Click me!</a
-        >
+      <div class="row">
+        <div class="col-md-2 photo"></div>
+        <div class="col-md-10 intro">
+          <div class="name">
+            Hello, I am Coral 👋 <br />
+            an
+            <span style="font-weight: 700">UIUX Designer</span>
+            with 4+ years of experience who pursue inclusive mindset 🌈
+          </div>
+          <div class="expertise">
+            Expertise in UI Design/ Develope, Prototyping, Interaction Design,
+            Infographic Design and Cross-functional Collaboration.
+          </div>
+          <span class="i-am">
+            💬 BTW, Coral is also an
+            <span class="main__word" id="typed"></span>.<br />
+          </span>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-10">
+          <div class="wait-greet">
+            My portfolio is currently being prepared.
+            <br />
+
+            You can leave your information in the link below. I will send you an
+            email notification once the site launches.
+            <br />
+
+            Thank you!
+            <br />
+            <div class="wait-list">
+              <a
+                href="https://forms.gle/8en5nESyexGaUDXn7"
+                target="_blank"
+                class="btn"
+                >Leave Message!</a
+              >
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </body>
@@ -137,9 +166,10 @@
   <script>
     var typed = new Typed("#typed", {
       strings: [
-        "UIUX Designer",
         "AIDA Freediver",
         "Yogist",
+        "Artist of Candle",
+        "Ailurophile (cat lover)",
         // "Aromatherapist",
         // "Ikebana artist",
         "INFJ",

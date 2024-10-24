@@ -32,28 +32,28 @@ body {
   font-family: "Montserrat", "Noto Sans TC", sans-serif;
   padding: 40px 0;
 
-  &.pre {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    .container {
-      &.header {
-        display: block;
-        .myLogo {
-          height: 100px;
-          width: 100px;
-          margin: 0 auto 20px;
-          background-image: url(../img/protrait.webp);
-          background-size: cover;
-        }
-      }
-      &.greet {
-        text-align: center;
-      }
-    }
-  }
+  // &.pre {
+  //   height: 100vh;
+  //   display: flex;
+  //   flex-direction: column;
+  //   justify-content: center;
+  //   align-items: center;
+  //   .container {
+  //     &.header {
+  //       display: block;
+  //       .myLogo {
+  //         height: 100px;
+  //         width: 100px;
+  //         margin: 0 auto 20px;
+  //         background-image: url(../img/protrait.webp);
+  //         background-size: cover;
+  //       }
+  //     }
+  //     &.greet {
+  //       text-align: center;
+  //     }
+  //   }
+  // }
 }
 
 // ==================================================
@@ -94,9 +94,11 @@ body {
 // ==================================================
 // wait greet==================================================
 .wait-greet {
-  text-align: center;
+  // text-align: center;
+  font-size: 0.8rem;
   .wait-list {
     padding: 10px;
+
     .btn {
       background: #000;
       padding: 10px 20px;
@@ -104,6 +106,7 @@ body {
       color: #fff;
       text-decoration: none;
       transition: 0.3s;
+      font-size: 0.8rem;
       &:hover {
         color: #fff;
         background: #222;

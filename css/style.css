@@ -28,26 +28,6 @@ body {
   font-family: "Montserrat", "Noto Sans TC", sans-serif;
   padding: 40px 0;
 }
-body.pre {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-body.pre .container.header {
-  display: block;
-}
-body.pre .container.header .myLogo {
-  height: 100px;
-  width: 100px;
-  margin: 0 auto 20px;
-  background-image: url(../img/protrait.webp);
-  background-size: cover;
-}
-body.pre .container.greet {
-  text-align: center;
-}
 
 *,
 *::before,
@@ -83,7 +63,7 @@ body.pre .container.greet {
 }
 
 .wait-greet {
-  text-align: center;
+  font-size: 0.8rem;
 }
 .wait-greet .wait-list {
   padding: 10px;
@@ -95,6 +75,7 @@ body.pre .container.greet {
   color: #fff;
   text-decoration: none;
   transition: 0.3s;
+  font-size: 0.8rem;
 }
 .wait-greet .wait-list .btn:hover {
   color: #fff;
