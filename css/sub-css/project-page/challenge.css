@@ -1,17 +1,45 @@
 .challenge {
   font-size: 0.8rem;
   border: 1px solid #dc3645;
-  border-radius: 1rem;
-  padding: 1rem;
+  border-radius: 0.8rem;
   background-color: rgba(220, 54, 69, 0.062745098);
   color: #dc3645;
-  margin: 1rem;
+  margin: 1rem 0;
+  overflow: hidden;
 }
 .challenge .description {
   font-weight: 600;
-  margin-bottom: 0.6rem;
+  padding: 0.6rem 1rem;
+}
+.challenge .note {
+  padding: 0 1rem 0.6rem;
 }
 .challenge .title {
+  width: 100%;
   font-weight: 600;
-  margin-bottom: 0.6rem;
+  background-color: rgba(220, 54, 69, 0.062745098);
+  padding: 0.6rem 1rem;
+}
+
+.learning {
+  font-size: 0.8rem;
+  border: 1px solid #29a845;
+  border-radius: 0.8rem;
+  background-color: rgba(41, 168, 69, 0.062745098);
+  color: #29a845;
+  margin: 1rem 0;
+  overflow: hidden;
+}
+.learning .description {
+  font-weight: 600;
+  padding: 0.6rem 1rem;
+}
+.learning .note {
+  padding: 0 1rem 0.6rem;
+}
+.learning .title {
+  width: 100%;
+  font-weight: 600;
+  background-color: rgba(41, 168, 69, 0.062745098);
+  padding: 0.6rem 1rem;
 }/*# sourceMappingURL=challenge.css.map */
