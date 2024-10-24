@@ -26,6 +26,7 @@
   color: rgba(0, 0, 0, 0.5647058824);
   text-decoration: none;
   transition: 0.5s;
+  font-size: 0.8rem;
 }
 .container.header .menu a.change-language-zh {
   width: 32px;
@@ -64,6 +65,10 @@
 .container.header .menu a.LinkedIn::before {
   content: "\e900";
   font-family: "icomoon";
+}
+.container.header .menu a.Resume {
+  font-style: italic;
+  text-decoration: underline;
 }
 .container.header .menu a.Resume::before {
   content: "\e918";

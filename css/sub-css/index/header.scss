@@ -26,6 +26,7 @@
         color: #00000090;
         text-decoration: none;
         transition: 0.5s;
+        font-size: 0.8rem;
         &.change-language-zh {
           width: 32px;
           height: 32px;
@@ -67,6 +68,8 @@
           }
         }
         &.Resume {
+          font-style: italic;
+          text-decoration: underline;
           &::before {
             content: "\e918";
             font-family: "icomoon";
