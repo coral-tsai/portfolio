@@ -133,6 +133,18 @@ body.page-1999 {
       &.reflection,
       &.process {
         background-color: #fafafa;
+        .process-note {
+          color: $main;
+          &::before {
+            content: "● ";
+          }
+        }
+        .process-img {
+          // gap: 8px;
+          .col-md {
+            padding: 1rem;
+          }
+        }
         .team-member {
           .row {
             gap: 20px;

@@ -58,6 +58,7 @@ a.backBtn {
   box-shadow: 0px 3px 30px rgba(0, 0, 0, 0.07);
   display: block;
   transition: bottom 0.5s;
+  z-index: 3;
   nav.container-fluid {
     width: 100%;
     padding-right: 15px;

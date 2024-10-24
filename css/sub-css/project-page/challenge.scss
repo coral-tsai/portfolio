@@ -1,0 +1,18 @@
+.challenge {
+  font-size: 0.8rem;
+  border: 1px solid #dc3645;
+  border-radius: 1rem;
+  padding: 1rem;
+  background-color: #dc364510;
+  color: #dc3645;
+  margin: 1rem;
+  .description {
+    font-weight: 600;
+    margin-bottom: 0.6rem;
+  }
+  .title {
+    // font-size: 0.6rem;
+    font-weight: 600;
+    margin-bottom: 0.6rem;
+  }
+}

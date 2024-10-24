@@ -1,0 +1,17 @@
+.challenge {
+  font-size: 0.8rem;
+  border: 1px solid #dc3645;
+  border-radius: 1rem;
+  padding: 1rem;
+  background-color: rgba(220, 54, 69, 0.062745098);
+  color: #dc3645;
+  margin: 1rem;
+}
+.challenge .description {
+  font-weight: 600;
+  margin-bottom: 0.6rem;
+}
+.challenge .title {
+  font-weight: 600;
+  margin-bottom: 0.6rem;
+}/*# sourceMappingURL=challenge.css.map */
