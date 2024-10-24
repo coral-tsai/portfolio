@@ -28,6 +28,9 @@ body {
   font-family: "Montserrat", "Noto Sans TC", sans-serif;
   padding: 40px 0;
 }
+body.pre .message {
+  padding: 20px 24px;
+}
 
 *,
 *::before,
@@ -66,7 +69,7 @@ body {
   font-size: 0.8rem;
 }
 .wait-greet .wait-list {
-  padding: 10px;
+  padding: 10px 0;
 }
 .wait-greet .wait-list .btn {
   background: #000;
