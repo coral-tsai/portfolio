@@ -42,4 +42,27 @@
   font-weight: 600;
   background-color: rgba(41, 168, 69, 0.062745098);
   padding: 0.6rem 1rem;
+}
+
+.achievement {
+  font-size: 0.8rem;
+  border: 1px solid #17a2b8;
+  border-radius: 0.8rem;
+  background-color: rgba(23, 162, 184, 0.062745098);
+  color: #17a2b8;
+  margin: 1rem 0;
+  overflow: hidden;
+}
+.achievement .description {
+  font-weight: 600;
+  padding: 0.6rem 1rem;
+}
+.achievement .note {
+  padding: 0 1rem 0.6rem;
+}
+.achievement .title {
+  width: 100%;
+  font-weight: 600;
+  background-color: rgba(23, 162, 184, 0.0941176471);
+  padding: 0.6rem 1rem;
 }/*# sourceMappingURL=challenge.css.map */
