@@ -1,79 +1,39 @@
 body.page-fast-sign {
   background: #0b7d77;
-  padding: 0;
 }
 body.page-fast-sign .page-work-cover {
   background: #0b7d77;
 }
-body.page-fast-sign .page-work-cover img {
-  width: 80%;
-  height: auto;
+body.page-fast-sign .work-container .section .sub-title {
+  color: #0b7d77;
 }
-body.page-fast-sign .work-container {
+body.page-fast-sign .work-container .section .sub-title .tag {
+  background-color: #cee5e4;
+}
+body.page-fast-sign .work-container .section.overview {
   background: #cee5e4;
-  padding: 20px 0;
 }
-body.page-fast-sign .work-container .project-detail {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  padding-top: 120px;
-  padding-bottom: 120px;
-}
-body.page-fast-sign .work-container .project-detail .project-name {
-  font-family: "Trirong", "Noto Sans TC", sans-serif !important;
-  font-weight: bold;
-  text-align: left;
-  font-size: 16px;
-}
-body.page-fast-sign .work-container .project-detail .project-value {
-  font-size: 24px;
-}
-body.page-fast-sign .work-container .project-detail .project-link {
-  padding: 20px 0;
-}
-body.page-fast-sign .work-container .project-detail .project-link a {
-  background: #000;
-  border-radius: 8px;
-  text-decoration: none;
-  padding: 10px;
-  color: #fff;
-}
-body.page-fast-sign .work-container .project-detail .cover {
-  position: relative;
-  border-radius: 8px;
-  overflow: hidden;
-}
-body.page-fast-sign .work-container .project-detail .cover img {
-  width: 100%;
-  height: auto;
-}
-body.page-fast-sign .work-container .project-detail .rough-detail {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-body.page-fast-sign .work-container .project-detail .rough-detail .myRole::before {
-  content: "MY ROLE";
-  color: rgba(0, 0, 0, 0.5);
-  display: block;
-}
-body.page-fast-sign .work-container .project-detail .rough-detail .myResponsibilities::before {
-  content: "RESPONSIBILITIES";
-  color: rgba(0, 0, 0, 0.5);
-  display: block;
-}
-body.page-fast-sign .work-container .project-detail .section {
-  background: rgba(255, 255, 255, 0.1882352941);
-  border-radius: 20px;
-  padding: 40px 20px;
-}
-body.page-fast-sign .work-container .goal {
+body.page-fast-sign .work-container .section.goal {
   background-color: #323338;
-  color: white;
-  padding-top: 120px;
-  padding-bottom: 120px;
 }
-body.page-fast-sign .work-container .goal .row {
-  padding-bottom: 80px;
+body.page-fast-sign .work-container .section.goal .paragraph span.hightlight {
+  color: #cee5e4;
+}
+body.page-fast-sign .work-container .section.goal .paragraph li {
+  color: #cee5e4;
+}
+body.page-fast-sign .work-container .section.process {
+  background-color: #fafafa;
+}
+body.page-fast-sign .work-container .section.process .process-note {
+  color: #0b7d77;
+}
+body.page-fast-sign .work-container .section.approach {
+  background-color: #fff;
+}
+body.page-fast-sign .work-container .section.reflection {
+  background-color: #fafafa;
+}
+body.page-fast-sign .work-container .section.reflection .process-note {
+  color: #0b7d77;
 }/*# sourceMappingURL=page-fast-sign.css.map */

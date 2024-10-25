@@ -1,87 +1,22 @@
 body.page-classic-movie {
   background: #55301d;
-  padding: 0;
 }
 body.page-classic-movie .page-work-cover {
   background: #55301d;
 }
-body.page-classic-movie .page-work-cover img {
-  width: 100%;
-  height: auto;
-}
 body.page-classic-movie .work-container {
   background: #dea55e;
-  padding: 20px 0;
-}
-body.page-classic-movie .work-container .section {
-  padding-top: 120px;
-  padding-bottom: 120px;
-}
-body.page-classic-movie .work-container .section img {
-  width: 100%;
-}
-body.page-classic-movie .work-container .section .section-title {
-  text-transform: uppercase;
-  font-weight: 600;
-  font-size: 1.5rem;
-  margin-bottom: 20px;
 }
 body.page-classic-movie .work-container .section .sub-title {
   color: #55301d;
-  font-size: 1.2rem;
-  margin-top: 40px;
-  margin-bottom: 10px;
 }
 body.page-classic-movie .work-container .section.overview {
   background: accent03;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-body.page-classic-movie .work-container .section.overview .project-value {
-  font-size: 1.5rem;
-}
-body.page-classic-movie .work-container .section.overview .project-link {
-  padding: 20px 0;
-}
-body.page-classic-movie .work-container .section.overview .project-link a {
-  background: #000;
-  border-radius: 8px;
-  text-decoration: none;
-  padding: 10px;
-  color: #fff;
-}
-body.page-classic-movie .work-container .section.overview .cover {
-  position: relative;
-  border-radius: 8px;
-  overflow: hidden;
-}
-body.page-classic-movie .work-container .section.overview .cover img {
-  width: 100%;
-  height: auto;
-}
-body.page-classic-movie .work-container .section.overview .rough-detail {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-body.page-classic-movie .work-container .section.overview .rough-detail .myRole::before {
-  content: "MY ROLE";
-  color: rgba(0, 0, 0, 0.5);
-  display: block;
-}
-body.page-classic-movie .work-container .section.overview .rough-detail .timeline::before {
-  content: "TIMELINE";
-  color: rgba(0, 0, 0, 0.5);
-  display: block;
 }
 body.page-classic-movie .work-container .section.goal {
   background-color: #813110;
-  color: white;
-  padding-top: 120px;
-  padding-bottom: 120px;
 }
-body.page-classic-movie .work-container .section.approach, body.page-classic-movie .work-container .section.research {
+body.page-classic-movie .work-container .section.approach {
   background-color: #f4f2f1;
 }
 body.page-classic-movie .work-container .section.approach .iteration {
@@ -97,21 +32,6 @@ body.page-classic-movie .work-container .section.approach .iteration .iterate-no
   color: #fff;
   font-size: 1rem;
   padding-top: 10px;
-}
-body.page-classic-movie .work-container .section.approach .final-design a {
-  color: #fff;
-  text-decoration: none;
-  padding: 5px 20px 15px;
-  background-color: #000;
-  border-radius: 20px;
-  display: inline-block;
-  height: 40px;
-  margin-bottom: 20px;
-  transition: 0.3s;
-}
-body.page-classic-movie .work-container .section.approach .final-design a:hover {
-  color: rgba(255, 255, 255, 0.6);
-  transition: 0.3s;
 }
 body.page-classic-movie .work-container .section.process, body.page-classic-movie .work-container .section.reflection {
   background-color: #fff;

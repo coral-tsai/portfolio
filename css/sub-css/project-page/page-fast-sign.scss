@@ -4,90 +4,45 @@ $accent: #323338;
 
 body.page-fast-sign {
   background: $main;
-  padding: 0;
   .page-work-cover {
     background: $main;
-    img {
-      width: 80%;
-      height: auto;
-    }
   }
   .work-container {
-    background: $main-light;
-    padding: 20px 0;
-    .project-detail {
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-      @include section();
-      .project-name {
-        font-family: "Trirong", "Noto Sans TC", sans-serif !important;
-        font-weight: bold;
-        text-align: left;
-        font-size: 16px;
-      }
-      .project-value {
-        font-size: 24px;
-        //   font-weight: bold;
-      }
-      .project-link {
-        padding: 20px 0;
-        a {
-          background: #000;
-          border-radius: 8px;
-          text-decoration: none;
-          padding: 10px;
-          color: #fff;
+    .section {
+      .sub-title {
+        color: $main;
+        .tag {
+          background-color: $main-light;
         }
       }
-      .cover {
-        position: relative;
-        border-radius: 8px;
-        overflow: hidden;
-        img {
-          width: 100%;
-          height: auto;
-        }
+      &.overview {
+        background: $main-light;
       }
-
-      .rough-detail {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-        .link {
-          &::before {
-            content: "LINK";
-            color: #ffffff60;
-            display: block;
+      &.goal {
+        background-color: $accent;
+        .paragraph {
+          span.hightlight {
+            color: $main-light;
           }
-        }
-        .myRole {
-          &::before {
-            content: "MY ROLE";
-            color: rgba(0, 0, 0, 0.5);
-            display: block;
-          }
-        }
-        .myResponsibilities {
-          &::before {
-            content: "RESPONSIBILITIES";
-            color: rgba(0, 0, 0, 0.5);
-            display: block;
+          li {
+            color: $main-light;
           }
         }
       }
-      .section {
-        background: #ffffff30;
-        border-radius: 20px;
-        padding: 40px 20px;
+      &.process {
+        background-color: #fafafa;
+        .process-note {
+          color: $main;
+        }
       }
-    }
-    .goal {
-      background-color: $accent;
-      color: white;
-      @include section();
-      .row {
-        padding-bottom: 80px;
+      &.approach {
+        background-color: #fff;
+      }
+      &.reflection {
+        background-color: #fafafa;
+        .process-note {
+          color: $main;
+        }
       }
     }
   }

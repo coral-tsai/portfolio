@@ -2,135 +2,31 @@ $main: #e95076;
 $main-light: rgb(253, 237, 241, 1);
 $accent: #374753;
 
-// $0-5rem: 8px;
-// $1rem: 16px;
-// $1-5rem: 20px;
-// $2rem: 32px;
-// $2-5rem: 40px;
-// $3rem: 48px;
-
-@mixin section {
-  padding-top: 120px;
-  padding-bottom: 120px;
-}
-
 body.page-1999 {
   background: $main;
   padding: 0;
   .page-work-cover {
     background: $main;
-    //   height: 400px;
-    img {
-      width: 100%;
-      height: auto;
-    }
   }
   .work-container {
-    // background: $main-light;
-    padding: 20px 0;
     .section {
-      @include section();
-      img {
-        width: 100%;
-      }
-      .section-title {
-        text-transform: uppercase;
-        font-weight: 600;
-        font-size: 1.5rem;
-        margin-bottom: 20px;
-        // transform: translateX(-0.2rem);
-      }
       .sub-title {
         color: $main;
-        font-size: 1.2rem;
-        margin-top: 40px;
-        margin-bottom: 10px;
       }
       &.overview {
         background: $main-light;
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-        .project-value {
-          font-size: 1.5rem;
-        }
-        .project-link {
-          padding: 20px 0;
-          a {
-            background: #000;
-            border-radius: 8px;
-            text-decoration: none;
-            padding: 10px;
-            color: #fff;
-          }
-        }
-        .cover {
-          position: relative;
-          border-radius: 8px;
-          overflow: hidden;
-          img {
-            width: 100%;
-            height: auto;
-          }
-        }
-
-        .rough-detail {
-          display: flex;
-          flex-direction: column;
-          gap: 20px;
-          .myRole {
-            &::before {
-              content: "MY ROLE";
-              color: rgba(0, 0, 0, 0.5);
-              display: block;
-            }
-          }
-          .timeline {
-            &::before {
-              content: "TIMELINE";
-              color: rgba(0, 0, 0, 0.5);
-              display: block;
-            }
-          }
-        }
       }
       &.goal {
         background-color: $accent;
-        color: white;
         .paragraph {
-          display: flex;
-          flex-direction: column;
-          gap: 80px;
-          span.goal-detail {
-            display: block;
-            margin: 4px 0 20px 0;
-            display: none;
-          }
           span.hightlight {
             color: $main-light;
-            // font-weight: 600;
-            text-decoration: underline;
           }
           li {
-            font-weight: 600;
             color: $main-light;
-            padding-bottom: 20px;
-            span {
-              font-weight: normal;
-              color: white;
-            }
-          }
-          .user-story {
-            font-size: 1rem;
-            line-height: 2;
           }
         }
       }
-      &.approach {
-        background-color: #fff;
-      }
-      &.understanding,
-      &.reflection,
       &.process {
         background-color: #fafafa;
         .process-note {
@@ -139,17 +35,12 @@ body.page-1999 {
             content: "● ";
           }
         }
-        .process-img {
-          // gap: 8px;
-          .col-md {
-            padding: 1rem;
-          }
-        }
-        .team-member {
-          .row {
-            gap: 20px;
-          }
-        }
+      }
+      &.approach {
+        background-color: #fff;
+      }
+      &.reflection {
+        background-color: #fafafa;
       }
     }
   }

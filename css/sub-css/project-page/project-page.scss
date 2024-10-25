@@ -1,3 +1,180 @@
+@mixin section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+body.project {
+  .page-work-cover {
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  .work-container {
+    .section {
+      @include section();
+      img {
+        width: 100%;
+      }
+      .section-title {
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+      }
+      .sub-title {
+        font-size: 1.2rem;
+        margin-top: 40px;
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+        gap: 0.4rem;
+        .tag {
+          font-size: 0.7rem;
+          padding: 0.1rem 0.8rem;
+          border-radius: 99px;
+        }
+      }
+      &.overview {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        .project-value {
+          font-size: 1.5rem;
+          margin-bottom: 1.5rem;
+        }
+        .project-link {
+          padding: 20px 0;
+          a {
+            background: #000;
+            border-radius: 8px;
+            text-decoration: none;
+            padding: 10px;
+            color: #fff;
+          }
+        }
+        .cover {
+          position: relative;
+          border-radius: 8px;
+          overflow: hidden;
+          img {
+            width: 100%;
+            height: auto;
+          }
+        }
+
+        .rough-detail {
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+          .myRole {
+            &::before {
+              content: "MY ROLE";
+              color: rgba(0, 0, 0, 0.5);
+              display: block;
+              font-size: 0.8rem;
+            }
+          }
+          .timeline {
+            &::before {
+              content: "TIMELINE";
+              color: rgba(0, 0, 0, 0.5);
+              display: block;
+              font-size: 0.8rem;
+            }
+          }
+          .p-link {
+            color: inherit;
+          }
+        }
+      }
+      &.goal {
+        color: white;
+        .paragraph {
+          display: flex;
+          flex-direction: column;
+          gap: 80px;
+          span.goal-detail {
+            display: block;
+            margin: 4px 0 20px 0;
+            display: none;
+          }
+          span.hightlight {
+            text-decoration: underline;
+          }
+          li {
+            font-weight: 600;
+            padding-bottom: 20px;
+            span {
+              font-weight: normal;
+              color: white;
+            }
+          }
+          .user-story {
+            font-size: 1rem;
+            line-height: 2;
+          }
+        }
+      }
+      &.process {
+        .process-note {
+          &::before {
+            content: "● ";
+          }
+        }
+        .process-img {
+          // gap: 8px;
+          .col-md {
+            padding: 1rem;
+          }
+        }
+        .team-member {
+          .row {
+            gap: 20px;
+          }
+        }
+      }
+      &.approach {
+      }
+      &.reflection {
+      }
+      a.external-link {
+        color: #fff;
+        text-decoration: none;
+        padding: 5px 20px 15px;
+        background-color: #000;
+        border-radius: 20px;
+        display: inline-block;
+        height: 40px;
+        margin-bottom: 20px;
+        transition: 0.3s;
+        &:hover {
+          color: #ffffff99;
+          transition: 0.3s;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  body.page-fast-sign {
+    .page-work-cover {
+    }
+    .work-container {
+      .section {
+        .sub-title {
+          align-items: flex-start;
+          flex-direction: column;
+          gap: 0;
+        }
+      }
+    }
+  }
+}
+
+////////////////////////////////////////////////////////////////////////////
+
 a.backBtn {
   transition: 0.5s;
   text-decoration: none;
@@ -19,28 +196,6 @@ a.backBtn {
     padding-left: 16px;
     padding-right: 24px;
     transition: 0.5s;
-  }
-}
-
-.work-nav {
-  transition: 0.5s;
-  text-decoration: none;
-  padding: 12px 20px;
-  color: white;
-  background: #fff;
-  border-radius: 99px;
-  position: fixed;
-  bottom: 20px;
-  left: 50%;
-  transform: translate(-50%, 0);
-  a {
-    text-decoration: none;
-    color: #b8c6d0;
-    padding: 0 4px;
-    &:active,
-    &:hover {
-      color: #000 !important;
-    }
   }
 }
 

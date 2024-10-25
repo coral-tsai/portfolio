@@ -10,94 +10,24 @@ $accent03: #dea55e;
 
 body.page-classic-movie {
   background: $main;
-  padding: 0;
   .page-work-cover {
     background: $main;
-    //   height: 400px;
-    img {
-      width: 100%;
-      height: auto;
-    }
   }
   .work-container {
     background: $accent03;
-    padding: 20px 0;
     .section {
-      @include section();
-      img {
-        width: 100%;
-      }
-      .section-title {
-        text-transform: uppercase;
-        font-weight: 600;
-        font-size: 1.5rem;
-        margin-bottom: 20px;
-      }
       .sub-title {
         color: $main;
-        font-size: 1.2rem;
-        margin-top: 40px;
-        margin-bottom: 10px;
       }
       &.overview {
         background: accent03;
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-        .project-value {
-          font-size: 1.5rem;
-        }
-        .project-link {
-          padding: 20px 0;
-          a {
-            background: #000;
-            border-radius: 8px;
-            text-decoration: none;
-            padding: 10px;
-            color: #fff;
-          }
-        }
-        .cover {
-          position: relative;
-          border-radius: 8px;
-          overflow: hidden;
-          img {
-            width: 100%;
-            height: auto;
-          }
-        }
-
-        .rough-detail {
-          display: flex;
-          flex-direction: column;
-          gap: 20px;
-          .myRole {
-            &::before {
-              content: "MY ROLE";
-              color: rgba(0, 0, 0, 0.5);
-              display: block;
-            }
-          }
-          .timeline {
-            &::before {
-              content: "TIMELINE";
-              color: rgba(0, 0, 0, 0.5);
-              display: block;
-            }
-          }
-        }
       }
 
       &.goal {
         background-color: $accent01;
-        color: white;
-        @include section();
-      }
-      &.approach,
-      &.research {
-        background-color: #f4f2f1;
       }
       &.approach {
+        background-color: #f4f2f1;
         .iteration {
           background-color: $main;
           border-radius: 16px;
@@ -112,25 +42,7 @@ body.page-classic-movie {
             padding-top: 10px;
           }
         }
-        .final-design {
-          a {
-            color: #fff;
-            text-decoration: none;
-            padding: 5px 20px 15px;
-            background-color: #000;
-            border-radius: 20px;
-            display: inline-block;
-            height: 40px;
-            margin-bottom: 20px;
-            transition: 0.3s;
-            &:hover {
-              color: #ffffff99;
-              transition: 0.3s;
-            }
-          }
-        }
       }
-
       &.process,
       &.reflection {
         background-color: #fff;

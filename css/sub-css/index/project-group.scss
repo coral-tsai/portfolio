@@ -37,7 +37,7 @@
   height: 100%;
   position: relative;
   transition: 0.5s;
-  font-family: "Montserrat", "icomoon";
+  font-family: "Nunito Sans", "Noto Sans TC", sans-serif, "icomoon";
   // overflow: hidden;
   &.small {
     height: 236px;
@@ -149,7 +149,6 @@
     // }
 
     .project-name {
-      font-family: "Montserrat", "Noto Sans TC";
       font-weight: 600;
       font-size: 1.2rem;
       &.on-going {
