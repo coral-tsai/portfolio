@@ -288,6 +288,12 @@ a.backBtn:hover {
   .section-menu nav.container-fluid ul.nav {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
+  }
+  .section-menu nav.container-fluid ul.nav li .nav-link {
+    padding: 0.6rem 0.4rem;
+  }
+  .section-menu nav.container-fluid ul.nav li.to-top {
+    display: contents;
   }
 }/*# sourceMappingURL=project-page.css.map */

@@ -342,7 +342,16 @@ a.backBtn {
       ul.nav {
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content: space-around;
+
+        li {
+          .nav-link {
+            padding: 0.6rem 0.4rem;
+          }
+          &.to-top {
+            display: contents;
+          }
+        }
       }
     }
   }
