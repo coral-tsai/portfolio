@@ -13,11 +13,21 @@ body.page-classic-movie .work-container .section .sub-title {
 body.page-classic-movie .work-container .section.overview {
   background: accent03;
 }
+body.page-classic-movie .work-container .section.overview a.project-link {
+  color: #813110;
+}
 body.page-classic-movie .work-container .section.goal {
   background-color: #813110;
 }
 body.page-classic-movie .work-container .section.approach {
   background-color: #f4f2f1;
+}
+body.page-classic-movie .work-container .section.approach .key-visual img {
+  border-radius: 1rem;
+}
+body.page-classic-movie .work-container .section.approach .key-visual .row {
+  margin: 1rem 0;
+  align-items: center;
 }
 body.page-classic-movie .work-container .section.approach .iteration {
   background-color: #55301d;
@@ -26,13 +36,26 @@ body.page-classic-movie .work-container .section.approach .iteration {
   font-weight: 600;
   padding: 20px;
   font-size: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 body.page-classic-movie .work-container .section.approach .iteration .iterate-note {
   font-weight: normal;
   color: #fff;
   font-size: 1rem;
-  padding-top: 10px;
 }
-body.page-classic-movie .work-container .section.process, body.page-classic-movie .work-container .section.reflection {
+body.page-classic-movie .work-container .section.approach .iteration i {
+  width: 100%;
+  text-align: center;
+  display: block;
+}
+body.page-classic-movie .work-container .section.process {
+  background-color: #fff;
+}
+body.page-classic-movie .work-container .section.process .process-note {
+  color: #dea55e;
+}
+body.page-classic-movie .work-container .section.reflection {
   background-color: #fff;
 }/*# sourceMappingURL=page-classic-movie.css.map */

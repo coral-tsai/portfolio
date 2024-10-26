@@ -47,6 +47,12 @@ body.page-scrum-game .work-container .section.process .process-note {
 body.page-scrum-game .work-container .section.approach {
   background-color: #2f343f;
 }
+body.page-scrum-game .work-container .section.approach .paragraph.scenario-persona .persona {
+  background-color: rgba(255, 255, 255, 0.062745098);
+}
+body.page-scrum-game .work-container .section.approach .paragraph.scenario-persona .persona .problem i {
+  color: #ffc207;
+}
 body.page-scrum-game .work-container .section.reflection {
   background-color: #181e2a;
 }

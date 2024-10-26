@@ -1,4 +1,3 @@
-@charset "UTF-8";
 body.page-1999 {
   background: #e95076;
   padding: 0;
@@ -26,9 +25,6 @@ body.page-1999 .work-container .section.process {
 }
 body.page-1999 .work-container .section.process .process-note {
   color: #e95076;
-}
-body.page-1999 .work-container .section.process .process-note::before {
-  content: "● ";
 }
 body.page-1999 .work-container .section.approach {
   background-color: #fff;

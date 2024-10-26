@@ -57,6 +57,24 @@ body.page-scrum-game {
       }
       &.approach {
         background-color: $background10;
+        .paragraph {
+          &.scenario-persona {
+            .persona {
+              background-color: #ffffff10;
+              .user {
+                i {
+                }
+              }
+              .scenario {
+              }
+              .problem {
+                i {
+                  color: #ffc207;
+                }
+              }
+            }
+          }
+        }
       }
       &.reflection {
         background-color: $background;

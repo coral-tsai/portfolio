@@ -100,7 +100,7 @@
       <div class="section goal">
         <div class="container">
           <div class="paragraph">
-            <div class="row">
+            <!-- <div class="row">
               <div class="col-md-3 section-title">Theme</div>
               <div class="col-md-9 user-story">
                 As a
@@ -115,27 +115,30 @@
                   efficiency</span
                 >.
               </div>
-            </div>
+            </div> -->
             <div class="row">
-              <div class="col-md-3 section-title">The Goal</div>
+              <div class="col-md-3 section-title">User Story</div>
               <div class="col-md-9">
                 <ul>
-                  <li>我可以離線新增與儲存自己的簽名檔列表（最多兩張）。</li>
+                  <li>I can add and save my own signature list offline.</li>
                   <li>
-                    我可以上傳圖片或 PDF 簽署文件，網頁會即時預覽對應資訊。
+                    I can upload an image or PDF to sign, and the webpage will
+                    show a real-time preview.
                   </li>
                   <li>
-                    我可以在即時預覽的簽署文件上，從簽名檔列表裡選出一個簽名，並將簽名拖動到簽署文件的對應位置。
+                    I can choose a signature from my saved list and drag it to
+                    the desired location.
                   </li>
                   <li>
-                    我可以將簽署文件裡的簽名檔，進行拖拉、放大縮小等行為。
+                    I can drag, resize, and adjust the signature on the document
+                    as needed.
                   </li>
                   <li>
-                    我可以看到進度條，知道目前簽署進度，分別為
+                    I can see a progress bar that shows the signing steps:
                     <ol>
-                      <li>上傳簽署檔案</li>
-                      <li>進行簽署</li>
-                      <li>簽署完成（下載）</li>
+                      <li>Upload the document</li>
+                      <li>Sign the document</li>
+                      <li>Signing complete (download)</li>
                     </ol>
                   </li>
                 </ul>
@@ -155,20 +158,6 @@
           <div class="paragraph">
             <img src="/img/project/1999/Pendding/project-process.png" alt="" />
           </div>
-          <div class="paragraph team-member">
-            <div class="sub-title">Team Member</div>
-            <div class="row">
-              <div class="col-md">
-                <img src="/img/project/1999/Pendding/members-1.png" alt="" />
-              </div>
-              <div class="col-md">
-                <img src="/img/project/1999/Pendding/members-2.png" alt="" />
-              </div>
-              <div class="col-md">
-                <img src="/img/project/1999/Pendding/members-3.png" alt="" />
-              </div>
-            </div>
-          </div>
         </div>
       </div>
       <div class="section approach" id="approach">
@@ -176,7 +165,7 @@
           <div class="paragraph">
             <div class="section-title">Design approach</div>
           </div>
-          <div class="paragraph">
+          <div class="paragraph scenario-persona">
             <div class="sub-title">
               <span>Scenario & Persona</span>
               <span class="tag">Provided by competition organizer</span>
@@ -184,25 +173,40 @@
 
             <div class="row">
               <div class="col-md-6">
-                <div class="user">User A: Supervisor</div>
-                <div><i class="ph-fill ph-device-mobile"></i></div>
-                <div class="scenario">
-                  我必須在 10 分鐘內簽一個線上合約，否則就會違約！
-                </div>
-                <div class="problem">
-                  <i class="ph-fill ph-smiley-sad"></i>
-                  但我人在車上，手邊只有合約紙本，計程車也來不及親送到合作廠商。
+                <div class="persona">
+                  <div class="user">
+                    <i class="ph-fill ph-user"></i><br />
+                    User A
+                  </div>
+                  <div class="scenario">
+                    A senior executive is currently in a taxi. "I must sign an
+                    online contract within 10 minutes; otherwise, I will be in
+                    breach of contract!"
+                  </div>
+                  <div class="problem">
+                    <i class="ph-fill ph-smiley-sad"></i>
+                    I'm in the car, and I only have a hard copy of the contract,
+                    and there's no time for the taxi to deliver it to the
+                    collaborating vendor.
+                  </div>
                 </div>
               </div>
               <div class="col-md-6">
-                <div class="user">User B: Empolyee</div>
-                <div><i class="ph-fill ph-desktop"></i></div>
-                <div class="scenario">
-                  合作廠商透過 Email 提供 PDF 文件，請我簽名回傳。
-                </div>
-                <div class="problem">
-                  <i class="ph-fill ph-smiley-sad"></i
-                  >因為列印機壞掉，所以沒辦法列印紙本出來簽名並掃描回傳。
+                <div class="persona">
+                  <div class="user">
+                    <i class="ph-fill ph-user"></i><br />
+                    User B
+                  </div>
+                  <div class="scenario">
+                    An employee at the office is preparing to sign, but the
+                    printer is broken. "The collaborating vendor provided a PDF
+                    document via email and asked me to sign and return it.
+                  </div>
+                  <div class="problem">
+                    <i class="ph-fill ph-smiley-sad"></i>
+                    Since the printer is broken, I can't print it out, sign it,
+                    and scan it back to send.
+                  </div>
                 </div>
               </div>
             </div>
@@ -242,7 +246,13 @@
               />
             </div>
           </div>
-
+          <div class="paragraph">
+            <div class="sub-title">Wireframe by Me</div>
+            <img
+              src="/img/project/fast-sign/approach/wireframe-coral.png"
+              alt=""
+            />
+          </div>
           <div class="paragraph">
             <div class="sub-title">Hi-Fi Mockup <br />Hand off</div>
             <a

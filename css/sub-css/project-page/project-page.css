@@ -1,4 +1,10 @@
 @charset "UTF-8";
+.d-0 {
+  display: inline;
+  opacity: 0;
+  height: 0;
+}
+
 body.project .page-work-cover img {
   width: 100%;
   height: auto;
@@ -8,6 +14,9 @@ body.project .work-container .section {
   padding-bottom: 120px;
 }
 body.project .work-container .section img {
+  width: 100%;
+}
+body.project .work-container .section video {
   width: 100%;
 }
 body.project .work-container .section .section-title {
@@ -38,15 +47,32 @@ body.project .work-container .section.overview .project-value {
   font-size: 1.5rem;
   margin-bottom: 1.5rem;
 }
-body.project .work-container .section.overview .project-link {
-  padding: 20px 0;
-}
-body.project .work-container .section.overview .project-link a {
-  background: #000;
-  border-radius: 8px;
+body.project .work-container .section.overview a.project-link {
+  margin-bottom: 1.5rem;
   text-decoration: none;
-  padding: 10px;
-  color: #fff;
+  color: #000;
+  transition: 0.5s;
+  position: relative;
+}
+body.project .work-container .section.overview a.project-link::after {
+  content: "\e90a";
+  font-family: "icomoon";
+  position: absolute;
+  right: -16px;
+  top: 2px;
+  opacity: 0;
+  transition: 0.5s;
+  z-index: 1;
+}
+body.project .work-container .section.overview a.project-link:hover {
+  transition: 0.5s;
+  text-decoration: underline;
+}
+body.project .work-container .section.overview a.project-link:hover::after {
+  content: "\e90a";
+  right: -22px;
+  top: -2px;
+  opacity: 1;
 }
 body.project .work-container .section.overview .cover {
   position: relative;
@@ -93,6 +119,10 @@ body.project .work-container .section.goal .paragraph span.goal-detail {
 body.project .work-container .section.goal .paragraph span.hightlight {
   text-decoration: underline;
 }
+body.project .work-container .section.goal .paragraph ul,
+body.project .work-container .section.goal .paragraph ol {
+  padding-left: 1rem;
+}
 body.project .work-container .section.goal .paragraph li {
   font-weight: 600;
   padding-bottom: 20px;
@@ -100,6 +130,12 @@ body.project .work-container .section.goal .paragraph li {
 body.project .work-container .section.goal .paragraph li span {
   font-weight: normal;
   color: white;
+}
+body.project .work-container .section.goal .paragraph li ul li,
+body.project .work-container .section.goal .paragraph li ol li {
+  padding-bottom: 0.2rem;
+  padding-top: 0.2rem;
+  font-weight: 400;
 }
 body.project .work-container .section.goal .paragraph .user-story {
   font-size: 1rem;
@@ -113,6 +149,27 @@ body.project .work-container .section.process .process-img .col-md {
 }
 body.project .work-container .section.process .team-member .row {
   gap: 20px;
+}
+body.project .work-container .section.approach .paragraph.scenario-persona .persona {
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  height: 100%;
+}
+body.project .work-container .section.approach .paragraph.scenario-persona .persona .user {
+  padding: 0.5rem 0;
+  text-align: center;
+}
+body.project .work-container .section.approach .paragraph.scenario-persona .persona .user i {
+  font-size: 3rem;
+}
+body.project .work-container .section.approach .paragraph.scenario-persona .persona .scenario {
+  padding: 0.5rem 0;
+}
+body.project .work-container .section.approach .paragraph.scenario-persona .persona .problem {
+  padding: 0.5rem 0;
+}
+body.project .work-container .section.approach .paragraph.scenario-persona .persona .problem i {
+  color: red;
 }
 body.project .work-container .section a.external-link {
   color: #fff;

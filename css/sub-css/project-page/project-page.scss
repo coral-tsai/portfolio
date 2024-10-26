@@ -3,6 +3,12 @@
   padding-bottom: 120px;
 }
 
+.d-0 {
+  display: inline;
+  opacity: 0;
+  height: 0;
+}
+
 body.project {
   .page-work-cover {
     img {
@@ -14,6 +20,9 @@ body.project {
     .section {
       @include section();
       img {
+        width: 100%;
+      }
+      video {
         width: 100%;
       }
       .section-title {
@@ -43,16 +52,43 @@ body.project {
           font-size: 1.5rem;
           margin-bottom: 1.5rem;
         }
-        .project-link {
-          padding: 20px 0;
-          a {
-            background: #000;
-            border-radius: 8px;
-            text-decoration: none;
-            padding: 10px;
-            color: #fff;
+        a.project-link {
+          margin-bottom: 1.5rem;
+          text-decoration: none;
+          color: #000;
+          transition: 0.5s;
+          position: relative;
+          &::after {
+            content: "\e90a";
+            font-family: "icomoon";
+            position: absolute;
+            right: -16px;
+            top: 2px;
+            opacity: 0;
+            transition: 0.5s;
+            z-index: 1;
+          }
+          &:hover {
+            transition: 0.5s;
+            text-decoration: underline;
+            &::after {
+              content: "\e90a";
+              right: -22px;
+              top: -2px;
+              opacity: 1;
+            }
           }
         }
+        // .project-link {
+        //   padding: 20px 0;
+        //   a {
+        //     background: #000;
+        //     border-radius: 8px;
+        //     text-decoration: none;
+        //     padding: 10px;
+        //     color: #fff;
+        //   }
+        // }
         .cover {
           position: relative;
           border-radius: 8px;
@@ -102,12 +138,24 @@ body.project {
           span.hightlight {
             text-decoration: underline;
           }
+          ul,
+          ol {
+            padding-left: 1rem;
+          }
           li {
             font-weight: 600;
             padding-bottom: 20px;
             span {
               font-weight: normal;
               color: white;
+            }
+            ul,
+            ol {
+              li {
+                padding-bottom: 0.2rem;
+                padding-top: 0.2rem;
+                font-weight: 400;
+              }
             }
           }
           .user-story {
@@ -135,6 +183,31 @@ body.project {
         }
       }
       &.approach {
+        .paragraph {
+          &.scenario-persona {
+            .persona {
+              padding: 0.5rem 1rem;
+              border-radius: 1rem;
+              height: 100%;
+              .user {
+                padding: 0.5rem 0;
+                text-align: center;
+                i {
+                  font-size: 3rem;
+                }
+              }
+              .scenario {
+                padding: 0.5rem 0;
+              }
+              .problem {
+                padding: 0.5rem 0;
+                i {
+                  color: red;
+                }
+              }
+            }
+          }
+        }
       }
       &.reflection {
       }

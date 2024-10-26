@@ -31,6 +31,12 @@ body.page-fast-sign .work-container .section.process .process-note {
 body.page-fast-sign .work-container .section.approach {
   background-color: #fff;
 }
+body.page-fast-sign .work-container .section.approach .paragraph.scenario-persona .persona {
+  background-color: rgba(0, 0, 0, 0.031372549);
+}
+body.page-fast-sign .work-container .section.approach .paragraph.scenario-persona .persona .problem i {
+  color: #dc3545;
+}
 body.page-fast-sign .work-container .section.reflection {
   background-color: #fafafa;
 }

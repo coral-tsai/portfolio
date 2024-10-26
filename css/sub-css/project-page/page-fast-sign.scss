@@ -37,6 +37,24 @@ body.page-fast-sign {
       }
       &.approach {
         background-color: #fff;
+        .paragraph {
+          &.scenario-persona {
+            .persona {
+              background-color: #00000008;
+              .user {
+                i {
+                }
+              }
+              .scenario {
+              }
+              .problem {
+                i {
+                  color: #dc3545;
+                }
+              }
+            }
+          }
+        }
       }
       &.reflection {
         background-color: #fafafa;

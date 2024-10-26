@@ -31,9 +31,6 @@ body.page-1999 {
         background-color: #fafafa;
         .process-note {
           color: $main;
-          &::before {
-            content: "● ";
-          }
         }
       }
       &.approach {
