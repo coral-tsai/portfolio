@@ -3,77 +3,80 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2rem 0;
-    a {
-      text-decoration-style: none;
-      text-decoration: none;
-      &:hover {
-        text-decoration-style: double;
-      }
-    }
-    .myLogo {
-      color: #000;
-      font-weight: 400;
-      font-size: 1rem;
-      // height: 60px;
-      width: 160px;
-      margin: 0 0 0 10px;
-      background-size: cover;
-    }
-    .menu {
-      display: flex;
-      position: relative;
-      a {
-        color: #00000090;
-        text-decoration: none;
-        transition: 0.5s;
-        font-size: 0.8rem;
-        &.change-language-zh {
-          width: 32px;
-          height: 32px;
-          text-align: center;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          position: absolute;
-          top: 50%;
-          font-size: 0.8rem;
-          right: 0;
-          transform: translate(0, -50%);
-          transition: 0.5s;
-          color: black;
-        }
-        &.change-language-en {
-          width: 32px;
-          height: 32px;
-          text-align: center;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          position: absolute;
-          top: 50%;
-          font-size: 0.8rem;
-          left: 0;
-          transform: translate(-50%, 0);
-          transition: 0.5s;
-          color: black;
-        }
-        &:hover {
-          color: #000000;
-          transition: 0.5s;
-        }
-        &.LinkedIn {
-          &::before {
-            content: "\e900";
-            font-family: "icomoon";
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    .link {
+      padding: 0 1rem;
+      &.myLogo {
+        font-weight: 400;
+        font-size: 1rem;
+        width: 160px;
+        background-size: cover;
+        a {
+          text-decoration: none;
+          color: #000;
+          transition: 2s;
+          &:hover {
+            text-decoration: underline;
           }
         }
-        &.Resume {
-          font-style: italic;
-          text-decoration: underline;
-          &::before {
-            content: "\e918";
-            font-family: "icomoon";
+      }
+      &.menu {
+        display: flex;
+        position: relative;
+        gap: 1rem;
+        a {
+          color: #00000090;
+          text-decoration: none;
+          transition: 0.5s;
+          font-size: 0.8rem;
+          &.change-language-zh {
+            width: 32px;
+            height: 32px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            top: 50%;
+            font-size: 0.8rem;
+            right: 0;
+            transform: translate(0, -50%);
+            transition: 0.5s;
+            color: black;
+          }
+          &.change-language-en {
+            width: 32px;
+            height: 32px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            top: 50%;
+            font-size: 0.8rem;
+            left: 0;
+            transform: translate(-50%, 0);
+            transition: 0.5s;
+            color: black;
+          }
+          &:hover {
+            color: #000000;
+            transition: 0.5s;
+          }
+          &.LinkedIn {
+            &::before {
+              content: "\e900";
+              font-family: "icomoon";
+            }
+          }
+          &.Resume {
+            font-style: italic;
+            text-decoration: underline;
+            &::before {
+              content: "\e918";
+              font-family: "icomoon";
+            }
           }
         }
       }
@@ -121,7 +124,6 @@
         background-position: 50% 20%;
       }
       .intro {
-        // font-family: "Trirong", "Noto Serif TC", "Noto Sans TC", sans-serif !important;
         font-weight: 400;
         font-size: 1.4rem;
         padding: 0;

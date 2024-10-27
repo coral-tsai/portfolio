@@ -2,34 +2,38 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2rem 0;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
-.container.header a {
-  text-decoration-style: none;
-  text-decoration: none;
+.container.header .link {
+  padding: 0 1rem;
 }
-.container.header a:hover {
-  text-decoration-style: double;
-}
-.container.header .myLogo {
-  color: #000;
+.container.header .link.myLogo {
   font-weight: 400;
   font-size: 1rem;
   width: 160px;
-  margin: 0 0 0 10px;
   background-size: cover;
 }
-.container.header .menu {
+.container.header .link.myLogo a {
+  text-decoration: none;
+  color: #000;
+  transition: 2s;
+}
+.container.header .link.myLogo a:hover {
+  text-decoration: underline;
+}
+.container.header .link.menu {
   display: flex;
   position: relative;
+  gap: 1rem;
 }
-.container.header .menu a {
+.container.header .link.menu a {
   color: rgba(0, 0, 0, 0.5647058824);
   text-decoration: none;
   transition: 0.5s;
   font-size: 0.8rem;
 }
-.container.header .menu a.change-language-zh {
+.container.header .link.menu a.change-language-zh {
   width: 32px;
   height: 32px;
   text-align: center;
@@ -44,7 +48,7 @@
   transition: 0.5s;
   color: black;
 }
-.container.header .menu a.change-language-en {
+.container.header .link.menu a.change-language-en {
   width: 32px;
   height: 32px;
   text-align: center;
@@ -59,19 +63,19 @@
   transition: 0.5s;
   color: black;
 }
-.container.header .menu a:hover {
+.container.header .link.menu a:hover {
   color: #000000;
   transition: 0.5s;
 }
-.container.header .menu a.LinkedIn::before {
+.container.header .link.menu a.LinkedIn::before {
   content: "\e900";
   font-family: "icomoon";
 }
-.container.header .menu a.Resume {
+.container.header .link.menu a.Resume {
   font-style: italic;
   text-decoration: underline;
 }
-.container.header .menu a.Resume::before {
+.container.header .link.menu a.Resume::before {
   content: "\e918";
   font-family: "icomoon";
 }
