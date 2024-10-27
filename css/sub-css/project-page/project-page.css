@@ -38,6 +38,9 @@ body.project .work-container .section .sub-title .tag {
   padding: 0.1rem 0.8rem;
   border-radius: 99px;
 }
+body.project .work-container .section .paragraph a {
+  color: inherit;
+}
 body.project .work-container .section.overview {
   display: flex;
   flex-direction: column;
@@ -49,6 +52,7 @@ body.project .work-container .section.overview .project-value {
 }
 body.project .work-container .section.overview a.project-link {
   margin-bottom: 1.5rem;
+  display: inline-block;
   text-decoration: none;
   color: #000;
   transition: 0.5s;
@@ -175,6 +179,10 @@ body.project .work-container .section.approach .paragraph.result .appreciation .
 body.project .work-container .section.approach .paragraph.result .award .title {
   text-transform: uppercase;
   margin: 1rem 0;
+}
+body.project .work-container .section.approach .paragraph.result .appreciation .list,
+body.project .work-container .section.approach .paragraph.result .award .list {
+  margin-top: 0.5rem;
 }
 body.project .work-container .section.approach .paragraph.result .appreciation .list .row,
 body.project .work-container .section.approach .paragraph.result .award .list .row {

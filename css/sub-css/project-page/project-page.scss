@@ -44,6 +44,11 @@ body.project {
           border-radius: 99px;
         }
       }
+      .paragraph {
+        a {
+          color: inherit;
+        }
+      }
       &.overview {
         display: flex;
         flex-direction: column;
@@ -54,6 +59,7 @@ body.project {
         }
         a.project-link {
           margin-bottom: 1.5rem;
+          display: inline-block;
           text-decoration: none;
           color: #000;
           transition: 0.5s;
@@ -215,6 +221,7 @@ body.project {
                 margin: 1rem 0;
               }
               .list {
+                margin-top: 0.5rem;
                 .row {
                   gap: 0.5rem;
                   .col-md {

@@ -58,6 +58,55 @@ body.page-scrum-game {
       &.approach {
         background-color: $background10;
         .paragraph {
+          &.result {
+            .appreciation,
+            .award {
+              .title {
+                text-decoration: $main wavy underline;
+              }
+              .list {
+                .row {
+                  .col-md {
+                    background-color: #ffffff10;
+                    margin-bottom: 0.5rem;
+                    a {
+                      color: $main;
+                    }
+                    &.award-dev {
+                      position: relative;
+                      transition: 0.5s;
+
+                      animation: shine 2s ease infinite;
+                      .ph-medal {
+                        animation-name: medal;
+                        animation-duration: 1s;
+                        animation-iteration-count: infinite;
+                      }
+                      .award-note {
+                        position: absolute;
+                        top: -1rem;
+                        left: 0;
+                        font-size: 0.6rem;
+                        opacity: 0;
+                        transition: 0.5s;
+                        padding: 0.4rem 0.6rem;
+                        background-color: $background20;
+                        border-radius: 0.6rem;
+                        width: 100%;
+                      }
+                      &:hover {
+                        color: #0b7d77;
+                        transition: 0.5s;
+                        .award-note {
+                          opacity: 1;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
           &.scenario-persona {
             .persona {
               background-color: #ffffff10;

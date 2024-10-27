@@ -47,6 +47,54 @@ body.page-scrum-game .work-container .section.process .process-note {
 body.page-scrum-game .work-container .section.approach {
   background-color: #2f343f;
 }
+body.page-scrum-game .work-container .section.approach .paragraph.result .appreciation .title,
+body.page-scrum-game .work-container .section.approach .paragraph.result .award .title {
+  -webkit-text-decoration: #0693e3 wavy underline;
+          text-decoration: #0693e3 wavy underline;
+}
+body.page-scrum-game .work-container .section.approach .paragraph.result .appreciation .list .row .col-md,
+body.page-scrum-game .work-container .section.approach .paragraph.result .award .list .row .col-md {
+  background-color: rgba(255, 255, 255, 0.062745098);
+  margin-bottom: 0.5rem;
+}
+body.page-scrum-game .work-container .section.approach .paragraph.result .appreciation .list .row .col-md a,
+body.page-scrum-game .work-container .section.approach .paragraph.result .award .list .row .col-md a {
+  color: #0693e3;
+}
+body.page-scrum-game .work-container .section.approach .paragraph.result .appreciation .list .row .col-md.award-dev,
+body.page-scrum-game .work-container .section.approach .paragraph.result .award .list .row .col-md.award-dev {
+  position: relative;
+  transition: 0.5s;
+  animation: shine 2s ease infinite;
+}
+body.page-scrum-game .work-container .section.approach .paragraph.result .appreciation .list .row .col-md.award-dev .ph-medal,
+body.page-scrum-game .work-container .section.approach .paragraph.result .award .list .row .col-md.award-dev .ph-medal {
+  animation-name: medal;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+body.page-scrum-game .work-container .section.approach .paragraph.result .appreciation .list .row .col-md.award-dev .award-note,
+body.page-scrum-game .work-container .section.approach .paragraph.result .award .list .row .col-md.award-dev .award-note {
+  position: absolute;
+  top: -1rem;
+  left: 0;
+  font-size: 0.6rem;
+  opacity: 0;
+  transition: 0.5s;
+  padding: 0.4rem 0.6rem;
+  background-color: #464b55;
+  border-radius: 0.6rem;
+  width: 100%;
+}
+body.page-scrum-game .work-container .section.approach .paragraph.result .appreciation .list .row .col-md.award-dev:hover,
+body.page-scrum-game .work-container .section.approach .paragraph.result .award .list .row .col-md.award-dev:hover {
+  color: #0b7d77;
+  transition: 0.5s;
+}
+body.page-scrum-game .work-container .section.approach .paragraph.result .appreciation .list .row .col-md.award-dev:hover .award-note,
+body.page-scrum-game .work-container .section.approach .paragraph.result .award .list .row .col-md.award-dev:hover .award-note {
+  opacity: 1;
+}
 body.page-scrum-game .work-container .section.approach .paragraph.scenario-persona .persona {
   background-color: rgba(255, 255, 255, 0.062745098);
 }
