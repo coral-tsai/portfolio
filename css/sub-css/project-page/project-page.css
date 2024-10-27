@@ -171,6 +171,34 @@ body.project .work-container .section.approach .paragraph.scenario-persona .pers
 body.project .work-container .section.approach .paragraph.scenario-persona .persona .problem i {
   color: red;
 }
+body.project .work-container .section.approach .paragraph.result .appreciation .title,
+body.project .work-container .section.approach .paragraph.result .award .title {
+  text-transform: uppercase;
+  margin: 1rem 0;
+}
+body.project .work-container .section.approach .paragraph.result .appreciation .list .row,
+body.project .work-container .section.approach .paragraph.result .award .list .row {
+  gap: 0.5rem;
+}
+body.project .work-container .section.approach .paragraph.result .appreciation .list .row .col-md,
+body.project .work-container .section.approach .paragraph.result .award .list .row .col-md {
+  text-align: center;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+body.project .work-container .section.approach .paragraph.result .appreciation .list .row .col-md a,
+body.project .work-container .section.approach .paragraph.result .award .list .row .col-md a {
+  font-size: 0.8rem;
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  transition: 0.5s;
+}
+body.project .work-container .section.approach .paragraph.result .appreciation .list .row .col-md a:hover,
+body.project .work-container .section.approach .paragraph.result .award .list .row .col-md a:hover {
+  text-decoration: underline;
+  transition: 0.5s;
+}
 body.project .work-container .section a.external-link {
   color: #fff;
   text-decoration: none;

@@ -37,6 +37,37 @@ body.page-fast-sign .work-container .section.approach .paragraph.scenario-person
 body.page-fast-sign .work-container .section.approach .paragraph.scenario-persona .persona .problem i {
   color: #dc3545;
 }
+body.page-fast-sign .work-container .section.approach .paragraph.result .appreciation .list .row .col-md,
+body.page-fast-sign .work-container .section.approach .paragraph.result .award .list .row .col-md {
+  background-color: rgba(0, 0, 0, 0.031372549);
+  margin-bottom: 0.5rem;
+}
+body.page-fast-sign .work-container .section.approach .paragraph.result .appreciation .list .row .col-md a,
+body.page-fast-sign .work-container .section.approach .paragraph.result .award .list .row .col-md a {
+  color: #0b7d77;
+}
+body.page-fast-sign .work-container .section.approach .paragraph.result .appreciation .list .row .col-md .award-dev,
+body.page-fast-sign .work-container .section.approach .paragraph.result .award .list .row .col-md .award-dev {
+  position: relative;
+}
+body.page-fast-sign .work-container .section.approach .paragraph.result .appreciation .list .row .col-md .award-dev .award-note,
+body.page-fast-sign .work-container .section.approach .paragraph.result .award .list .row .col-md .award-dev .award-note {
+  position: absolute;
+  top: -1rem;
+  left: 0;
+  font-size: 0.6rem;
+  opacity: 0;
+  transition: 0.5s;
+}
+body.page-fast-sign .work-container .section.approach .paragraph.result .appreciation .list .row .col-md .award-dev:hover,
+body.page-fast-sign .work-container .section.approach .paragraph.result .award .list .row .col-md .award-dev:hover {
+  color: #0b7d77;
+  transition: 0.5s;
+}
+body.page-fast-sign .work-container .section.approach .paragraph.result .appreciation .list .row .col-md .award-dev:hover .award-note,
+body.page-fast-sign .work-container .section.approach .paragraph.result .award .list .row .col-md .award-dev:hover .award-note {
+  opacity: 1;
+}
 body.page-fast-sign .work-container .section.reflection {
   background-color: #fafafa;
 }

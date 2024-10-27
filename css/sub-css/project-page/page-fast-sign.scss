@@ -54,6 +54,42 @@ body.page-fast-sign {
               }
             }
           }
+          &.result {
+            .appreciation,
+            .award {
+              .title {
+              }
+              .list {
+                .row {
+                  .col-md {
+                    background-color: #00000008;
+                    margin-bottom: 0.5rem;
+                    a {
+                      color: $main;
+                    }
+                    .award-dev {
+                      position: relative;
+                      .award-note {
+                        position: absolute;
+                        top: -1rem;
+                        left: 0;
+                        font-size: 0.6rem;
+                        opacity: 0;
+                        transition: 0.5s;
+                      }
+                      &:hover {
+                        color: #0b7d77;
+                        transition: 0.5s;
+                        .award-note {
+                          opacity: 1;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
         }
       }
       &.reflection {
