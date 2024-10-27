@@ -49,15 +49,20 @@ body.page-fast-sign .work-container .section.approach .paragraph.result .award .
 body.page-fast-sign .work-container .section.approach .paragraph.result .appreciation .list .row .col-md .award-dev,
 body.page-fast-sign .work-container .section.approach .paragraph.result .award .list .row .col-md .award-dev {
   position: relative;
+  transition: 0.5s;
 }
 body.page-fast-sign .work-container .section.approach .paragraph.result .appreciation .list .row .col-md .award-dev .award-note,
 body.page-fast-sign .work-container .section.approach .paragraph.result .award .list .row .col-md .award-dev .award-note {
   position: absolute;
-  top: -1rem;
+  top: -2rem;
   left: 0;
   font-size: 0.6rem;
   opacity: 0;
   transition: 0.5s;
+  padding: 0.4rem 0.6rem;
+  background-color: #cee5e4;
+  border-radius: 0.6rem;
+  width: 100%;
 }
 body.page-fast-sign .work-container .section.approach .paragraph.result .appreciation .list .row .col-md .award-dev:hover,
 body.page-fast-sign .work-container .section.approach .paragraph.result .award .list .row .col-md .award-dev:hover {
