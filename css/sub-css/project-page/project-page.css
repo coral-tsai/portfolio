@@ -262,7 +262,7 @@ a.backBtn:hover {
   left: 50%;
   transform: translate(-50%, 0);
   position: fixed;
-  font-size: 0.6rem;
+  font-size: 0.7rem;
   font-weight: 550;
   border-radius: 50px;
   box-shadow: 0px 3px 30px rgba(0, 0, 0, 0.07);
@@ -290,17 +290,17 @@ a.backBtn:hover {
   color: #b8c6d0;
   text-transform: uppercase;
 }
+
 @media (max-width: 768px) {
-  .section-menu a.backBtn {
+  a.backBtn {
     top: 10px;
     left: 10px;
     position: fixed;
     font-size: 0.8rem;
     padding: 8px 16px;
   }
-  .section-menu .section-menu {
+  .section-menu {
     padding: 4px 0;
-    background-color: #ffffff;
     color: #b8c6d0;
     bottom: 10px;
     left: 50%;
@@ -314,23 +314,26 @@ a.backBtn:hover {
     display: block;
     transition: bottom 0.5s;
   }
-  .section-menu .section-menu nav.container-fluid {
+  .section-menu nav.container-fluid {
     margin: auto;
     width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 5px;
+    padding-left: 5px;
   }
-  .section-menu .section-menu nav.container-fluid ul.nav {
+  .section-menu nav.container-fluid ul.nav {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 0.2rem;
   }
-  .section-menu .section-menu nav.container-fluid ul.nav li.active a.nav-link {
+  .section-menu nav.container-fluid ul.nav li.active a.nav-link {
     color: #000000 !important;
     font-weight: 600;
+    padding: 0.8rem 0.4rem;
   }
-  .section-menu .section-menu nav.container-fluid ul.nav li a.nav-link {
+  .section-menu nav.container-fluid ul.nav li a.nav-link {
     color: #b8c6d0;
     text-transform: uppercase;
+    padding: 0.8rem 0.4rem;
   }
 }/*# sourceMappingURL=project-page.css.map */
