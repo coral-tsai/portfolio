@@ -325,10 +325,12 @@ a.backBtn:hover {
     flex-wrap: wrap;
     justify-content: space-around;
   }
-  .section-menu .section-menu nav.container-fluid ul.nav li .nav-link {
-    padding: 0.6rem 0.4rem;
+  .section-menu .section-menu nav.container-fluid ul.nav li.active a.nav-link {
+    color: #000000 !important;
+    font-weight: 600;
   }
-  .section-menu .section-menu nav.container-fluid ul.nav li.to-top {
-    display: contents;
+  .section-menu .section-menu nav.container-fluid ul.nav li a.nav-link {
+    color: #b8c6d0;
+    text-transform: uppercase;
   }
 }/*# sourceMappingURL=project-page.css.map */

@@ -383,11 +383,15 @@ a.backBtn {
           justify-content: space-around;
 
           li {
-            .nav-link {
-              padding: 0.6rem 0.4rem;
+            &.active {
+              a.nav-link {
+                color: #000000 !important;
+                font-weight: 600;
+              }
             }
-            &.to-top {
-              display: contents;
+            a.nav-link {
+              color: #b8c6d0;
+              text-transform: uppercase;
             }
           }
         }
