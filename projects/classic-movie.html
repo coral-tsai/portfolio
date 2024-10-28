@@ -12,7 +12,8 @@
     />
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="stylesheet" href="../icomoon/fonts/icomoon.ttf" />
-    <script src="/js/js.js"></script>
+    <script defer src="/js/js.js"></script>
+    <script defer src="/js/scroll-nav.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
       integrity="sha384-I7E8VVD/imdYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
@@ -28,19 +29,19 @@
   <body class="project page-classic-movie">
     <a href="/index.html" class="backBtn">Back</a>
 
-    <div class="section-menu">
+    <div class="section-menu" id="id_section_menu">
       <nav id="myScrollspy" class="container-fluid">
         <ul class="nav">
-          <li>
+          <li class="overview">
             <a class="nav-link" href="#overview">Overview</a>
           </li>
-          <li>
-            <a class="nav-link" href="#process">process</a>
+          <li class="process">
+            <a class="nav-link" href="#process">Process</a>
           </li>
-          <li>
+          <li class="approach">
             <a class="nav-link" href="#approach">approach</a>
           </li>
-          <li>
+          <li class="to-top">
             <button
               onclick="topFunction()"
               id="pageNavMyBtn"
@@ -59,7 +60,7 @@
     </div>
 
     <div class="work-container">
-      <div class="section overview" id="overview">
+      <section class="section overview" id="overview">
         <div class="container">
           <div class="paragraph">
             <div class="row">
@@ -96,7 +97,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
       <div class="section goal">
         <div class="container">
@@ -114,7 +115,7 @@
           </div>
         </div>
       </div>
-      <div class="section process" id="process">
+      <section class="section process" id="process">
         <div class="container">
           <div class="paragraph">
             <div class="section-title">Process</div>
@@ -171,8 +172,8 @@
             </div>
           </div>
         </div>
-      </div>
-      <div class="section approach" id="approach">
+      </section>
+      <section class="section approach" id="approach">
         <div class="container">
           <div class="paragraph">
             <div class="section-title">design approach</div>
@@ -211,34 +212,6 @@
                 alt=""
               />
             </div>
-            <!-- <div class="row">
-              <div class="col-md-8">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum
-                facere magni possimus eaque ad nobis sunt expedita atque, error
-                corporis minima libero ab aspernatur nesciunt fugiat, vel,
-                aliquid placeat. Totam.
-              </div>
-              <div class="col-md-4">
-                <img
-                  src="/img/project/classic-movie/approach/key-visual-01.png"
-                  alt=""
-                />
-              </div>
-            </div> -->
-            <!-- <div class="row">
-              <div class="col-md-4">
-                <img
-                  src="/img/project/classic-movie/approach/key-visual-02.png"
-                  alt=""
-                />
-              </div>
-              <div class="col-md-8">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum
-                facere magni possimus eaque ad nobis sunt expedita atque, error
-                corporis minima libero ab aspernatur nesciunt fugiat, vel,
-                aliquid placeat. Totam.
-              </div>
-            </div> -->
             <div class="achievement">
               <div class="title">
                 <i class="ph-fill ph-hands-clapping"></i>
@@ -250,13 +223,6 @@
                 clearly communicate the message and align with the project’s
                 goals.
               </div>
-              <!-- <div class="note">
-                I successfully delivered a key visual design that was approved
-                on the first review, demonstrating my ability to create
-                impactful and visually appealing concepts that effectively
-                communicate the desired message and align with the project’s
-                goals.
-              </div> -->
             </div>
           </div>
           <div class="paragraph">
@@ -339,7 +305,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </section>
       <div class="section reflection">
         <div class="container">
           <div class="paragraph">

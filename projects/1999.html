@@ -13,7 +13,8 @@
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="stylesheet" href="../icomoon/fonts/icomoon.ttf" />
 
-    <script src="/js/js.js"></script>
+    <script defer src="/js/js.js"></script>
+    <script defer src="/js/scroll-nav.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
       integrity="sha384-I7E8VVD/imdYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
@@ -28,17 +29,16 @@
   </head>
   <body class="project page-1999">
     <a href="/index.html" class="backBtn">Back</a>
-
-    <div class="section-menu">
+    <div class="section-menu" id="id_section_menu">
       <nav id="myScrollspy" class="container-fluid">
         <ul class="nav">
-          <li>
+          <li class="overview">
             <a class="nav-link" href="#overview">Overview</a>
           </li>
-          <li>
+          <li class="process">
             <a class="nav-link" href="#process">Process</a>
           </li>
-          <li>
+          <li class="approach">
             <a class="nav-link" href="#approach">approach</a>
           </li>
           <li class="to-top">
@@ -57,7 +57,7 @@
     </div>
 
     <div class="work-container">
-      <div class="section overview" id="overview">
+      <section class="section overview" id="overview">
         <div class="container">
           <div class="paragraph">
             <div class="row">
@@ -90,7 +90,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </section>
       <div class="section goal">
         <div class="container">
           <div class="paragraph">
@@ -181,39 +181,7 @@
           </div>
         </div>
       </div>
-      <!-- <div class="section understanding">
-        <div class="container">
-          <div class="section-title">
-            understanding THE USERs<br />
-            THE NEEDs
-          </div>
-          <div class="container">
-            <div class="sub-title">User Story</div>
-            <div>
-              As a UI Designer in this project, I reasonable for UI Design and
-              Prototyping.As a UI Designer in this project, I reasonable for UI
-              Design and Prototyping.As a UI Designer in this project, I
-              reasonable for UI Design and Prototyping.As a UI Designer in this
-              project, I reasonable for UI Design and Prototyping.As a UI
-              Designer in this project, I reasonable for UI Design and
-              Prototyping.
-            </div>
-          </div>
-          <div class="container">
-            <div class="sub-title">Tasks</div>
-            <div>
-              As a UI Designer in this project, I reasonable for UI Design and
-              Prototyping.As a UI Designer in this project, I reasonable for UI
-              Design and Prototyping.As a UI Designer in this project, I
-              reasonable for UI Design and Prototyping.As a UI Designer in this
-              project, I reasonable for UI Design and Prototyping.As a UI
-              Designer in this project, I reasonable for UI Design and
-              Prototyping.
-            </div>
-          </div>
-        </div>
-      </div> -->
-      <div class="section process" id="process">
+      <section class="section process" id="process">
         <div class="container">
           <div class="paragraph">
             <div class="section-title">project process</div>
@@ -235,8 +203,8 @@
             </div>
           </div>
         </div>
-      </div>
-      <div class="section approach" id="approach">
+      </section>
+      <section class="section approach" id="approach">
         <div class="container">
           <div class="paragraph">
             <div class="section-title">Design approach</div>
@@ -307,13 +275,13 @@
           <div class="paragraph">
             <div class="sub-title">Prototyping</div>
             <div>Desktop view is recommend.</div>
-            <iframe
+            <!-- <iframe
               style="border: 1px solid rgba(0, 0, 0, 0.1)"
               width="100%"
               height="600"
               src="https://embed.figma.com/proto/YIHUTHX4zDz52rTCiVINVW/1999-%E9%99%B3%E6%83%85%E6%A1%88%E4%BB%B6%E5%88%86%E6%9E%90%E5%B9%B3%E5%8F%B0?page-id=0%3A1&node-id=86-676&node-type=frame&viewport=-384%2C81%2C0.26&scaling=scale-down&content-scaling=fixed&starting-point-node-id=86%3A676&embed-host=share"
               allowfullscreen
-            ></iframe>
+            ></iframe> -->
           </div>
           <div class="paragraph">
             <div class="sub-title">Final Design</div>
@@ -434,7 +402,7 @@
             </div>
           </div> -->
         </div>
-      </div>
+      </section>
       <div class="section reflection">
         <div class="container">
           <div class="paragraph">
@@ -476,6 +444,7 @@
       </div>
     </div>
   </body>
+
   <script>
     // Get the button
     let mybutton = document.getElementById("pageNavMyBtn");

@@ -13,7 +13,8 @@
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="stylesheet" href="../icomoon/fonts/icomoon.ttf" />
 
-    <script src="/js/js.js"></script>
+    <script defer src="/js/js.js"></script>
+    <script defer src="/js/scroll-nav.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
       integrity="sha384-I7E8VVD/imdYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
@@ -29,19 +30,19 @@
   <body class="project page-fast-sign">
     <a href="/index.html" class="backBtn">Back</a>
 
-    <div class="section-menu">
+    <div class="section-menu" id="id_section_menu">
       <nav id="myScrollspy" class="container-fluid">
         <ul class="nav">
-          <li>
+          <li class="overview">
             <a class="nav-link" href="#overview">Overview</a>
           </li>
-          <li>
+          <li class="process">
             <a class="nav-link" href="#process">Process</a>
           </li>
-          <li>
+          <li class="approach">
             <a class="nav-link" href="#approach">approach</a>
           </li>
-          <li>
+          <li class="to-top">
             <button
               onclick="topFunction()"
               id="pageNavMyBtn"
@@ -57,7 +58,7 @@
     </div>
 
     <div class="work-container">
-      <div class="section overview" id="overview">
+      <section class="section overview" id="overview">
         <div class="container">
           <div class="paragraph">
             <div class="row">
@@ -96,7 +97,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </section>
       <div class="section goal">
         <div class="container">
           <div class="paragraph">
@@ -147,7 +148,7 @@
           </div>
         </div>
       </div>
-      <div class="section process" id="process">
+      <section class="section process" id="process">
         <div class="container">
           <div class="paragraph">
             <div class="section-title">project process</div>
@@ -159,8 +160,8 @@
             />
           </div>
         </div>
-      </div>
-      <div class="section approach" id="approach">
+      </section>
+      <section class="section approach" id="approach">
         <div class="container">
           <div class="paragraph">
             <div class="section-title">Design approach</div>
@@ -332,7 +333,7 @@
               <div class="container list">
                 <div class="row">
                   <div class="col-md award-dev">
-                    <i class="ph-fill ph-medal-military"></i></i>Howard
+                    <i class="ph-fill ph-medal-military"></i>Howard
                     <div class="award-note">The Winner of F2E!</div>
 
                     <a href="https://pdf.howardism.dev/" target="_blank"
@@ -404,7 +405,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </section>
       <div class="section reflection">
         <div class="container">
           <div class="paragraph">
@@ -412,7 +413,6 @@
           </div>
 
           <div class="paragraph">
-
             <div class="row">
               <div class="col-md-10">
                 During this project, I encountered several issues while
