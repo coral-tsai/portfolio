@@ -67,17 +67,9 @@
   color: #000000;
   transition: 0.5s;
 }
-.container.header .link.menu a.LinkedIn::before {
-  content: "\e900";
-  font-family: "icomoon";
-}
 .container.header .link.menu a.Resume {
   font-style: italic;
   text-decoration: underline;
-}
-.container.header .link.menu a.Resume::before {
-  content: "\e918";
-  font-family: "icomoon";
 }
 .container.greet {
   padding: 40px;

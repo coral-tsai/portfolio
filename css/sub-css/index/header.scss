@@ -64,19 +64,19 @@
             color: #000000;
             transition: 0.5s;
           }
-          &.LinkedIn {
-            &::before {
-              content: "\e900";
-              font-family: "icomoon";
-            }
-          }
+          // &.LinkedIn {
+          //   &::before {
+          //     content: "\e900";
+          //     font-family: "icomoon";
+          //   }
+          // }
           &.Resume {
             font-style: italic;
             text-decoration: underline;
-            &::before {
-              content: "\e918";
-              font-family: "icomoon";
-            }
+            // &::before {
+            //   content: "\e918";
+            //   font-family: "icomoon";
+            // }
           }
         }
       }
