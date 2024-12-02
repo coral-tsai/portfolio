@@ -12,7 +12,13 @@
 .marquee {
   overflow: hidden;
   position: relative;
-  padding: 5rem 0;
+  padding: 1rem 0;
+}
+.marquee .more-design-works {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  padding: 2rem;
 }
 
 .marquee-content {
@@ -63,6 +69,14 @@
   font-size: 0.7rem;
   text-align: center;
   padding-top: 0.5rem;
+}
+.marquee-content li .note .more-worls-tag {
+  display: inline;
+  font-size: 0.55rem;
+  background: rgba(255, 255, 255, 0.5019607843);
+  border-radius: 1rem;
+  padding: 0.15rem 0.3rem;
+  border: 1px solid rgba(0, 0, 0, 0.3137254902);
 }
 
 @media (max-width: 600px) {
