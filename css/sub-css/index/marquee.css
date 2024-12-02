@@ -19,7 +19,7 @@
   list-style: none;
   height: 100%;
   display: flex;
-  gap: 2rem;
+  gap: 1.2rem;
   animation: scrolling var(--marquee-animation-duration) linear infinite;
 }
 
@@ -39,12 +39,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: var(--marquee-element-width);
   height: var(--marquee-height);
+}
+.marquee-content li a {
+  width: 100%;
+  height: inherit;
 }
 .marquee-content li img {
   height: 100%;
-  border-radius: 1rem;
+  border-radius: 0.5rem;
   -o-object-fit: cover;
      object-fit: cover;
 }
