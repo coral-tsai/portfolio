@@ -32,7 +32,7 @@
     transform: translateX(0);
   }
   100% {
-    transform: translateX(calc(-1 * var(--marquee-element-width) * var(--marquee-elements)));
+    transform: translateX(calc(-0.8 * var(--marquee-element-width) * var(--marquee-elements)));
   }
 }
 .marquee-content li {
