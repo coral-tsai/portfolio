@@ -13,7 +13,7 @@
   //   color: red;
   overflow: hidden;
   position: relative;
-  padding: 2rem 0;
+  padding: 5rem 0;
 }
 .marquee-content {
   list-style: none;
@@ -38,9 +38,15 @@
 }
 .marquee-content li {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: var(--marquee-height);
+  transition: 0.5s;
+  &:hover {
+    transform: translate(0, -0.5rem);
+    transition: 0.5s;
+  }
 
   a {
     width: 100%;
@@ -50,11 +56,13 @@
     height: 100%;
     border-radius: 0.5rem;
     object-fit: cover;
-    transition: 0.5s;
-    &:hover {
-      transform: translate(0, -0.5rem);
-      transition: 0.5s;
-    }
+  }
+  .note {
+    display: block;
+    width: 100%;
+    font-size: 0.7rem;
+    text-align: center;
+    padding-top: 0.5rem;
   }
 }
 
