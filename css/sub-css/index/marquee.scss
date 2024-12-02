@@ -54,6 +54,7 @@
   //   max-height: 100%;
   height: var(--marquee-height);
   //   white-space: nowrap;
+
   a {
     width: 100%;
     height: inherit;
@@ -62,6 +63,11 @@
     height: 100%;
     border-radius: 0.5rem;
     object-fit: cover;
+    transition: 0.5s;
+    &:hover {
+      transform: translate(0, -0.5rem);
+      transition: 0.5s;
+    }
   }
 }
 

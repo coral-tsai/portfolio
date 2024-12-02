@@ -50,6 +50,11 @@
   border-radius: 0.5rem;
   -o-object-fit: cover;
      object-fit: cover;
+  transition: 0.5s;
+}
+.marquee-content li img:hover {
+  transform: translate(0, -0.5rem);
+  transition: 0.5s;
 }
 
 @media (max-width: 600px) {
