@@ -52,6 +52,9 @@
           <li class="approach">
             <a class="nav-link" href="#approach">Approach</a>
           </li>
+          <li class="conclusion">
+            <a class="nav-link" href="#conclusion">Conclusion</a>
+          </li>
           <li class="to-top">
             <button
               onclick="topFunction()"
@@ -148,24 +151,30 @@
             <div class="sub-title">Design tasks</div>
             <div class="row tasks">
               <div class="col-md task">
-                <span class="task-title">任務一</span
-                ><span class="task-info">找到票價資訊</span>
+                <span class="task-title">Task 1</span
+                ><span class="task-info">Find fare information</span>
               </div>
               <div class="col-md task">
-                <span class="task-title">任務二</span
-                ><span class="task-info">找到鐵路班次</span>
+                <span class="task-title">Task 2</span
+                ><span class="task-info">Find rail schedules</span>
               </div>
               <div class="col-md task">
-                <span class="task-title">任務三</span
-                ><span class="task-info">找到特定日期日出時間</span>
+                <span class="task-title">Task 3</span
+                ><span class="task-info"
+                  >Find sunrise time on a specific date</span
+                >
+              </div>
+            </div>
+            <div class="row tasks">
+              <div class="col-md task">
+                <span class="task-title">Task 4</span
+                ><span class="task-info">Find the designated place</span>
               </div>
               <div class="col-md task">
-                <span class="task-title">任務四</span
-                ><span class="task-info">找到指定地點</span>
-              </div>
-              <div class="col-md task">
-                <span class="task-title">任務五</span
-                ><span class="task-info">找到指定花花期</span>
+                <span class="task-title">Task 5</span
+                ><span class="task-info"
+                  >Find the designated flower blooming period</span
+                >
               </div>
             </div>
           </div>
@@ -177,31 +186,56 @@
           </div>
           <div class="paragraph">
             <div class="sub-title">Data record</div>
-            <div>此次易用性測試將記錄以下數據：</div>
             <br />
-            <ul>
-              <li>受測者任務花費時間。</li>
-              <li>受測者完成進度。</li>
-              <li>受測者操作任務時點擊螢幕的次數。</li>
-              <li>受測者操作任務點擊失敗次數。</li>
-              <li>受測者對於此任務使用上的滿意程度。</li>
-            </ul>
+            <div class="row data-record">
+              <div class="col-md">
+                <i class="ph-duotone ph-clock-user"></i>
+                <span class="title">Task takes time</span>
+              </div>
+              <div class="col-md">
+                <i class="ph-duotone ph-kanban"></i>
+                <span class="title">Completion progress</span>
+              </div>
+              <div class="col-md">
+                <i class="ph-duotone ph-hand-tap"></i>
+                <span class="title">Screen click times</span>
+              </div>
+              <div class="col-md">
+                <i class="ph-duotone ph-x-circle"></i>
+                <span class="title">Number of failed clicks</span>
+              </div>
+              <div class="col-md">
+                <i class="ph-duotone ph-smiley"></i>
+                <span class="title">Satisfaction with task usage</span>
+              </div>
+            </div>
           </div>
           <div class="paragraph">
             <div class="sub-title">Evaluation index</div>
             <div>
               <ul>
-                <li>任務成功(Task Success)：受測者是否有完成任務。</li>
                 <li>
-                  任務錯誤(Task
-                  Failures)：受測者執行任務時的非預期錯誤，如錯過、按錯按
-                  鈕，導致任務失敗。在處理錯誤時，必須了解導致錯誤的前因後果，以利改善。
+                  <span style="font-weight: bold">Task Success:</span> <br />
+                  Whether participants successfully complete the task.
                 </li>
-                <li>任務時間(Workflow Time)：操作任務時所花費的時間。</li>
                 <li>
-                  滿意度(Task
-                  Rating)：受測者在操作任務時的滿意程度對於這次任務操作的評
-                  價。此項指標最後將使用五位受測者的分數以SUS量表計算出產品滿意度分數。
+                  <span style="font-weight: bold">Task Failures: </span
+                  ><br />Unexpected errors made by participants during task
+                  execution, such as missing steps or pressing the wrong button,
+                  leading to task failure. When addressing errors, it's
+                  essential to understand their causes to facilitate
+                  improvement.
+                </li>
+                <li>
+                  <span style="font-weight: bold">Workflow Time: </span
+                  ><br />The amount of time spent completing the task.
+                </li>
+                <li>
+                  <span style="font-weight: bold">Task Rating: </span><br />The
+                  participant's level of satisfaction during task execution.
+                  This is assessed using a SUS (System Usability Scale) score
+                  calculated from the ratings of five participants to determine
+                  overall product satisfaction.
                 </li>
               </ul>
             </div>
@@ -214,39 +248,61 @@
           <div class="paragraph">
             <div class="sub-title">Brief</div>
             <div>
-              主持人在受測者操作任務之前，須將下列指示明確地告訴受測者：
+              <span style="font-weight: bold"
+                >Before participants begin the tasks, the moderator must clearly
+                provide the following instructions:</span
+              >
               <br />
-              您好，我們將進行五項「森遊阿里山」APP易用性任務測試。我們將會詢問您的個人基本資料，並在您操作每項任務時錄影紀錄。另外在每項任務完成時，會詢問您10題關於操作任務時的滿意度，並期望能收到您在操作任務時的其他心得。
-              此次測試的目的是評估「森遊阿里山」APP的易用性，找出使用性問題及改善的地方。您不需要有使用過此APP的經驗或相關的知識，我們是在測試產品的易用性，並非測試您，請放輕鬆操作所有任務，謝謝您。
+              Hello, we will conduct usability testing for the "Senyou Alishan"
+              app, consisting of five tasks. We will ask for some basic personal
+              information and record your screen while you perform each task.
+              After completing each task, you will be asked 10 questions about
+              your satisfaction with the task, and we hope to hear any
+              additional thoughts you have during the process. The purpose of
+              this test is to evaluate the usability of the "Senyou Alishan" app
+              and identify areas for improvement. You do not need to have prior
+              experience with this app or related knowledge. Please remember
+              that we are testing the product's usability, not you. Feel free to
+              complete the tasks at your own pace. Thank you for participating!
             </div>
           </div>
           <div class="paragraph">
             <div class="sub-title">Testing and Record</div>
             <div class="tasks-record">
-              <div>測試任務一：「找到票價資訊」</div>
+              <div>Task 1:</div>
               <div>
-                找到票價資訊，選擇兩張全票、一張小型車，最後告訴主持人票價總計。
+                Find the ticket information, select two full tickets and one
+                small vehicle ticket, and calculate the total price.
               </div>
               <img src="/img/project/alipedia/appraoch/Task1.png" alt="" />
             </div>
             <div class="tasks-record">
-              <div>測試任務二：「找到鐵路班次」</div>
-              <div>假設現在時間12:00，可以搭乘森林鐵路哪一班車次。</div>
+              <div>Task 2:</div>
+              <div>
+                Assuming the current time is 12:00, determine which train
+                schedule for the forest railway is available.
+              </div>
               <img src="/img/project/alipedia/appraoch/Task2.png" alt="" />
             </div>
             <div class="tasks-record">
-              <div>測試任務三：「找到特定日期日出時間」</div>
-              <div>找到冬至(12/21)的日出時間。</div>
+              <div>Task 3:</div>
+              <div>
+                Locate the sunrise time for the Winter Solstice (12/21).
+              </div>
               <img src="/img/project/alipedia/appraoch/Task3.png" alt="" />
             </div>
             <div class="tasks-record">
-              <div>測試任務四：「找到指定地點」</div>
-              <div>在園區地圖中搜尋並找到青山別館。</div>
+              <div>Task 4:</div>
+              <div>
+                Search for and find "Qingshan Guesthouse" on the park map.
+              </div>
               <img src="/img/project/alipedia/appraoch/Task4.png" alt="" />
             </div>
             <div class="tasks-record">
-              <div>測試任務五：「找到指定花花期」</div>
-              <div>請找到「霧社山櫻花」的花期。</div>
+              <div>Task 5:</div>
+              <div>
+                Find the blooming period of "Wushe Mountain Cherry Blossoms."
+              </div>
               <img src="/img/project/alipedia/appraoch/Task5.png" alt="" />
             </div>
           </div>
@@ -269,11 +325,15 @@
               </ul>
             </div>
           </div>
+        </div>
+      </section>
+      <section class="section conclusion" id="conclusion">
+        <div class="container">
           <div class="paragraph">
-            <div class="sub-title">Result analysis and Conclusion</div>
-            <div>
-              本工作坊透過對導覽型APP的易用性操作任務測試，了解介面在引導使用者操作、資訊架構設計上，是否對使用者友善，並依結果提供修改建議。
-            </div>
+            <div class="section-title">Result analysis and Conclusion</div>
+          </div>
+          <div class="paragraph">
+            本工作坊透過對導覽型APP的易用性操作任務測試，了解介面在引導使用者操作、資訊架構設計上，是否對使用者友善，並依結果提供修改建議。
           </div>
         </div>
       </section>
