@@ -6,7 +6,7 @@
   --marquee-element-width: calc(
     var(--marquee-width) / var(--marquee-elements-displayed)
   );
-  --marquee-animation-duration: calc(var(--marquee-elements) * 3s);
+  --marquee-animation-duration: calc(var(--marquee-elements) * 5s);
 }
 
 .marquee {
@@ -49,6 +49,7 @@
   align-items: center;
   height: var(--marquee-height);
   transition: 0.5s;
+  position: relative;
   &:hover {
     transform: translate(0, -0.5rem);
     transition: 0.5s;
@@ -76,6 +77,17 @@
       padding: 0.15rem 0.3rem;
       border: 1px solid #00000050;
     }
+  }
+  .more-worls-tag {
+    position: absolute;
+    top: -0.4rem;
+    left: 0.3rem;
+    display: block;
+    font-size: 0.55rem;
+    background: #ffffff;
+    border-radius: 1rem;
+    padding: 0.15rem 0.3rem;
+    border: 1px solid #00000050;
   }
 }
 
