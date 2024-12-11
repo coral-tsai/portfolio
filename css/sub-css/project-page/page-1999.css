@@ -31,37 +31,4 @@ body.page-1999 .work-container .section.approach {
 }
 body.page-1999 .work-container .section.reflection {
   background-color: #fafafa;
-}
-
-#carouselExampleCaptions .carousel-indicators [data-bs-target] {
-  background-color: #e95076;
-  opacity: 0.3;
-}
-#carouselExampleCaptions .carousel-indicators .active {
-  opacity: 1;
-}
-#carouselExampleCaptions .carousel-control-next,
-#carouselExampleCaptions .carousel-control-prev {
-  width: 5%;
-  opacity: 1;
-  background: rgb(255, 255, 255);
-  background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
-}
-#carouselExampleCaptions .carousel-control-prev {
-  background: rgb(255, 255, 255);
-  background: linear-gradient(90deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%);
-}
-#carouselExampleCaptions .carousel-inner .carousel-caption {
-  width: 100%;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  padding-bottom: 2.5rem;
-  background: rgb(255, 255, 255);
-  background: linear-gradient(0deg, rgb(255, 255, 255) 60%, rgba(255, 255, 255, 0) 100%);
-}
-#carouselExampleCaptions .carousel-inner .carousel-caption h5,
-#carouselExampleCaptions .carousel-inner .carousel-caption p {
-  color: #000;
-  margin-bottom: 0;
 }/*# sourceMappingURL=page-1999.css.map */
