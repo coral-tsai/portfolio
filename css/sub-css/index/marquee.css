@@ -1,0 +1,107 @@
+:root {
+  --marquee-width: 80vw;
+  --marquee-height: 20vh;
+  /* --marquee-elements: 12; */ /* defined with JavaScript */
+  --marquee-elements-displayed: 5;
+  --marquee-element-width: calc(
+    var(--marquee-width) / var(--marquee-elements-displayed)
+  );
+  --marquee-animation-duration: calc(var(--marquee-elements) * 4.5s);
+}
+
+.marquee {
+  overflow: hidden;
+  position: relative;
+  padding: 1rem 0;
+}
+.marquee .more-design-works {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  padding: 2rem;
+}
+
+.marquee-content {
+  list-style: none;
+  height: 100%;
+  display: flex;
+  gap: 1.2rem;
+  animation: scrolling var(--marquee-animation-duration) linear infinite;
+}
+
+.marquee-content:hover {
+  animation-play-state: paused;
+}
+
+@keyframes scrolling {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-0.8 * var(--marquee-element-width) * var(--marquee-elements)));
+  }
+}
+.marquee-content li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: var(--marquee-height);
+  transition: 0.5s;
+  position: relative;
+}
+.marquee-content li:hover {
+  transform: translate(0, -0.5rem);
+  transition: 0.5s;
+}
+.marquee-content li a {
+  width: 100%;
+  height: inherit;
+}
+.marquee-content li img {
+  height: 100%;
+  border-radius: 0.5rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.marquee-content li .note {
+  display: block;
+  width: 100%;
+  font-size: 0.7rem;
+  text-align: center;
+  padding-top: 0.5rem;
+}
+.marquee-content li .note .more-worls-tag {
+  display: inline;
+  font-size: 0.55rem;
+  background: rgba(255, 255, 255, 0.5019607843);
+  border-radius: 1rem;
+  padding: 0.15rem 0.3rem;
+  border: 1px solid rgba(0, 0, 0, 0.3137254902);
+}
+.marquee-content li .more-worls-tag {
+  position: absolute;
+  top: -0.4rem;
+  left: 0.3rem;
+  display: block;
+  font-size: 0.55rem;
+  background: #ffffff;
+  border-radius: 1rem;
+  padding: 0.15rem 0.3rem;
+  border: 1px solid rgba(0, 0, 0, 0.3137254902);
+}
+
+@media (max-width: 600px) {
+  html {
+    font-size: 12px;
+  }
+  :root {
+    --marquee-width: 100vw;
+    --marquee-height: 16vh;
+    --marquee-elements-displayed: 3;
+  }
+  .marquee:before,
+  .marquee:after {
+    width: 5rem;
+  }
+}/*# sourceMappingURL=marquee.css.map */
