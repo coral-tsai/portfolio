@@ -1,0 +1,102 @@
+body.page-alipedia {
+  background: #5e7e93;
+}
+body.page-alipedia .page-work-cover {
+  background: #5e7e93;
+}
+body.page-alipedia .work-container .section .section-sub-title {
+  color: #35556a;
+}
+body.page-alipedia .work-container .section .sub-title {
+  color: #5e7e93;
+}
+body.page-alipedia .work-container .section .sub-title .tag {
+  background-color: #eeeeee;
+}
+body.page-alipedia .work-container .section.overview {
+  background: #eeeeee;
+}
+body.page-alipedia .work-container .section.goal {
+  background-color: #35556a;
+}
+body.page-alipedia .work-container .section.goal .paragraph span.hightlight {
+  color: #eeeeee;
+}
+body.page-alipedia .work-container .section.goal .paragraph li {
+  color: #eeeeee;
+}
+body.page-alipedia .work-container .section.process {
+  background-color: #fafafa;
+}
+body.page-alipedia .work-container .section.process .process-note {
+  color: #5e7e93;
+}
+body.page-alipedia .work-container .section.approach {
+  background-color: #fff;
+}
+body.page-alipedia .work-container .section.approach .paragraph .tasks,
+body.page-alipedia .work-container .section.approach .paragraph .data-record {
+  display: flex;
+  gap: 0.5rem;
+  margin: 0;
+  margin-bottom: 0.5rem;
+}
+body.page-alipedia .work-container .section.approach .paragraph .tasks .task,
+body.page-alipedia .work-container .section.approach .paragraph .data-record .task {
+  font-size: 1rem;
+  background-color: #eeeeee;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+body.page-alipedia .work-container .section.approach .paragraph .tasks .task .task-title,
+body.page-alipedia .work-container .section.approach .paragraph .data-record .task .task-title {
+  display: block;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+body.page-alipedia .work-container .section.approach .paragraph .tasks-record {
+  margin-bottom: 2rem;
+}
+body.page-alipedia .work-container .section.approach .paragraph img {
+  border-radius: 0.5rem;
+}
+body.page-alipedia .work-container .section.approach .paragraph .data-record {
+  text-align: center;
+}
+body.page-alipedia .work-container .section.approach .paragraph .data-record .title {
+  display: block;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+body.page-alipedia .work-container .section.approach .paragraph .data-record i::before, body.page-alipedia .work-container .section.approach .paragraph .data-record i::after {
+  font-size: 3rem;
+}
+body.page-alipedia .work-container .section.conclusion {
+  background-color: #eeeeee;
+}
+body.page-alipedia .work-container .section.reflection {
+  background-color: #fafafa;
+}
+body.page-alipedia .work-container .section.reflection .process-note {
+  color: #5e7e93;
+}
+
+@keyframes medal {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(2);
+  }
+}
+@keyframes shine {
+  0% {
+    border: #5e7e93 2px solid;
+  }
+  50% {
+    border: #eeeeee 2px solid;
+  }
+  100% {
+    border: #5e7e93 2px solid;
+  }
+}/*# sourceMappingURL=page-alipedia.css.map */

@@ -22,13 +22,18 @@ body.project .work-container .section video {
 body.project .work-container .section .section-title {
   text-transform: uppercase;
   font-weight: 600;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   margin-bottom: 20px;
+}
+body.project .work-container .section .section-sub-title {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-top: 2em;
 }
 body.project .work-container .section .sub-title {
   font-size: 1.2rem;
-  margin-top: 40px;
-  margin-bottom: 10px;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
   display: flex;
   align-items: center;
   gap: 0.4rem;

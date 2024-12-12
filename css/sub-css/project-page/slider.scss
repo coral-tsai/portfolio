@@ -1,0 +1,57 @@
+#carouselExampleCaptions {
+  .carousel-indicators {
+    [data-bs-target] {
+      background-color: #000000;
+      opacity: 0.3;
+      // border-radius: 50%;
+    }
+    .active {
+      opacity: 1;
+    }
+  }
+  .carousel-control-next-icon {
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%23000"><path d="M8.29 3.29a1 1 0 0 0 0 1.41l7.29 7.29-7.29 7.29a.996.996 0 1 0 1.41 1.41l8-8c.2-.2.29-.45.29-.71s-.1-.51-.29-.71L9.71 3.29a1 1 0 0 0-1.41 0Z"/></svg>');
+  }
+  .carousel-control-prev-icon {
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%23000"><path d="M15.71 20.71a1 1 0 0 0 0-1.41l-7.29-7.29 7.29-7.29a.996 .996 0 1 0-1.41-1.41l-8.01 7.98c-.2.2-.29.45-.29.71s.1.51.29.71l8 8c.39.39 1.02.39 1.41 0Z"/></svg>');
+  }
+  .carousel-control-next,
+  .carousel-control-prev {
+    width: 5%;
+    opacity: 1;
+    // background: rgb(255, 255, 255);
+    // background: linear-gradient(
+    //   90deg,
+    //   rgba(0, 0, 0, 0) 0%,
+    //   rgba(0, 0, 0, 0.2) 100%
+    // );
+  }
+  .carousel-control-prev {
+    // background: rgb(255, 255, 255);
+    // background: linear-gradient(
+    //   90deg,
+    //   rgba(0, 0, 0, 0.2) 0%,
+    //   rgba(0, 0, 0, 0) 100%
+    // );
+  }
+  .carousel-inner {
+    // background-color: red;
+    .carousel-caption {
+      position: relative;
+      height: 6rem;
+      h5,
+      p {
+        color: #000;
+        margin-bottom: 0;
+        text-align: left;
+      }
+      width: 100%;
+      left: 0;
+      right: 0;
+      top: 0;
+      // bottom: initial;
+      // padding-bottom: 2.5rem;
+      background: rgb(255, 255, 255);
+    }
+  }
+}

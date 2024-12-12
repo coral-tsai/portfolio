@@ -1,0 +1,116 @@
+$main: #5e7e93;
+$main-light: #eeeeee;
+$accent: #35556a;
+
+body.page-alipedia {
+  background: $main;
+  .page-work-cover {
+    background: $main;
+  }
+  .work-container {
+    .section {
+      .section-sub-title {
+        color: $accent;
+      }
+      .sub-title {
+        color: $main;
+        .tag {
+          background-color: $main-light;
+        }
+      }
+      &.overview {
+        background: $main-light;
+      }
+      &.goal {
+        background-color: $accent;
+        .paragraph {
+          span.hightlight {
+            color: $main-light;
+          }
+          li {
+            color: $main-light;
+          }
+        }
+      }
+      &.process {
+        background-color: #fafafa;
+        .process-note {
+          color: $main;
+        }
+      }
+      &.approach {
+        background-color: #fff;
+        .paragraph {
+          .tasks,
+          .data-record {
+            display: flex;
+            gap: 0.5rem;
+            margin: 0;
+            margin-bottom: 0.5rem;
+            .task {
+              font-size: 1rem;
+              background-color: $main-light;
+              padding: 0.5rem;
+              border-radius: 0.5rem;
+              .task-title {
+                display: block;
+                font-size: 0.8rem;
+                font-weight: bold;
+              }
+            }
+          }
+          .tasks-record {
+            margin-bottom: 2rem;
+          }
+          img {
+            border-radius: 0.5rem;
+          }
+          .data-record {
+            text-align: center;
+            .title {
+              display: block;
+              font-size: 0.8rem;
+              font-weight: bold;
+            }
+            i {
+              &::before,
+              &::after {
+                font-size: 3rem;
+              }
+            }
+          }
+        }
+      }
+      &.conclusion {
+        background-color: $main-light;
+      }
+      &.reflection {
+        background-color: #fafafa;
+        .process-note {
+          color: $main;
+        }
+      }
+    }
+  }
+}
+
+@keyframes medal {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(2);
+  }
+}
+
+@keyframes shine {
+  0% {
+    border: $main 2px solid;
+  }
+  50% {
+    border: $main-light 2px solid;
+  }
+  100% {
+    border: $main 2px solid;
+  }
+}
